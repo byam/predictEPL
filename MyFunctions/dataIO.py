@@ -15,7 +15,11 @@ def CSVtoDF(filepathName, listHeaderNames=None):
 
 # save df to csv file.
 def DFtoCSV(df, pathToSave, fileName, index=True):
+    if not os.path.exists(pathToSave):
+        os.makedirs(pathToSave)
+
     os.chdir(pathToSave)
+
     df.to_csv(fileName + '.csv', sep=',', encoding='utf-8', index=index)
 
 
