@@ -1,12 +1,9 @@
 import os
-import csv
 import pandas as pd
 
 hashPath = "/Users/Bya/git/EPLdata/"
 savePath = "/Users/Bya/Dropbox/Research/datas/"
 
-os.chdir(hashPath)
-from config import Hashtags
 
 os.chdir("/Users/Bya/git/predictEPL/MyFunctions/")
 from dataIO import DFtoCSV
@@ -41,13 +38,13 @@ def read_file_and_save_as_each_game(fileName, teams, GW):
     tags_home = Hashtags.dic[home_team]
     tags_away = Hashtags.dic[away_team]
 
-    # read file as dataframe, and add 'side' column that shows which team's tweet it is 
+    # read file as dataframe, and add 'side' column that shows which team's tweet it is
     dfTweets = pd.read_csv(fileName, header=None, names=['date', 'text', 'user', 'tags'])
     dfTweets['side'] = map(lambda tags: whichSide(tags, tags_home, tags_away), map(lambda tag: tag.split(','), dfTweets['tags']))
 
     # count tweets
     sides = ['home', 'away', 'both', 'nothing']
-    numSides =  map(lambda side: (side, len(dfTweets[dfTweets["side"] == side])), sides)
+    numSides = map(lambda side: (side, len(dfTweets[dfTweets["side"] == side])), sides)
     print("\n %s vs %s :\n" % (home_team, away_team))
     print(numSides)
 
@@ -55,6 +52,18 @@ def read_file_and_save_as_each_game(fileName, teams, GW):
     dfHomeAwayTweets = pd.DataFrame(dfHomeAwayTweets.values, range(len(dfHomeAwayTweets)), dfHomeAwayTweets.columns)
 
     DFtoCSV(dfHomeAwayTweets, savePath + GW + '/SingleGames/', home_team + "_vs_" + away_team, False)
+
+
+def toSeconds(string):
+    try:
+        string = string[-19:-11]
+        hour, minute, second = map(int, string.split(':'))
+        hour = hour * 3600
+        minute = minute * 60
+
+        return hour + minute + second
+    except:
+        return None
 
 
 class Teams(object):
@@ -79,3 +88,75 @@ class Teams(object):
         self.Watford = 'Watford'
         self.WestBromwich = 'WestBromwich'
         self.WestHam = 'WestHam'
+
+
+# Englad Premier League's 20 teams hashtags
+class Hashtags(object):
+    dic = {
+      # debug
+      'debug': ['byambasuren'],
+
+      # AFC Bournemouth
+      'Bournemouth': ['#afcb', '#bournemouth'],
+
+      # Arsenal
+      'Arsenal': ['#arsenal', '#afc'],
+
+      # Aston Villa
+      'Villa': ['#avfc', '#astonvilla', '#astonvillafc', '#villafc'],
+
+      # Chelsea
+      'Chelsea': ['#cfc', '#chelsea'],
+
+      # Crystal Palace
+      'Crystal': ['#cpfc', '#crystalpalace'],
+
+      # Everton
+      'Everton': ['#efc', '#everton'],
+
+      # Leicester City
+      'Leicester': ['#lcfc', '#leicesterfc', '#leicestercity',
+                    '#leicestercityfc'],
+
+      # Liverpool
+      'Liverpool': ['#lfc', '#liverpoolfc', '#livfc'],
+
+      # Manchester City
+      'City': ['#mcfc', '#manchestercity', '#mancity'],
+
+      # Manchester United
+      'United': ['#mufc', '#manchesterunited', '#manutd'],
+
+      # Newcastle United
+      'Newcastle': ['#nufc', '#newcastlefc', '#newcastleunited',
+                    '#newcastleunitedfc'],
+
+      # Norwich City
+      'Norwich': ['#ncfc', '#norwichcity'],
+
+      # Southampton
+      'Southampton': ['#saintsfc', '#southamptonfc'],
+
+      # Stoke City
+      'Stoke': ['#scfc', '#stoke', '#stokecity'],
+
+      # Sunderland
+      'Sunderland': ['#safc', '#sunderlandfc'],
+
+      # Swansea City
+      'Swansea': ['#swans', '#swanseacity'],
+
+      # Tottenham Hotspur
+      'Tottenham': ['#coys', '#tottenhamfc', '#spursfc',
+                    '#hotspurfc', '#tottenhamhotspurfc', '#tottenhamhotspur'],
+
+      # Watford
+      'Watford': ['#watfordfc'],
+
+      # West Bromwich Albion
+      'WestBromwich': ['#wba', '#wbafc', '#westbromwichalbion'],
+
+      # West Ham United
+      'WestHam': ['#whufc', '#westhamfc', '#westhamunited', '#westhamunitedfc',
+                  '#whu'],
+      }

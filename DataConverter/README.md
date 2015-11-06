@@ -1,98 +1,22 @@
-### Convert JSON to CSV
+# Data Converter
 
-#### Created Code
-JSON_to_CSV.py :
-```python
-# coding: utf-8
+## Download EPL Twitter datas from AWS server
 
-import os
-import sys
-import json
-import csv
-
-
-# Change home directory
-pathData = "/Users/Bya/Dropbox/Research/datas/"
-os.chdir(pathData)
-
-
-# return filenames as list
-def GetFilenames(foldername):
-    for folderName, subFolders, fileNames in os.walk(foldername):
-        fileNames = filter(lambda filename:
-                           filename.endswith('_json.txt'), fileNames)
-        fileNames = map(lambda filename:
-                        str(foldername + '/' + filename), fileNames)
-        return fileNames
-
-
-# Parsing JSON file
-# return as list(if returnList != 0), save to csv file(if saveCSV != 0)
-def ParseJson(textFilePath, returnList, saveCSV):
-    # Read file
-    tweets_file = open(textFilePath, "r")
-
-    # Parsing JSON
-    tweets_data = []
-    for line in tweets_file:
-        try:
-            all_data = json.loads(line)
-            text = all_data['text'].encode('utf8')
-            date = all_data['created_at'].encode('utf8')
-            user = all_data["user"]["screen_name"].encode('utf8')
-            tags = map(lambda tag: tag['text'],
-                       all_data['entities']['hashtags'])
-
-            # if tweet has no tags, check quoted tweets tag
-            if len(tags) == 0:
-                text = text + '. ' + all_data['quoted_status']['text']\
-                    .encode('utf8')
-
-                tags = map(lambda tag: tag['text'],
-                           all_data['quoted_status']['entities']['hashtags'])
-
-            # if still has no tags
-            if len(tags) == 0:
-                tags = ['no_tags']
-
-            data_featured = {'text': text,
-                             'date': date,
-                             'user': user,
-                             'tags': ','.join(map(lambda tag:
-                                                  tag.lower(), tags))}
-            tweets_data.append(data_featured)
-
-            # add to CSV file
-            if(saveCSV):
-                DicSaveToCSV(textFilePath, data_featured)
-
-        except:
-            continue
-
-    tweets_file.close()
-
-    if(returnList):
-        return tweets_data
-
-
-# Save the dictionary values to file
-def DicSaveToCSV(fileName, myDic):
-    with open(fileName + '.csv', 'a') as f:
-        w = csv.DictWriter(f, myDic.keys())
-        w.writerow(myDic)
-
-
-if __name__ == '__main__':
-    # Change the weeknumber
-    weeknumber = int(sys.argv[1])
-    filenames = GetFilenames('GW' + str(weeknumber))
-    for filename in filenames:
-        ParseJson(filename, 0, 1)
+```sh
+# download Game Week 11 (GW11)
+$ scp -r -i ~/.ssh/bya-aws.pem ubuntu@54.92.75.228:/home/ubuntu/datas/GW11/ ~/Dropbox/Research/datas
+game1.txt                               100%  245MB   2.9MB/s   01:26
+game8.txt                               100%   20MB   3.4MB/s   00:06
+game9.txt                               100%   16MB   2.6MB/s   00:06
+game10.txt                              100%   53MB   2.6MB/s   00:20
+game2_7.txt                             100%  224MB   3.6MB/s   01:02
 ```
 
-### Usage
-```sh
-# weeknumber must be integer (ex: 4)
-$ python JSON_to_CSV.py weeknumber
 
+## Convert JSON file to Text file
+
+Only extract ['text', 'date', 'user', 'tags'] from every Tweet.
+```sh
+# extract Game Week 11
+$ /Users/Bya/.virtualenvs/py3/bin/python ~/git/predictEPL/DataConverter/JSON_to_CSV.py 11
 ```
