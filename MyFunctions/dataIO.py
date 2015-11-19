@@ -39,12 +39,16 @@ def GetFilenames(foldername, extension='csv'):
         return list(fileNames)
 
 
-def csv_dic_df(filename):
+def csv_dic_df(filename, head = []):
     with open(filename, 'r') as f:
         reader = csv.reader(f)
 
         dic = {}
-        headers = next(reader)
+
+        if len(head) == 0:
+            headers = next(reader)
+        else:
+            headers = head
         for header in headers:
             dic[header] = []
 
