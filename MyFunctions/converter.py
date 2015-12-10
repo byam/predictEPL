@@ -1,8 +1,7 @@
 import os
 import pandas as pd
 
-hashPath = "/Users/Bya/git/EPLdata/"
-savePath = "/Users/Bya/Dropbox/Research/datas/"
+savePath = "/Users/Bya/Dropbox/Research/datas/EPL/ExtractedCsvData/"
 
 
 os.chdir("/Users/Bya/git/predictEPL/MyFunctions/")
@@ -18,7 +17,7 @@ def createTuples(weekGames):
 
 
 def whichSide(tags, tags_home, tags_away):
-    tags = map(lambda tag: '#' + tag.lower(), tags)
+    tags = list(map(lambda tag: '#' + tag.lower(), tags))
     if set(tags).intersection(tags_home) and set(tags).intersection(tags_away):
         return 'both'
     elif set(tags).intersection(tags_home):
@@ -39,14 +38,14 @@ def read_file_and_save_as_each_game(fileName, teams, GW):
     tags_away = Hashtags.dic[away_team]
 
     # read file as dataframe, and add 'side' column that shows which team's tweet it is
-    dfTweets = pd.read_csv(fileName, header=None, names=['date', 'text', 'user', 'tags'])
-    dfTweets['side'] = map(lambda tags: whichSide(tags, tags_home, tags_away), map(lambda tag: tag.split(','), dfTweets['tags']))
+    dfTweets = pd.read_csv(fileName, header=None, names=['date', 'text', 'tags', 'user', 'status'])
+    dfTweets['side'] = [whichSide(str(tags).split(','), tags_home, tags_away) for tags in dfTweets['tags']]
 
     # count tweets
     sides = ['home', 'away', 'both', 'nothing']
     numSides = map(lambda side: (side, len(dfTweets[dfTweets["side"] == side])), sides)
     print("\n %s vs %s :\n" % (home_team, away_team))
-    print(numSides)
+    print(list(numSides))
 
     dfHomeAwayTweets = dfTweets[(dfTweets["side"] == 'home') | (dfTweets["side"] == 'away') | (dfTweets["side"] == 'both')]
     dfHomeAwayTweets = pd.DataFrame(dfHomeAwayTweets.values, range(len(dfHomeAwayTweets)), dfHomeAwayTweets.columns)
