@@ -39,7 +39,7 @@ def GetFilenames(foldername, extension='csv'):
         return list(fileNames)
 
 
-def csv_dic_df(filename, head = []):
+def csv_dic_df(filename, head=[]):
     with open(filename, 'r') as f:
         reader = csv.reader(f)
 

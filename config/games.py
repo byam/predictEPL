@@ -145,6 +145,7 @@ GAMES = {
 
     'GW13':
         [
+            # ('Watford', 'United'),
             ('Chelsea', 'Norwich'),
             ('Everton', 'Villa'),
             ('Newcastle', 'Leicester'),
@@ -193,6 +194,25 @@ GAMES = {
             ('Newcastle', 'Liverpool'),
 
             ('Everton', 'Crystal'),
+        ],
+
+    'GW16':
+        [
+            ('Norwich', 'Everton'),
+
+            ('Crystal', 'Southampton'),
+            ('City', 'Swansea'),
+            ('Sunderland', 'Watford'),
+            ('WestHam', 'Stoke'),
+
+            ('Bournemouth', 'United'),
+
+            ('Villa', 'Arsenal'),
+
+            ('Liverpool', 'WestBromwich'),
+            ('Tottenham', 'Newcastle'),
+
+            # ('Leicester', 'Chelsea'),
         ],
 }
 

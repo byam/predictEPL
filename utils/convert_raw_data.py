@@ -41,25 +41,25 @@ def FilterTweet(tweet):
         tags = list(set(tags + qt_tags))
         status = 'quoted'
 
-    tweet_dic = {
-        'date':   date,
-        'text':   text,
-        'tags':   ','.join(map(lambda tag: tag.lower(), tags)),
-        'user':   user,
-        'status': status
-    }
+    tweet_list = [
+        date,
+        text,
+        ','.join(map(lambda tag: tag.lower(), tags)),
+        user,
+        status
+    ]
 
-    return tweet_dic
+    return tweet_list
 
 
-def SaveDicAppendToCSV(path_to_save, file_name, my_dic):
+def SaveListAppendToCSV(path_to_save, file_name, my_list):
     if not os.path.exists(path_to_save):
         os.makedirs(path_to_save)
     os.chdir(path_to_save)
 
     with open(file_name[:-4] + '.csv', 'a') as file:
-        w = csv.DictWriter(file, my_dic.keys())
-        w.writerow(my_dic)
+        wr = csv.writer(file, quoting=csv.QUOTE_ALL)
+        wr.writerow(my_list)
 
 
 def ReadTextLineByLine(file_name, directory):
@@ -89,10 +89,10 @@ def RawTweetFilterToCSV(week):
         for i in range(len(tweets)):
             try:
                 tweet_all = json.loads(tweets[i])
-                tweet_dic = FilterTweet(tweet_all)
+                tweet_list = FilterTweet(tweet_all)
 
                 path_to_save = SAVE_DATA_PATH + week_folder
-                SaveDicAppendToCSV(path_to_save, file_name, tweet_dic)
+                SaveListAppendToCSV(path_to_save, file_name, tweet_list)
 
             except ValueError:
                 continue
@@ -100,7 +100,6 @@ def RawTweetFilterToCSV(week):
                 continue
 
         print("[Converting Done]: %s (%.2f sec)" % (file_name, time.time() - start_time))
-
 
 if __name__ == '__main__':
     week_number = int(sys.argv[1])

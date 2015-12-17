@@ -1,15 +1,14 @@
 MEDIAS = [
-    'ThoughtsTalks',
-    'AllSportsGh',
-    '',
+    'thoughtstalks',
+    'allsportsgh',
 ]
 
 STREAMS = [
-    'MatchesOnline',
-    'KORAWATS1',
+    'matchesonline',
+    'korawats1',
     'izil18',
-    'KSASTUF1',
-    'FootbalStream',
+    'ksastuf1',
+    'footbalstream',
     'jonfellipe1989',
     'izil12',
     'izil17',
@@ -18,9 +17,9 @@ STREAMS = [
     'lornesway',
     'izil19',
     'dogru_sevda',
-    'LauraCsrc',
-    'KwiiHeloooo',
-    'FutbolCanl',
+    'lauracsrc',
+    'kwiiHeloooo',
+    'futbolcanl',
     'yildizebrum',
     'uzlmrym',
     '@denis_tugba',
@@ -29,14 +28,14 @@ STREAMS = [
 ]
 
 NON_ENGLISH = [
-    'EPL_ArabicNews',
-    'Nafie_AL_faridi',
+    'epl_arabicnews',
+    'nafie_aL_faridi',
 ]
 
 BOT = [
     'ftbllprmrshp',
     'secretceli',
-    'Beer_and_Sports',
+    'beer_and_sports',
     'drewney2000',
-    'Alfyaz_',
+    'alfyaz_',
 ]
