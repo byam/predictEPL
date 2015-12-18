@@ -22,6 +22,7 @@ def PlotLineSingleChart(my_list, label, color, title, xlabel, ylabel,
 
     # set subplot
     ax = plt.subplot(1, 1, 1)
+    ax.grid(True)
 
     # manipulate xlims, ylims
     xlim_min = 0
@@ -63,6 +64,7 @@ def PlotLineMultipleChart(my_list_list, labels, colors, title, xlabel, ylabel,
 
     # set subplot
     ax = plt.subplot(1, 1, 1)
+    ax.grid(True)
 
     # manipulate xlims, ylims
     xlim_min = 0

@@ -179,3 +179,81 @@ Norwich vs Everton :
 ```
 
 
+---
+
+# Functions
+
+
+## Scrapping ESPN's Soccer Match Gamecast Live Commentary
+
+```python
+import sys
+
+# import funtion
+sys.path.append("/Users/Bya/git/predictEPL/WebScrapping/")
+from scrap_espn_gamecast import CreateEspnLiveCommentDF
+
+# Copy paste match's URL
+# see the matches: http://www.espnfc.us/barclays-premier-league/23/scores
+# output: dataframe, columns: ['minute', 'comment', 'side', 'comment_status']
+# side : 'home', 'away', 'both', 'neutral'
+# comment_status : 'corner', 'foul', 'goal', 'attemp', 'freekick', 'delay'
+#                  'offside', 'substitution', 'yellow_card', 'red_card', 'neutral'
+url = 'http://www.espnfc.us/gamecast/422508/gamecast.html'
+dfGameCast = CreateEspnLiveCommentDF(url)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
