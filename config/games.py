@@ -214,6 +214,24 @@ GAMES = {
 
             # ('Leicester', 'Chelsea'),
         ],
+
+    'GW17':
+        [
+            ('Chelsea', 'Sunderland'),
+            ('Everton', 'Leicester'),
+            ('United', 'Norwich'),
+            ('Southampton', 'Tottenham'),
+            ('Stoke', 'Crystal'),
+            ('WestBromwich', 'Bournemouth'),
+
+            ('Newcastle', 'Villa'),
+
+            ('Watford', 'Liverpool'),
+
+            ('Swansea', 'WestHam'),
+
+            ('Arsenal', 'City'),
+        ],
 }
 
 # 'Bournemouth'

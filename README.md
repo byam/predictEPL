@@ -184,34 +184,130 @@ Norwich vs Everton :
 # Functions
 
 
-## Scrapping ESPN's Soccer Match Gamecast Live Commentary
+### Scrapping ESPN's Soccer Match Gamecast Live Commentary
 
+* See the matches: [here](http://www.espnfc.us/barclays-premier-league/23/scores)
+* output: dataframe, columns: ['minute', 'comment', 'side', 'comment_status']
+* side : 'home', 'away', 'both', 'neutral'
+* comment_status : 'corner', 'foul', 'goal', 'attemp', 'freekick', 'delay'
+              'offside', 'substitution', 'yellow_card', 'red_card', 'neutral'
+
+Usage:
 ```python
 import sys
 
-# import funtion
+# import function
 sys.path.append("/Users/Bya/git/predictEPL/WebScrapping/")
 from scrap_espn_gamecast import CreateEspnLiveCommentDF
 
-# Copy paste match's URL
-# see the matches: http://www.espnfc.us/barclays-premier-league/23/scores
-# output: dataframe, columns: ['minute', 'comment', 'side', 'comment_status']
-# side : 'home', 'away', 'both', 'neutral'
-# comment_status : 'corner', 'foul', 'goal', 'attemp', 'freekick', 'delay'
-#                  'offside', 'substitution', 'yellow_card', 'red_card', 'neutral'
+# copy paste matches URL
+# Output: Dataframe
 url = 'http://www.espnfc.us/gamecast/422508/gamecast.html'
 dfGameCast = CreateEspnLiveCommentDF(url)
 ```
 
 
+**Goal, Attack, Foul minutes:**
+
+* Goal: ['goal']
+* Attack: ['corner', 'offside', 'freekick', 'attemp']
+* Foul: ['foul']
+
+```python
+goals_dic, attacks_dic_home, attacks_dic_away, fouls_dic_home, fouls_dic_away = scrap_espn_gamecast.CreateGAFdics(dfGameCast)
+```
 
 
 
+---
+### Plot Emolex
+
+Usage:
+
+```python
+import sys
+
+# import function
+sys.path.append("/Users/Bya/git/predictEPL/utils/")
+import my_plot
 
 
+# Plot Line Chart as data series
+my_plot.PlotLineChart(
+    my_list_list=[
+        [1, 4, 9, 16, 25],
+    ],
+    labels=categorys,
+    colors=colors,
+    title='Square',
+    xlabel='x data',
+    ylabel='y data',
+    width=20,
+    height=10,
+    grid=True,
+    vline=False,
+    xlim=False,
+    ylim=False,
+    x_interval=False,
+    y_interval=False,
+    points=False,
+)
+```
 
 
+Colors and Types:
 
+```python
+# red circle, red dashes, blue squares and green triangles
+point_types = ['ro', 'r--', 'bs', 'g^']
+
+# Emolex Category and Colors
+categorys = [
+    'joy', 'trust', 'anticipation',
+    'anger', 'fear', 'disgust', 'sadness',
+    'surprise',
+    'positive', 'negative',
+]
+colors = [
+    '#fadb4d', '#99cc33', '#f2993a',
+    '#e43054', '#35a450', '#9f78ba', '#729dc9',
+    '#3fa5c0',
+    'g', 'r',
+]
+```
+
+Example:
+
+```python
+my_plot.PlotLineChart(
+    my_list_list=[
+        list(dfFilterEmolexHome[categorys[0]]),     # Emolex DF
+        list(dfFilterEmolexHome[categorys[1]]),
+        list(dfFilterEmolexHome[categorys[2]]),
+    ],
+    labels=categorys,
+    colors=[
+        colors[0],
+        colors[1],
+        colors[2],
+    ],
+    title='Emotion Lexicon' + ' Home Team',
+    xlabel='Minutes',
+    ylabel='Emotion Signal',
+    width=20,
+    height=10,
+    grid=True,
+    vline=False,
+    xlim=False,
+    ylim=False,
+    x_interval=False,
+    y_interval=False,
+    points=[goals_dic, attacks_dic_home, fouls_dic_home],   # ESPN Gamecast minutes
+)
+```
+
+
+---
 
 
 

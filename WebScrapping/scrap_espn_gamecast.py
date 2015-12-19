@@ -109,3 +109,94 @@ def CreateEspnLiveCommentDF(url):
     dfComments['comment_status'] = [CommentStatus(comment) for comment in dfComments['comment']]
 
     return dfComments
+
+
+# Adding Half-Time minutes
+def AddHtMinute(minute):
+    minute = int(minute)
+
+    # adding HT 15 min and Referee's ET 3 min
+    if minute > 45:
+        minute = minute + 15 + 3
+    return minute
+
+
+# Extract Attacking Minutes
+def AttackMinutes(dfGameCast, side):
+    # filter attack comments
+    attack_minutes = list(dfGameCast[
+            (
+                (dfGameCast.comment_status == 'corner') |
+                (dfGameCast.comment_status == 'offside') |
+                (dfGameCast.comment_status == 'freekick') |
+                (dfGameCast.comment_status == 'attemp')
+            ) & (dfGameCast.side == side)
+            ]['minute'])
+
+    # convert to integer and unique minutes
+    attack_minutes = [AddHtMinute(minute) for minute in attack_minutes]
+    attack_minutes = list(set(attack_minutes))
+    attack_minutes.sort()
+
+    # create dic for plot
+    attacks_dic = {
+        'xdata': attack_minutes,
+        'types': 'k^',
+        'label': 'attack',
+    }
+
+    return attacks_dic
+
+
+# Extract Foul Minutes
+def FoulMinutes(dfGameCast, side):
+    # filter foul comments
+    foul_minutes = list(dfGameCast[
+            (dfGameCast.comment_status == 'foul') &
+            (dfGameCast.side == side)
+             ]['minute'])
+
+    # convert to integer and unique minutes
+    foul_minutes = [AddHtMinute(minute) for minute in foul_minutes]
+    foul_minutes = list(set(foul_minutes))
+    foul_minutes.sort()
+
+    # create dic for plot
+    fouls_dic = {
+        'xdata': foul_minutes,
+        'types': 'ks',
+        'label': 'foul',
+    }
+
+    return fouls_dic
+
+
+# Extract Goal Minutes
+def GoalMinutes(dfGameCast):
+    goal_minutes = list(dfGameCast[dfGameCast['comment_status'] == 'goal']['minute'])
+
+    goal_minutes = list(map(lambda minute: AddHtMinute(minute), goal_minutes))
+    goal_minutes.sort()
+
+    goals_dic = {
+        'xdata': goal_minutes,
+        'types': 'co',
+        'label': 'goal',
+    }
+
+    return goals_dic
+
+
+# Goal, Attack, Foul dictionaries
+def CreateGAFdics(dfGameCast):
+    attacks_dic_home = AttackMinutes(dfGameCast, 'home')
+    attacks_dic_away = AttackMinutes(dfGameCast, 'away')
+
+    fouls_dic_home = FoulMinutes(dfGameCast, 'home')
+    fouls_dic_away = FoulMinutes(dfGameCast, 'away')
+
+    goals_dic = GoalMinutes(dfGameCast)
+
+    return (goals_dic,
+            attacks_dic_home, attacks_dic_away,
+            fouls_dic_home, fouls_dic_away)
