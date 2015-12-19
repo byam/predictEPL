@@ -206,7 +206,7 @@ url = 'http://www.espnfc.us/gamecast/422508/gamecast.html'
 dfGameCast = CreateEspnLiveCommentDF(url)
 ```
 
-![espn_scrap](https://github.com/byam/Programming-Notes/blob/master/predictEPL/img/espn_scrap.png)
+![espn_scrap](https://github.com/byam/predictEPL/blob/master/img/espn_scrap.png)
 
 
 
@@ -309,7 +309,7 @@ my_plot.PlotLineChart(
 )
 ```
 
-![plot_emolex](https://github.com/byam/Programming-Notes/blob/master/predictEPL/img/plot_emolex.png)
+![plot_emolex](https://github.com/byam/predictEPL/blob/master/img/plot_emolex.png)
 
 
 ---
