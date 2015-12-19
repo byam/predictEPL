@@ -198,10 +198,14 @@ import sys
 
 # import function
 sys.path.append("/Users/Bya/git/predictEPL/WebScrapping/")
+sys.path.append("/Users/Bya/git/predictEPL/config/")
+
+import espn_urls
 from scrap_espn_gamecast import CreateEspnLiveCommentDF
 
 # copy paste matches URL
 # Output: Dataframe
+# url = espn_urls.MatchUrl(GW, filename)
 url = 'http://www.espnfc.us/gamecast/422508/gamecast.html'
 dfGameCast = CreateEspnLiveCommentDF(url)
 ```
@@ -225,7 +229,28 @@ goals_dic, attacks_dic_home, attacks_dic_away, fouls_dic_home, fouls_dic_away = 
 ---
 ### Plot Emolex
 
-Usage:
+**Colors and Types**:
+
+```python
+# red circle, red dashes, blue squares and green triangles
+point_types = ['ro', 'r--', 'bs', 'g^']
+
+# Emolex Category and Colors
+categorys = [
+    'joy', 'trust', 'anticipation',
+    'anger', 'fear', 'disgust', 'sadness',
+    'surprise',
+    'positive', 'negative',
+]
+colors_el = [
+    '#fadb4d', '#99cc33', '#f2993a',
+    '#e43054', '#35a450', '#9f78ba', '#729dc9',
+    '#3fa5c0',
+    'lime', 'saddlebrown',
+]
+```
+
+**my_plot.PlotLineChart**:
 
 ```python
 import sys
@@ -257,28 +282,6 @@ my_plot.PlotLineChart(
 )
 ```
 
-
-Colors and Types:
-
-```python
-# red circle, red dashes, blue squares and green triangles
-point_types = ['ro', 'r--', 'bs', 'g^']
-
-# Emolex Category and Colors
-categorys = [
-    'joy', 'trust', 'anticipation',
-    'anger', 'fear', 'disgust', 'sadness',
-    'surprise',
-    'positive', 'negative',
-]
-colors = [
-    '#fadb4d', '#99cc33', '#f2993a',
-    '#e43054', '#35a450', '#9f78ba', '#729dc9',
-    '#3fa5c0',
-    'g', 'r',
-]
-```
-
 Example:
 
 ```python
@@ -290,9 +293,9 @@ my_plot.PlotLineChart(
     ],
     labels=categorys,
     colors=[
-        colors[0],
-        colors[1],
-        colors[2],
+        colors_el[0],
+        colors_el[1],
+        colors_el[2],
     ],
     title='Emotion Lexicon' + ' Home Team',
     xlabel='Minutes',
@@ -311,6 +314,15 @@ my_plot.PlotLineChart(
 
 ![plot_emolex](https://github.com/byam/predictEPL/blob/master/img/plot_emolex.png)
 
+
+**my_plot.HomeAwayPos3Neg4**
+
+![plot_pos3neg4](https://github.com/byam/predictEPL/blob/master/img/plot_pos3neg4.png)
+
+
+**my_plot.EmolexCats**
+
+![plot_cats](https://github.com/byam/predictEPL/blob/master/img/plot_cats.png)
 
 ---
 
