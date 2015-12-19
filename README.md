@@ -206,6 +206,9 @@ url = 'http://www.espnfc.us/gamecast/422508/gamecast.html'
 dfGameCast = CreateEspnLiveCommentDF(url)
 ```
 
+![espn_scrap](https://github.com/byam/Programming-Notes/blob/master/predictEPL/img/espn_scrap.png)
+
+
 
 **Goal, Attack, Foul minutes:**
 
@@ -305,6 +308,8 @@ my_plot.PlotLineChart(
     points=[goals_dic, attacks_dic_home, fouls_dic_home],   # ESPN Gamecast minutes
 )
 ```
+
+![plot_emolex](https://github.com/byam/Programming-Notes/blob/master/predictEPL/img/plot_emolex.png)
 
 
 ---
