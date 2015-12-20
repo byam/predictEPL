@@ -191,7 +191,7 @@ GAMES = {
 
             ('Chelsea', 'Bournemouth'),
 
-            ('Newcastle', 'Liverpool'),
+            ('Newcastle', 'Liverpool', 'http://www.espnfc.us/gamecast/422519/gamecast.html'),
 
             ('Everton', 'Crystal'),
         ],

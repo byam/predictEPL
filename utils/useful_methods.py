@@ -125,6 +125,7 @@ def FilterDF(df):
     return dfFilter
 
 
+# Tweet, Retweet, Quoted tweet's percentage
 def TweetsPercentageByWeek(week):
     # find files
     GW = 'GW' + str(week)
@@ -153,6 +154,13 @@ def TweetsPercentageByWeek(week):
     print("\tNormal Quoted: %s(%.2f)" % (quoted, quoted/all_week))
 
 
+# Printing Most Common Element os List
+def ShowMostCommon(my_list, most=10):
+    counter = collections.Counter(my_list)
+    most_common = list(counter.most_common(most))
+    pprint(most_common)
+
+
 def MostCommonUsersByWeek(week, users_number=20, filtered=False):
     # find files
     GW = 'GW' + str(week)
@@ -177,33 +185,6 @@ def MostCommonUsersByWeek(week, users_number=20, filtered=False):
     counter = collections.Counter(all_users)
     most_common = list(counter.most_common(users_number))
     pprint(most_common)
-
-
-def EmolexDic():
-    # read Emotion-Lexicon.txt
-    os.chdir(paths.READ_PATH_EMOLEX)
-    with open("Emotion-Lexicon.txt", 'r') as emoleRaw:
-        emoleRaw = emoleRaw.readlines()
-
-    # create emotion word dic
-    dic_emolex = {}
-    dic_emolex_stemmed = {}
-
-    for line in emoleRaw:
-        word, category, flag = line.split()
-        flag = int(flag)
-
-        if word not in dic_emolex:
-            dic_emolex[word] = {}
-            dic_emolex_stemmed[PorterStemmer().stem(word)] = {}
-
-        dic_emolex[word][category] = flag
-        dic_emolex_stemmed[PorterStemmer().stem(word)][category] = flag
-        dic_emolex_stemmed[PorterStemmer().stem(word)]["_original_word"] = word
-
-    print("All Words: %s" % len(dic_emolex.keys()))
-
-    return dic_emolex, dic_emolex_stemmed
 
 
 def cleanHash(word):
@@ -238,7 +219,7 @@ def PreprocessingTweet(tweet, debug=False):
 
     # defining stopwords
     english_stops = set(stopwords.words('english'))
-    english_stops_added = english_stops | {'!', '.', ',', ':', ';', '#', '?', 'RT', '-', '@', 'rt'}
+    english_stops_added = english_stops | {'!', '.', ',', ':', ';', '#', '?', 'RT', '-', '@', 'rt', 'http'}
     words = [word for word in words if word not in english_stops_added]
     if debug:
         print("====================================")
@@ -258,99 +239,3 @@ def PreprocessingTweet(tweet, debug=False):
         print("[Stemmed hash Tweet]: \n\n %s \n\n" % words_stemmed)
 
     return words, words_stemmed
-
-
-# add 2 dics values
-def AddDics(dic_x, dic_y):
-    for key in dic_y:
-        if key in dic_x:
-            dic_x[key] += dic_y[key]
-
-
-# inpute: words list
-# outpute: emolex score as dic
-def CountEmolexWords(dic_emolex, dic_emolex_stemmed,
-                     words, words_stemmed, debug=False):
-    # initialize emolex
-    emolex_score = {
-        'anger': 0, 'fear': 0, 'disgust': 0, 'sadness': 0,
-        'surprise': 0,
-        'trust': 0, 'joy': 0, 'anticipation': 0,
-        'positive': 0, 'negative': 0,
-    }
-
-    # count each word
-    for w_i in range(len(words)):
-        # word in emolex
-        if words[w_i] in dic_emolex:
-            if debug:
-                print(words[w_i], dic_emolex[words[w_i]])
-            AddDics(emolex_score, dic_emolex[words[w_i]])
-
-        # stemmed word in emolex
-        elif words_stemmed[w_i] in dic_emolex:
-            if debug:
-                print(words_stemmed[w_i], dic_emolex[words_stemmed[w_i]])
-            AddDics(emolex_score, dic_emolex[words_stemmed[w_i]])
-
-        # stemmed word in stemmed emolex
-        elif words_stemmed[w_i] in dic_emolex_stemmed:
-            if debug:
-                print(words_stemmed[w_i], dic_emolex_stemmed[words_stemmed[w_i]])
-            AddDics(emolex_score, dic_emolex_stemmed[words_stemmed[w_i]])
-
-        # word in stemmed emolex
-        elif words[w_i] in dic_emolex_stemmed:
-            if debug:
-                print(words[w_i], dic_emolex_stemmed[words[w_i]])
-            AddDics(emolex_score, dic_emolex_stemmed[words[w_i]])
-
-    return emolex_score
-
-
-# input: SingleGames's 1 game as DF
-# outpute: Emolex DF by ith_minute
-# NOTE: declare dic emolex before calling method
-# => dic_emolex, dic_emolex_stemmed = EmolexDic()
-def CreateEmolexDF(df, dic_emolex, dic_emolex_stemmed):
-    columns = ['ith_minute',
-               'anger', 'fear', 'disgust', 'sadness',
-               'surprise',
-               'trust', 'joy', 'anticipation',
-               'positive', 'negative']
-
-    # Create DF
-    dfEmolex = pd.DataFrame(columns=columns)
-
-    # Add emolex dic by minute
-    for m_i in range(110):
-        # set minute
-        ith_minute = str(m_i + 1)
-
-        # ith_minute's tweet list
-        tweets = list(df[df['ith_minute'] == ith_minute]['text'])
-
-        # initialize emolex
-        emolex_score_ith_minute = {
-            'anger': 0, 'fear': 0, 'disgust': 0, 'sadness': 0,
-            'surprise': 0,
-            'trust': 0, 'joy': 0, 'anticipation': 0,
-            'positive': 0, 'negative': 0,
-        }
-
-        # PreprocessingTweet & Counting Emolex Score
-        for tweet in tweets:
-            words, words_stemmed = PreprocessingTweet(tweet)
-
-            # Count emolex words
-            emolex_score = CountEmolexWords(dic_emolex, dic_emolex_stemmed, words, words_stemmed)
-
-            # Add values
-            AddDics(emolex_score_ith_minute, emolex_score)
-
-        emolex_score_ith_minute['ith_minute'] = ith_minute
-
-        # add dic emolex to DF as row
-        dfEmolex.loc[m_i] = pd.Series(emolex_score_ith_minute)
-
-    return dfEmolex

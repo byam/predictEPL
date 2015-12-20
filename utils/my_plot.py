@@ -89,8 +89,8 @@ def PlotLineChart(my_list_list, labels, colors, title, xlabel, ylabel,
 
 
 # Plotting Emolex POS3, NEG4 Categories
-def HomeAwayPos3Neg4(dfEmolex, goals_dic, attacks_dic, fouls_dic, title=''):
-    # Home Team: POS3
+def Pos3Neg4(dfEmolex, goals_dic, attacks_dic, fouls_dic, title=''):
+    # POS3
     PlotLineChart(
         my_list_list=[
             list(dfEmolex[categorys[0]]),
@@ -107,7 +107,7 @@ def HomeAwayPos3Neg4(dfEmolex, goals_dic, attacks_dic, fouls_dic, title=''):
         points=[goals_dic, attacks_dic, fouls_dic]
     )
 
-    # Home Team: NEG4
+    # NEG4
     PlotLineChart(
         my_list_list=[
             list(dfEmolex[categorys[3]]),
@@ -123,6 +123,42 @@ def HomeAwayPos3Neg4(dfEmolex, goals_dic, attacks_dic, fouls_dic, title=''):
         grid=True,
         x_interval=5,
         points=[goals_dic, attacks_dic, fouls_dic]
+    )
+
+
+# Plotting Emolex POS3, NEG4 Categories, No Points
+def Pos3Neg4NoPoints(dfEmolex, title=''):
+    # POS3
+    PlotLineChart(
+        my_list_list=[
+            list(dfEmolex[categorys[0]]),
+            list(dfEmolex[categorys[1]]),
+            list(dfEmolex[categorys[2]]),
+        ],
+        labels=[categorys[0], categorys[1], categorys[2]],
+        colors=[colors_el[0], colors_el[1], colors_el[2]],
+        title='Emotion Lexicon POS3: [' + title + ']',
+        xlabel='Minutes', ylabel='Emotion Signals',
+        width=20, height=7,
+        grid=True,
+        x_interval=5
+    )
+
+    # NEG4
+    PlotLineChart(
+        my_list_list=[
+            list(dfEmolex[categorys[3]]),
+            list(dfEmolex[categorys[4]]),
+            list(dfEmolex[categorys[5]]),
+            list(dfEmolex[categorys[6]]),
+        ],
+        labels=[categorys[3], categorys[4], categorys[5], categorys[6]],
+        colors=[colors_el[3], colors_el[4], colors_el[5], colors_el[6]],
+        title='Emotion Lexicon NEG4: [' + title + ']',
+        xlabel='Minutes', ylabel='Emotion Signals',
+        width=20, height=7,
+        grid=True,
+        x_interval=5
     )
 
 
@@ -148,4 +184,28 @@ def EmolexCats(dfEmolex, emolex_cats, goals_dic, attacks_dic, fouls_dic, title='
         grid=True,
         x_interval=5,
         points=[goals_dic, attacks_dic, fouls_dic]
+    )
+
+
+# Plotting Emolex's selected categories
+def EmolexCatsNoPoints(dfEmolex, emolex_cats, title=''):
+    # Adding Emolex Category
+    my_list_list = []
+    labels = []
+    colors = []
+    for emolex_cat in emolex_cats:
+        my_list_list.append(list(dfEmolex[emolex_cat]))
+        labels.append(emolex_cat)
+        colors.append(colors_el[categorys.index(emolex_cat)])
+
+    # Plot Line Chart
+    PlotLineChart(
+        my_list_list=my_list_list,
+        labels=labels,
+        colors=colors,
+        title='Emotion Lexicon: [' + title + ']',
+        xlabel='Minutes', ylabel='Emotion Signals',
+        width=20, height=7,
+        grid=True,
+        x_interval=5
     )

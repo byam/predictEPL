@@ -22,10 +22,26 @@ This is my undergraduate research work.
 * Jupyter Notebook
 * AWS, ubuntu ec2
 
+## Converting and Functions
+
+* Converting to CSV
+
+    * [Scrap Game Infos](#scrap_info)
+    * [Download Raw Twitter Data from EC2 server](#download_row)
+    * [Convert Raw Twitter Data](#convert_raw)
+    * [Split Into Single Games](#split)
+
+* Functions
+
+    * [Scrapping ESPN's Soccer Match Gamecast Live Commentary](#scrap_espn)
+    * [Plot Emolex](#plot)
+
 
 ---
+## Converting
 
-## 0. Scrap Game Infos
+<a name="scrap_info"></a>
+### Scrap Game Infos
 
 Update Game Infos from [here](http://www.soccerstats.com/results.asp?league=england)
 
@@ -44,7 +60,10 @@ GW 17 's data is not yet
 [Saved in]: /Users/Bya/Dropbox/Research/datas/EPL/game_infos.csv
 ```
 
-## 1. Download Raw Twitter Data from EC2 server
+---
+
+<a name="download_row"></a>
+### Download Raw Twitter Data from EC2 server
 
 Change the 'GW16'.
 
@@ -62,7 +81,10 @@ game8_9.txt                                                       100%  138MB   
 game6.txt                                                         100%  186MB   2.1MB/s   01:27
 ```
 
-## 2. Convert Raw Twitter Data
+---
+
+<a name="convert_raw"></a>
+### Convert Raw Twitter Data
 
 Extract Twitter's date, text, username, tags, status(regular tweet or retweet or quoted tweet).
 
@@ -81,8 +103,10 @@ $ python utils/convert_raw_data.py 16
 [Converting Done]: game8_9.txt (12.84 sec)
 ```
 
+---
 
-## 3. Split Into Single Games
+<a name="split"></a>
+### Split Into Single Games
 
 Add 'GW16' inside `games.py` and `csv_files.py`.
 
@@ -181,9 +205,10 @@ Norwich vs Everton :
 
 ---
 
-# Functions
+## Functions
 
 
+<a name="scrap_espn"></a>
 ### Scrapping ESPN's Soccer Match Gamecast Live Commentary
 
 * See the matches: [here](http://www.espnfc.us/barclays-premier-league/23/scores)
@@ -227,6 +252,8 @@ goals_dic, attacks_dic_home, attacks_dic_away, fouls_dic_home, fouls_dic_away = 
 
 
 ---
+
+<a name="plot"></a>
 ### Plot Emolex
 
 **Colors and Types**:
@@ -317,10 +344,18 @@ my_plot.PlotLineChart(
 
 **my_plot.HomeAwayPos3Neg4**
 
+```python
+my_plot.Pos3Neg4(dfFilterEmolexNonRtAway, goals_dic, attacks_dic_away, fouls_dic_away, title='Away')
+```
+
 ![plot_pos3neg4](https://github.com/byam/predictEPL/blob/master/img/plot_pos3neg4.png)
 
 
 **my_plot.EmolexCats**
+
+```python
+my_plot.EmolexCats(dfFilterEmolexNonRtAway, ['joy', 'anger', 'surprise'], goals_dic, attacks_dic_away, fouls_dic_away, 'Away')
+```
 
 ![plot_cats](https://github.com/byam/predictEPL/blob/master/img/plot_cats.png)
 

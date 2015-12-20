@@ -71,7 +71,7 @@ def CommentStatus(text):
         return 'corner'
     elif text[0:4] == 'foul':
         return 'foul'
-    elif text[0:4] == 'goal':
+    elif text[0:4] == 'goal' or text[0:8] == 'own goal':
         return 'goal'
     elif text[0:6] == 'attemp':
         return 'attemp'
