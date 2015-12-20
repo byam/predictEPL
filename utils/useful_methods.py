@@ -17,6 +17,8 @@ sys.path.append('/Users/Bya/git/predictEPL/MyFunctions/')
 import paths
 import replacers
 import odds_portal
+import names
+import soccer_stopwords
 
 
 # Return Directory's file names
@@ -242,6 +244,51 @@ def PreprocessingTweet(tweet, debug=False):
     return words, words_stemmed
 
 
+# Porter Stemmer & PreprocessingTweet
+def tokenizer(tweet):
+    # can't -> cannot, bya's -> bya is
+    replacer = replacers.RegexpReplacer()
+    tweet = replacer.replace(tweet.lower())
+
+    # Tweet tokenizer and lower case
+    words = TweetTokenizer().tokenize(tweet)
+    words = [word.lower() for word in words]
+
+    # defining stopwords
+    english_stops = set(stopwords.words('english'))
+    english_stops_added = english_stops | {
+        '.', ',', ':', ';', '#', '-', '@', 'rt', 'http',
+        'kickoff',
+        'http',
+        'sterling',
+        'attack',
+        'attacking',
+        'strike',
+        'words',
+        'shot',
+        'hit',
+        'cross',
+        'rocket',
+        'watch',
+        'team',
+        'football',
+        'score',
+        'time',
+        'start',
+        'league',
+        'premier',
+        'player',
+        'boy',
+        'fire'}
+
+    words = [word for word in words if word not in english_stops_added]
+
+    # words = map(lambda word: cleanHash(word), words)
+    words = [cleanHash(word) for word in words]
+
+    return words
+
+
 # Read oddsportal.com
 def OddsPortalDf():
     lines = odds_portal.RAW_ODDS.split("\n")
@@ -266,6 +313,10 @@ def OddsPortalDf():
                 score_ft_home, score_ft_away = scores.split(":")
                 odds_home, odds_draw, odds_away = lines[i_line + 1:i_line + 4]
                 GW = math.floor(d_i / 10) + 1
+
+                # change names
+                home_team = names.ChangeTeamName(home_team)
+                away_team = names.ChangeTeamName(away_team)
 
                 # datas to dic
                 odds_infos = {

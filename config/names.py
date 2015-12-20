@@ -18,7 +18,7 @@ TEAM_NAMES_DIC = {
   'Everton': ['Everton'],
 
   # Leicester City
-  'Leicester': ['Leicester City'],
+  'Leicester': ['Leicester City', 'Leicester'],
 
   # Liverpool
   'Liverpool': ['Liverpool'],
@@ -33,7 +33,7 @@ TEAM_NAMES_DIC = {
   'Newcastle': ['Newcastle Utd', 'Newcastle United'],
 
   # Norwich City
-  'Norwich': ['Norwich City'],
+  'Norwich': ['Norwich City', 'Norwich'],
 
   # Southampton
   'Southampton': ['Southampton'],
@@ -45,7 +45,7 @@ TEAM_NAMES_DIC = {
   'Sunderland': ['Sunderland'],
 
   # Swansea City
-  'Swansea': ['Swansea City'],
+  'Swansea': ['Swansea City', 'Swansea'],
 
   # Tottenham Hotspur
   'Tottenham': ['Tottenham', 'Tottenham Hotspur'],
@@ -54,10 +54,10 @@ TEAM_NAMES_DIC = {
   'Watford': ['Watford'],
 
   # West Bromwich Albion
-  'WestBromwich': ['West Bromwich', 'West Bromwich Albion'],
+  'WestBromwich': ['West Bromwich', 'West Bromwich Albion', 'West Brom'],
 
   # West Ham United
-  'WestHam': ['West Ham Utd', 'West Ham United'],
+  'WestHam': ['West Ham Utd', 'West Ham United', 'West Ham'],
   }
 
 TEAM_NAMES_DIC_ESPN = {
