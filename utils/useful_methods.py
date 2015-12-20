@@ -16,6 +16,7 @@ sys.path.append('/Users/Bya/git/predictEPL/MyFunctions/')
 
 import paths
 import replacers
+import odds_portal
 
 
 # Return Directory's file names
@@ -239,3 +240,50 @@ def PreprocessingTweet(tweet, debug=False):
         print("[Stemmed hash Tweet]: \n\n %s \n\n" % words_stemmed)
 
     return words, words_stemmed
+
+
+# Read oddsportal.com
+def OddsPortalDf():
+    lines = odds_portal.RAW_ODDS.split("\n")
+
+    dfOdds = pd.DataFrame(columns=[
+            "GW",
+            "time",
+            "team_home", "team_away",
+            "score_ft_home", "score_ft_away",
+            "odds_home", "odds_away", "odds_draw"
+        ])
+
+    d_i = 0
+    for i_line in range(len(lines) - 1, -1, -1):
+        try:
+            if lines[i_line][2] == ":":
+                # extract datas
+                time = lines[i_line].split(" - ")[0][0:5]
+                home_team = lines[i_line].split(" - ")[0][5::].strip()
+                away_team = lines[i_line].split(" - ")[1][0:-4].strip()
+                scores = lines[i_line].split(" - ")[1][-4:-1]
+                score_ft_home, score_ft_away = scores.split(":")
+                odds_home, odds_draw, odds_away = lines[i_line + 1:i_line + 4]
+                GW = math.floor(d_i / 10) + 1
+
+                # datas to dic
+                odds_infos = {
+                    "GW": GW,
+                    "time": time,
+                    "team_home": home_team,
+                    "team_away": away_team,
+                    "score_ft_home": score_ft_home,
+                    "score_ft_away": score_ft_away,
+                    "odds_home": odds_home,
+                    "odds_draw": odds_draw,
+                    "odds_away": odds_away
+                }
+
+                # adding Row to DF
+                dfOdds.loc[d_i] = pd.Series(odds_infos)
+                d_i += 1
+        except:
+            continue
+
+    return dfOdds
