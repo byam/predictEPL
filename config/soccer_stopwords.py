@@ -1,4 +1,4 @@
-STOP_WORDS = [
+STOP_WORDS = {
     'kickoff',
     'http',
     'sterling',
@@ -21,4 +21,4 @@ STOP_WORDS = [
     'player',
     'boy',
     'fire',
-]
+}
