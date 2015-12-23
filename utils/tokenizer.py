@@ -39,3 +39,27 @@ def TweetLemmaSoccer(text, stops=True):
     words = [word for word in words if not word.startswith('t.co')]
 
     return words
+
+
+# Removing Soccer Stop Words
+def TweetLemmaSoccerEmolex(text, stops=True):
+    text = text.lower()
+    words = TextBlob(text).words
+
+    words_not_lemma = words
+
+    # Lemma
+    words = [word.lemma for word in words]
+
+    if stops:
+        # Removing STOP WORDS(includes Soccer stops)
+        english_stops = set(stopwords.words('english'))
+        english_stops_soccer = english_stops | soccer_stopwords.STOP_WORDS
+        words = [word for word in words if word not in english_stops_soccer]
+        words_not_lemma = [word for word in words_not_lemma if word not in english_stops_soccer]
+
+    # Removing Twitter Links
+    words = [word for word in words if not word.startswith('t.co')]
+    words_not_lemma = [word for word in words_not_lemma if not word.startswith('t.co')]
+
+    return words_not_lemma, words

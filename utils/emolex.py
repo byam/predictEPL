@@ -10,6 +10,7 @@ sys.path.append('/Users/Bya/git/predictEPL/utils/')
 import paths
 import soccer_emolex
 import useful_methods
+import tokenizer
 
 
 # Create Emotion Lexicon Dictionary
@@ -106,8 +107,10 @@ def CountEmolexWords(dic_emolex, dic_emolex_stemmed,
                 print(words[w_i], dic_emolex[words[w_i]])
             AddDics(emolex_score, dic_emolex[words[w_i]])
 
+    # count each word
+    for w_i in range(len(words_stemmed)):
         # stemmed word in emolex
-        elif words_stemmed[w_i] in dic_emolex:
+        if words_stemmed[w_i] in dic_emolex:
             if debug:
                 print(words_stemmed[w_i], dic_emolex[words_stemmed[w_i]])
             AddDics(emolex_score, dic_emolex[words_stemmed[w_i]])
@@ -147,7 +150,7 @@ def CreateEmolexDF(df, dic_emolex, dic_emolex_stemmed):
 
         # PreprocessingTweet & Counting Emolex Score
         for tweet in tweets:
-            words, words_stemmed = useful_methods.PreprocessingTweet(tweet)
+            words, words_stemmed = tokenizer.TweetLemmaSoccerEmolex(tweet)
 
             # Count emolex words
             emolex_score = CountEmolexWords(dic_emolex, dic_emolex_stemmed, words, words_stemmed)
