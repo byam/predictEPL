@@ -232,6 +232,59 @@ GAMES = {
 
             ('Arsenal', 'City'),
         ],
+
+    'GW18':
+        [
+            ('Stoke', 'United'),
+
+            ('Villa', 'WestHam'),
+            ('Bournemouth', 'Crystal'),
+            ('Chelsea', 'Watford'),
+            ('Liverpool', 'Leicester'),
+            ('City', 'Sunderland'),
+            ('Tottenham', 'Norwich'),
+            ('Swansea', 'WestBromwich'),
+
+            ('Newcastle', 'Everton'),
+
+            ('Southampton', 'Arsenal'),
+        ],
+
+    'GW19':
+        [
+            ('Crystal', 'Swansea'),
+            ('Everton', 'Stoke'),
+            ('Norwich', 'Villa'),
+            ('Watford', 'Tottenham'),
+            ('WestBromwich', 'Newcastle'),
+
+            ('Arsenal', 'Bournemouth'),
+            ('United', 'Chelsea'),
+            ('WestHam', 'Southampton'),
+
+            ('Leicester', 'City'),
+
+            ('Sunderland', 'Liverpool'),
+        ],
+
+    'GW20':
+        [
+            ('WestHam', 'Liverpool'),
+
+            ('Arsenal', 'Newcastle'),
+            ('Leicester', 'Bournemouth'),
+            ('United', 'Swansea'),
+            ('Norwich', 'Southampton'),
+            ('Sunderland', 'Villa'),
+            ('WestBromwich', 'Stoke'),
+
+            ('Watford', 'City'),
+
+            ('Crystal', 'Chelsea'),
+
+            ('Everton', 'Tottenham'),
+        ],
+
 }
 
 # 'Bournemouth'

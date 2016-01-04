@@ -30,6 +30,7 @@ This is my undergraduate research work.
     * [Download Raw Twitter Data from EC2 server](#download_row)
     * [Convert Raw Twitter Data](#convert_raw)
     * [Split Into Single Games](#split)
+    * [Update Odds data](#odds_data)
 
 * Functions
 
@@ -202,6 +203,12 @@ Norwich vs Everton :
 [('home', 4970), ('away', 5485), ('both', 1024), ('nothing', 24682)]
 ```
 
+
+<a name="odds_data"></a>
+### Update Odds data
+
+* [Copy] Latest Games Odds [Here](http://www.oddsportal.com/soccer/england/premier-league/results/).
+* [Paste] `config/odds_portal.py` file's top part.
 
 ---
 

@@ -228,4 +228,56 @@ FILES = {
 
             'game10.csv',
         ],
+
+    'GW18':
+        [
+            'game1.csv',
+
+            'game2_8.csv',
+            'game2_8.csv',
+            'game2_8.csv',
+            'game2_8.csv',
+            'game2_8.csv',
+            'game2_8.csv',
+            'game2_8.csv',
+
+            'game9.csv',
+
+            'game10.csv',
+        ],
+
+    'GW19':
+        [
+            'game1_5.csv',
+            'game1_5.csv',
+            'game1_5.csv',
+            'game1_5.csv',
+            'game1_5.csv',
+
+            'game6_8.csv',
+            'game6_8.csv',
+            'game6_8.csv',
+
+            'game9.csv',
+
+            'game10.csv',
+        ],
+
+    'GW20':
+        [
+            'game1.csv',
+
+            'game2_7.csv',
+            'game2_7.csv',
+            'game2_7.csv',
+            'game2_7.csv',
+            'game2_7.csv',
+            'game2_7.csv',
+
+            'game8.csv',
+
+            'game9.csv',
+
+            'game10.csv',
+        ],
 }

@@ -51,8 +51,8 @@ def OddsRes():
 
     # Use only Twitter data Games
     dfOdds = dfOdds[
-        # GW != [1, 2, 3, 12, 17], index != [37, 68, 120, 159]
-        (dfOdds['GW'] >= 4) & (dfOdds['GW'] != 12) & (dfOdds['GW'] != 17) &
+        # GW != [1, 2, 3, 12], index != [37, 68, 120, 159]
+        (dfOdds['GW'] >= 4) & (dfOdds['GW'] != 12) &
         (dfOdds.index != 37) & (dfOdds.index != 68) & (dfOdds.index != 120) &
         (dfOdds.index != 159)
         ].copy().reset_index(drop=True)
@@ -94,7 +94,7 @@ def ReviewRes():
 def EmolexRes():
     # Read as DF
     os.chdir(paths.READ_PATH_GAME_INFO)
-    dfEmolex = useful_methods.csv_dic_df("Predict-Emolex-63min.csv")
+    dfEmolex = useful_methods.csv_dic_df("Predict-Emolex-63min-NonRT.csv")
 
     # Convert strings to Integer & Float
     dfEmolex['score_ht_home'] = [int(st) for st in dfEmolex['score_ht_home']]

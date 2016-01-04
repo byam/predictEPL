@@ -1,4 +1,177 @@
 RAW_ODDS = """
+Yesterday, 03 Jan   1   X   2   B's
+16:00   Everton - Tottenham 1:1 
+2.55
+3.39
+2.81
+57
+13:30   Crystal Palace - Chelsea    0:3 
+3.95
+3.43
+2.00
+57
+02 Jan 2016 1   X   2   B's
+17:30   Watford - Manchester City   1:2 
+4.88
+3.91
+1.71
+57
+15:00   Arsenal - Newcastle Utd 1:0 
+1.24
+6.63
+11.81
+57
+15:00   Leicester - Bournemouth 0:0 
+1.92
+3.58
+4.07
+57
+15:00   Manchester United - Swansea 2:1 
+1.49
+4.10
+7.70
+57
+15:00   Norwich - Southampton   1:0 
+2.99
+3.18
+2.51
+57
+15:00   Sunderland - Aston Villa    3:1 
+2.48
+3.16
+3.06
+57
+15:00   West Brom - Stoke City  2:1 
+2.83
+3.06
+2.75
+56
+12:45   West Ham - Liverpool    2:0 
+4.05
+3.45
+1.97
+57
+30 Dec 2015 1   X   2   B's
+19:45   Sunderland - Liverpool  0:1 
+5.54
+3.94
+1.64
+57
+29 Dec 2015 1   X   2   B's
+19:45   Leicester - Manchester City 0:0 
+4.00
+3.82
+1.88
+57
+28 Dec 2015 1   X   2   B's
+17:30   Arsenal - Bournemouth   2:0 
+1.52
+4.20
+6.77
+57
+17:30   Manchester United - Chelsea 0:0 
+2.47
+3.18
+3.08
+57
+17:30   West Ham - Southampton  2:1 
+3.43
+3.28
+2.23
+57
+15:00   Crystal Palace - Swansea    0:0 
+2.00
+3.31
+4.10
+57
+15:00   Everton - Stoke City    3:4 
+1.85
+3.55
+4.45
+57
+15:00   Norwich - Aston Villa   2:0 
+1.92
+3.49
+4.19
+57
+15:00   Watford - Tottenham 1:2 
+3.19
+3.33
+2.33
+57
+15:00   West Brom - Newcastle Utd   1:0 
+2.14
+3.25
+3.68
+57
+26 Dec 2015 1   X   2   B's
+19:45   Southampton - Arsenal   4:0 
+3.47
+3.36
+2.19
+57
+17:30   Newcastle Utd - Everton 0:1 
+3.39
+3.49
+2.16
+57
+15:00   Aston Villa - West Ham  1:1 
+2.49
+3.16
+3.06
+57
+15:00   Bournemouth - Crystal Palace    0:0 
+2.16
+3.39
+3.50
+57
+15:00   Chelsea - Watford   2:2 
+1.49
+4.34
+7.00
+57
+15:00   Liverpool - Leicester   1:0 
+1.99
+3.67
+3.71
+57
+15:00   Manchester City - Sunderland    4:1 
+1.20
+7.21
+13.37
+57
+15:00   Swansea - West Brom 1:0 
+1.91
+3.31
+4.57
+57
+15:00   Tottenham - Norwich 3:0 
+1.45
+4.49
+7.58
+57
+12:45   Stoke City - Manchester United  2:0 
+3.52
+3.19
+2.24
+57
+21 Dec 2015 1   X   2   B's
+20:00   Arsenal - Manchester City   2:1 
+2.44
+3.40
+2.95
+58
+20 Dec 2015 1   X   2   B's
+16:00   Swansea - West Ham  0:0 
+2.04
+3.32
+3.96
+58
+13:30   Watford - Liverpool 3:0 
+3.59
+3.43
+2.10
+58
 Yesterday, 19 Dec   1   X   2   B's
 17:30   Newcastle Utd - Aston Villa 1:1 
 2.01
