@@ -21,4 +21,9 @@ STOP_WORDS = {
     'player',
     'boy',
     'fire',
+    'fight',
+    'visitor',
+    'unbelievable',
+    'heel',
+    'want',
 }

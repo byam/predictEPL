@@ -81,16 +81,25 @@ def EmolexSoccerDic():
 
 
 # add 2 dics values
-def AddDics(dic_x, dic_y):
-    for key in dic_y:
-        if key in dic_x:
-            dic_x[key] += dic_y[key]
+def AddDics(dic_x, dic_y, neg_mark):
+    # If word has Negation Marking: 'good_neg'
+    if neg_mark:
+        if dic_y['positive']:
+            dic_x['negative'] += 1
+
+        if dic_y['negative']:
+            dic_x['positive'] += 1
+
+    else:
+        for key in dic_y:
+            if key in dic_x:
+                dic_x[key] += dic_y[key]
 
 
-# inpute: words list
-# outpute: emolex score as dic
+# input: words list
+# output: emolex score as dic
 def CountEmolexWords(dic_emolex, dic_emolex_stemmed,
-                     words, words_stemmed, debug=False):
+                     words, debug=False):
     # initialize emolex
     emolex_score = {
         'anger': 0, 'fear': 0, 'disgust': 0, 'sadness': 0,
@@ -101,19 +110,19 @@ def CountEmolexWords(dic_emolex, dic_emolex_stemmed,
 
     # count each word
     for w_i in range(len(words)):
-        # word in emolex
-        if words[w_i] in dic_emolex:
-            if debug:
-                print(words[w_i], dic_emolex[words[w_i]])
-            AddDics(emolex_score, dic_emolex[words[w_i]])
+        word = words[w_i]
 
-    # count each word
-    for w_i in range(len(words_stemmed)):
-        # stemmed word in emolex
-        if words_stemmed[w_i] in dic_emolex:
+        # If word has Negation Marking: 'good_neg'
+        neg_mark = False
+        if word.endswith('_neg'):
+            word = word[0:-4]
+            neg_mark = True
+
+        # word in emolex
+        if word in dic_emolex:
             if debug:
-                print(words_stemmed[w_i], dic_emolex[words_stemmed[w_i]])
-            AddDics(emolex_score, dic_emolex[words_stemmed[w_i]])
+                print(word, dic_emolex[word])
+            AddDics(emolex_score, dic_emolex[word], neg_mark)
 
     return emolex_score
 
@@ -150,13 +159,13 @@ def CreateEmolexDF(df, dic_emolex, dic_emolex_stemmed):
 
         # PreprocessingTweet & Counting Emolex Score
         for tweet in tweets:
-            words, words_stemmed = tokenizer.TweetLemmaSoccerEmolex(tweet)
+            words = tokenizer.TweetLemmaSoccerLemma(tweet)
 
             # Count emolex words
-            emolex_score = CountEmolexWords(dic_emolex, dic_emolex_stemmed, words, words_stemmed)
+            emolex_score = CountEmolexWords(dic_emolex, dic_emolex_stemmed, words)
 
             # Add values
-            AddDics(emolex_score_ith_minute, emolex_score)
+            AddDics(emolex_score_ith_minute, emolex_score, False)
 
         emolex_score_ith_minute['ith_minute'] = ith_minute
 
@@ -166,15 +175,21 @@ def CreateEmolexDF(df, dic_emolex, dic_emolex_stemmed):
     return dfEmolex
 
 
-def AppendEmolexWords(emolex_words, word, word_emolex):
-    for key in word_emolex.keys():
-        if word_emolex[key]:
-            emolex_words[key].append(word)
+def AppendEmolexWords(emolex_words, word, word_emolex, neg_mark):
+    # If word has Negation Marking: 'good_neg'
+    if neg_mark:
+        if word_emolex['positive']:
+            emolex_words['negative'].append(word + "_neg")
+        if word_emolex['negative']:
+            emolex_words['positive'].append(word + "_neg")
+    else:
+        for key in word_emolex.keys():
+            if word_emolex[key]:
+                emolex_words[key].append(word)
 
 
 # Return List's Emolex words as List
-def EmolexWords(dic_emolex, dic_emolex_stemmed,
-                words, words_stemmed):
+def EmolexWords(dic_emolex, dic_emolex_stemmed, words):
     # initialize emolex
     emolex_words = {
         'anger': [], 'fear': [], 'disgust': [], 'sadness': [],
@@ -186,16 +201,16 @@ def EmolexWords(dic_emolex, dic_emolex_stemmed,
     # count each word
     for w_i in range(len(words)):
         word = words[w_i]
-        word_stem = words_stemmed[w_i]
+
+        # If word has Negation Marking: 'good_neg'
+        neg_mark = False
+        if word.endswith('_neg'):
+            word = word[0:-4]
+            neg_mark = True
 
         # word in emolex
         if word in dic_emolex:
             if sum(list(dic_emolex[word].values())):
-                AppendEmolexWords(emolex_words, word, dic_emolex[word])
-
-        # word_stem in emolex
-        elif word_stem in dic_emolex:
-            if sum(list(dic_emolex[word_stem].values())):
-                AppendEmolexWords(emolex_words, word_stem, dic_emolex[word_stem])
+                AppendEmolexWords(emolex_words, word, dic_emolex[word], neg_mark)
 
     return emolex_words

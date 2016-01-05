@@ -9,6 +9,7 @@ NOT_INCLUDE = {
         'hit',
         'cross',
         'rocket',
+        'fight',
     ],
 
     'fear': [
