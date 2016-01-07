@@ -1,0 +1,7 @@
+There are ten topics and about 20 tweets per topic. The topic is encoded in the file name.
+
+For subtask C, the data is split into separate files, where the file name encodes the topic.
+
+For subtask D, the data is split into strongly/weakly positive, strogly/weakly negative, and neutral trends in the respective folders and subfolders (not that we lack examples in two of these categories).
+
+For more information see http://alt.qcri.org/semeval2015/task10/

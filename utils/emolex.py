@@ -9,6 +9,7 @@ sys.path.append('/Users/Bya/git/predictEPL/utils/')
 
 import paths
 import soccer_emolex
+import soccer_stopwords
 import useful_methods
 import tokenizer
 
@@ -54,7 +55,7 @@ def EmolexSoccerDic():
     dic_emolex_stemmed = {}
 
     # Not Include Soccer Words
-    ng_words = []
+    ng_words = list(soccer_stopwords.STOP_WORDS)
     for words in soccer_emolex.NOT_INCLUDE.values():
         if len(words):
             for word in words:

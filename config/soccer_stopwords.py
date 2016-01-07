@@ -26,4 +26,7 @@ STOP_WORDS = {
     'unbelievable',
     'heel',
     'want',
+    'city',
+    'spur',
+    'saint',
 }

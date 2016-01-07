@@ -1,0 +1,2382 @@
+NA	T15113803	neutral	aaron rodgers
+NA	T15113805	neutral	aaron rodgers
+NA	T15113858	neutral	aaron rodgers
+NA	T15113966	neutral	aaron rodgers
+NA	T15114193	neutral	aaron rodgers
+NA	T15114341	neutral	aaron rodgers
+NA	T15114363	neutral	aaron rodgers
+NA	T15114427	neutral	aaron rodgers
+NA	T15114430	neutral	aaron rodgers
+NA	T15114476	neutral	aaron rodgers
+NA	T15114504	neutral	aaron rodgers
+NA	T15114673	neutral	aaron rodgers
+NA	T15114687	neutral	aaron rodgers
+NA	T15114739	neutral	aaron rodgers
+NA	T15114848	neutral	aaron rodgers
+NA	T15114946	neutral	aaron samuels
+NA	T15114953	neutral	aaron samuels
+NA	T15114955	neutral	aaron samuels
+NA	T15115002	neutral	aaron samuels
+NA	T15115072	neutral	aaron samuels
+NA	T15115101	neutral	aaron samuels
+NA	T15115153	neutral	aaron samuels
+NA	T15115242	neutral	aaron samuels
+NA	T15115277	neutral	aaron samuels
+NA	T15115420	neutral	aaron samuels
+NA	T15115428	neutral	aaron samuels
+NA	T15115481	neutral	aaron samuels
+NA	T15115524	neutral	aaron samuels
+NA	T15115554	neutral	aaron samuels
+NA	T15115592	neutral	aaron samuels
+NA	T15115737	neutral	aaron samuels
+NA	T15115772	neutral	aaron samuels
+NA	T15115831	neutral	abc
+NA	T15115889	neutral	abc
+NA	T15115958	neutral	abc
+NA	T15116003	neutral	abc
+NA	T15116015	neutral	abc
+NA	T15116058	neutral	abc
+NA	T15116103	neutral	abc
+NA	T15116133	neutral	abc
+NA	T15116197	neutral	abc
+NA	T15116235	neutral	abc
+NA	T15116256	neutral	abc
+NA	T15116266	neutral	abc
+NA	T15116295	neutral	abc
+NA	T15116418	neutral	abc
+NA	T15116429	neutral	abc
+NA	T15116492	neutral	abc
+NA	T15116596	neutral	abc
+NA	T15116630	neutral	abc
+NA	T15116695	neutral	abc
+NA	T15116704	neutral	abc
+NA	T15111156	neutral	afolayan
+NA	T15111300	neutral	afolayan
+NA	T15111473	neutral	afolayan
+NA	T15111549	neutral	afolayan
+NA	T15111725	neutral	afolayan
+NA	T15111946	neutral	afolayan
+NA	T15111959	neutral	afolayan
+NA	T15111975	neutral	afolayan
+NA	T15111140	neutral	ahs
+NA	T15111174	neutral	ahs
+NA	T15111265	neutral	ahs
+NA	T15111285	neutral	ahs
+NA	T15111387	neutral	ahs
+NA	T15111423	neutral	ahs
+NA	T15111492	neutral	ahs
+NA	T15111525	neutral	ahs
+NA	T15111630	neutral	ahs
+NA	T15111697	neutral	ahs
+NA	T15111704	neutral	ahs
+NA	T15111742	neutral	ahs
+NA	T15111747	neutral	ahs
+NA	T15111806	neutral	ahs
+NA	T15111815	neutral	ahs
+NA	T15111820	neutral	ahs
+NA	T15111827	neutral	ahs
+NA	T15111839	neutral	ahs
+NA	T15111990	neutral	ahs
+NA	T15115840	neutral	alonso
+NA	T15115877	neutral	alonso
+NA	T15115907	neutral	alonso
+NA	T15116025	neutral	alonso
+NA	T15116060	neutral	alonso
+NA	T15116084	neutral	alonso
+NA	T15116129	neutral	alonso
+NA	T15116142	neutral	alonso
+NA	T15116192	neutral	alonso
+NA	T15116194	neutral	alonso
+NA	T15116211	neutral	alonso
+NA	T15116251	neutral	alonso
+NA	T15116285	neutral	alonso
+NA	T15116339	neutral	alonso
+NA	T15116442	neutral	alonso
+NA	T15116610	neutral	alonso
+NA	T15116654	neutral	alonso
+NA	T15116700	neutral	alonso
+NA	T15116723	neutral	alonso
+NA	T15111124	neutral	american horror story
+NA	T15111197	neutral	american horror story
+NA	T15111230	neutral	american horror story
+NA	T15111250	neutral	american horror story
+NA	T15111420	neutral	american horror story
+NA	T15111556	neutral	american horror story
+NA	T15111567	neutral	american horror story
+NA	T15111591	neutral	american horror story
+NA	T15111600	neutral	american horror story
+NA	T15111672	neutral	american horror story
+NA	T15111684	neutral	american horror story
+NA	T15111708	neutral	american horror story
+NA	T15111721	neutral	american horror story
+NA	T15111757	neutral	american horror story
+NA	T15111855	neutral	american horror story
+NA	T15111878	neutral	american horror story
+NA	T15111964	neutral	american horror story
+NA	T15112007	neutral	american horror story
+NA	T15112266	neutral	ancelotti
+NA	T15112379	neutral	ancelotti
+NA	T15112459	neutral	ancelotti
+NA	T15112548	neutral	ancelotti
+NA	T15112554	neutral	ancelotti
+NA	T15112625	neutral	ancelotti
+NA	T15112689	neutral	ancelotti
+NA	T15112935	neutral	ancelotti
+NA	T15113068	neutral	ancelotti
+NA	T15113124	neutral	ancelotti
+NA	T15113181	neutral	ancelotti
+NA	T15113205	neutral	ancelotti
+NA	T15113237	neutral	ancelotti
+NA	T15113284	neutral	ancelotti
+NA	T15113310	neutral	ancelotti
+NA	T15113319	neutral	ancelotti
+NA	T15113322	neutral	ancelotti
+NA	T15113337	neutral	ancelotti
+NA	T15113564	neutral	ancelotti
+NA	T15113628	neutral	ancelotti
+NA	T15113677	neutral	annabelle
+NA	T15113703	neutral	annabelle
+NA	T15113764	neutral	annabelle
+NA	T15113783	neutral	annabelle
+NA	T15113924	neutral	annabelle
+NA	T15114099	neutral	annabelle
+NA	T15114229	neutral	annabelle
+NA	T15114235	neutral	annabelle
+NA	T15114241	neutral	annabelle
+NA	T15114253	neutral	annabelle
+NA	T15114301	neutral	annabelle
+NA	T15114647	neutral	annabelle
+NA	T15114659	neutral	annabelle
+NA	T15114693	neutral	annabelle
+NA	T15114735	neutral	annabelle
+NA	T15114765	neutral	annabelle
+NA	T15115844	neutral	arian foster
+NA	T15115955	neutral	arian foster
+NA	T15116013	neutral	arian foster
+NA	T15116108	neutral	arian foster
+NA	T15116202	neutral	arian foster
+NA	T15116243	neutral	arian foster
+NA	T15116307	neutral	arian foster
+NA	T15116312	neutral	arian foster
+NA	T15116413	neutral	arian foster
+NA	T15116456	neutral	arian foster
+NA	T15116510	neutral	arian foster
+NA	T15116513	neutral	arian foster
+NA	T15116587	neutral	arian foster
+NA	T15116594	neutral	arian foster
+NA	T15116599	neutral	arian foster
+NA	T15116617	neutral	arian foster
+NA	T15116656	neutral	arian foster
+NA	T15111198	neutral	arsenal
+NA	T15111240	neutral	arsenal
+NA	T15111274	neutral	arsenal
+NA	T15111348	neutral	arsenal
+NA	T15111381	neutral	arsenal
+NA	T15111389	neutral	arsenal
+NA	T15111413	neutral	arsenal
+NA	T15111433	neutral	arsenal
+NA	T15111444	neutral	arsenal
+NA	T15111450	neutral	arsenal
+NA	T15111498	neutral	arsenal
+NA	T15111519	neutral	arsenal
+NA	T15111541	neutral	arsenal
+NA	T15111692	neutral	arsenal
+NA	T15111731	neutral	arsenal
+NA	T15111754	neutral	arsenal
+NA	T15111782	neutral	arsenal
+NA	T15111936	neutral	arsenal
+NA	T15112006	neutral	arsenal
+NA	T15112084	neutral	ashton
+NA	T15112158	neutral	ashton
+NA	T15112167	neutral	ashton
+NA	T15112220	neutral	ashton
+NA	T15112307	neutral	ashton
+NA	T15112497	neutral	ashton
+NA	T15112713	neutral	ashton
+NA	T15112748	neutral	ashton
+NA	T15112751	neutral	ashton
+NA	T15112965	neutral	ashton
+NA	T15112974	neutral	ashton
+NA	T15113026	neutral	ashton
+NA	T15113304	neutral	ashton
+NA	T15113408	neutral	ashton
+NA	T15113464	neutral	ashton
+NA	T15113493	neutral	ashton
+NA	T15113505	neutral	ashton
+NA	T15113596	neutral	ashton
+NA	T15113633	neutral	ashton
+NA	T15113760	neutral	asiata
+NA	T15113796	neutral	asiata
+NA	T15113801	neutral	asiata
+NA	T15114052	neutral	asiata
+NA	T15114085	neutral	asiata
+NA	T15114165	neutral	asiata
+NA	T15114203	neutral	asiata
+NA	T15114238	neutral	asiata
+NA	T15114382	neutral	asiata
+NA	T15114383	neutral	asiata
+NA	T15114422	neutral	asiata
+NA	T15114426	neutral	asiata
+NA	T15114586	neutral	asiata
+NA	T15114602	neutral	asiata
+NA	T15114683	neutral	asiata
+NA	T15114688	neutral	asiata
+NA	T15114791	neutral	asiata
+NA	T15114800	neutral	asiata
+NA	T15114899	neutral	asiata
+NA	T15115834	neutral	atleti
+NA	T15115853	neutral	atleti
+NA	T15115882	neutral	atleti
+NA	T15115943	neutral	atleti
+NA	T15115957	neutral	atleti
+NA	T15115973	neutral	atleti
+NA	T15115992	neutral	atleti
+NA	T15116049	neutral	atleti
+NA	T15116117	neutral	atleti
+NA	T15116242	neutral	atleti
+NA	T15116435	neutral	atleti
+NA	T15116502	neutral	atleti
+NA	T15116607	neutral	atleti
+NA	T15116621	neutral	atleti
+NA	T15116693	neutral	atleti
+NA	T15116717	neutral	atleti
+NA	T15112053	neutral	atletico madrid
+NA	T15112058	neutral	atletico madrid
+NA	T15112304	neutral	atletico madrid
+NA	T15112332	neutral	atletico madrid
+NA	T15112510	neutral	atletico madrid
+NA	T15112579	neutral	atletico madrid
+NA	T15112727	neutral	atletico madrid
+NA	T15112812	neutral	atletico madrid
+NA	T15112847	neutral	atletico madrid
+NA	T15112866	neutral	atletico madrid
+NA	T15112867	neutral	atletico madrid
+NA	T15112873	neutral	atletico madrid
+NA	T15112979	neutral	atletico madrid
+NA	T15113201	neutral	atletico madrid
+NA	T15113247	neutral	atletico madrid
+NA	T15113288	neutral	atletico madrid
+NA	T15113375	neutral	atletico madrid
+NA	T15113533	neutral	atletico madrid
+NA	T15113941	neutral	austin city limits festival
+NA	T15114223	neutral	austin city limits festival
+NA	T15114546	neutral	austin city limits festival
+NA	T15114863	neutral	austin city limits festival
+NA	T15114894	neutral	austin city limits festival
+NA	T15112027	neutral	barca
+NA	T15112031	neutral	barca
+NA	T15112060	neutral	barca
+NA	T15112362	neutral	barca
+NA	T15112455	neutral	barca
+NA	T15112492	neutral	barca
+NA	T15112675	neutral	barca
+NA	T15112687	neutral	barca
+NA	T15112717	neutral	barca
+NA	T15112897	neutral	barca
+NA	T15113080	neutral	barca
+NA	T15113162	neutral	barca
+NA	T15113434	neutral	barca
+NA	T15113444	neutral	barca
+NA	T15113484	neutral	barca
+NA	T15113553	neutral	barca
+NA	T15113638	neutral	barca
+NA	T15113658	neutral	barca
+NA	T15112119	neutral	bellusci
+NA	T15112204	neutral	bellusci
+NA	T15112351	neutral	bellusci
+NA	T15112450	neutral	bellusci
+NA	T15112470	neutral	bellusci
+NA	T15112841	neutral	bellusci
+NA	T15113226	neutral	bellusci
+NA	T15113424	neutral	bellusci
+NA	T15113525	neutral	bellusci
+NA	T15113540	neutral	bellusci
+NA	T15114999	neutral	ben affleck
+NA	T15115004	neutral	ben affleck
+NA	T15115008	neutral	ben affleck
+NA	T15115018	neutral	ben affleck
+NA	T15115032	neutral	ben affleck
+NA	T15115069	neutral	ben affleck
+NA	T15115104	neutral	ben affleck
+NA	T15115188	neutral	ben affleck
+NA	T15115212	neutral	ben affleck
+NA	T15115239	neutral	ben affleck
+NA	T15115327	neutral	ben affleck
+NA	T15115341	neutral	ben affleck
+NA	T15115374	neutral	ben affleck
+NA	T15115381	neutral	ben affleck
+NA	T15115500	neutral	ben affleck
+NA	T15115503	neutral	ben affleck
+NA	T15115553	neutral	ben affleck
+NA	T15115738	neutral	ben affleck
+NA	T15115824	neutral	ben affleck
+NA	T15114958	neutral	bill maher
+NA	T15114982	neutral	bill maher
+NA	T15114992	neutral	bill maher
+NA	T15115016	neutral	bill maher
+NA	T15115082	neutral	bill maher
+NA	T15115106	neutral	bill maher
+NA	T15115142	neutral	bill maher
+NA	T15115197	neutral	bill maher
+NA	T15115265	neutral	bill maher
+NA	T15115266	neutral	bill maher
+NA	T15115297	neutral	bill maher
+NA	T15115427	neutral	bill maher
+NA	T15115477	neutral	bill maher
+NA	T15115573	neutral	bill maher
+NA	T15115629	neutral	bill maher
+NA	T15115643	neutral	bill maher
+NA	T15115685	neutral	bill maher
+NA	T15115758	neutral	bill maher
+NA	T15115798	neutral	bill maher
+NA	T15111178	neutral	blood moon
+NA	T15111201	neutral	blood moon
+NA	T15111209	neutral	blood moon
+NA	T15111211	neutral	blood moon
+NA	T15111228	neutral	blood moon
+NA	T15111233	neutral	blood moon
+NA	T15111288	neutral	blood moon
+NA	T15111453	neutral	blood moon
+NA	T15111469	neutral	blood moon
+NA	T15111655	neutral	blood moon
+NA	T15111681	neutral	blood moon
+NA	T15111741	neutral	blood moon
+NA	T15111768	neutral	blood moon
+NA	T15111787	neutral	blood moon
+NA	T15111810	neutral	blood moon
+NA	T15111852	neutral	blood moon
+NA	T15111950	neutral	blood moon
+NA	T15111976	neutral	blood moon
+NA	T15111986	neutral	blood moon
+NA	T15113736	neutral	brian cushing
+NA	T15113775	neutral	brian cushing
+NA	T15113811	neutral	brian cushing
+NA	T15113997	neutral	brian cushing
+NA	T15114125	neutral	brian cushing
+NA	T15114174	neutral	brian cushing
+NA	T15114240	neutral	brian cushing
+NA	T15114275	neutral	brian cushing
+NA	T15114285	neutral	brian cushing
+NA	T15114371	neutral	brian cushing
+NA	T15114379	neutral	brian cushing
+NA	T15114393	neutral	brian cushing
+NA	T15114433	neutral	brian cushing
+NA	T15114459	neutral	brian cushing
+NA	T15114548	neutral	brian cushing
+NA	T15114575	neutral	brian cushing
+NA	T15114650	neutral	brian cushing
+NA	T15114729	neutral	brian cushing
+NA	T15114747	neutral	brian cushing
+NA	T15114807	neutral	brian cushing
+NA	T15112071	neutral	brian kelly
+NA	T15112090	neutral	brian kelly
+NA	T15112154	neutral	brian kelly
+NA	T15112182	neutral	brian kelly
+NA	T15112276	neutral	brian kelly
+NA	T15112325	neutral	brian kelly
+NA	T15112605	neutral	brian kelly
+NA	T15112728	neutral	brian kelly
+NA	T15112885	neutral	brian kelly
+NA	T15112903	neutral	brian kelly
+NA	T15112927	neutral	brian kelly
+NA	T15112985	neutral	brian kelly
+NA	T15113085	neutral	brian kelly
+NA	T15113096	neutral	brian kelly
+NA	T15113104	neutral	brian kelly
+NA	T15113396	neutral	brian kelly
+NA	T15113501	neutral	brian kelly
+NA	T15114936	neutral	bulls
+NA	T15114951	neutral	bulls
+NA	T15114990	neutral	bulls
+NA	T15115037	neutral	bulls
+NA	T15115040	neutral	bulls
+NA	T15115051	neutral	bulls
+NA	T15115070	neutral	bulls
+NA	T15115085	neutral	bulls
+NA	T15115125	neutral	bulls
+NA	T15115250	neutral	bulls
+NA	T15115303	neutral	bulls
+NA	T15115308	neutral	bulls
+NA	T15115355	neutral	bulls
+NA	T15115399	neutral	bulls
+NA	T15115413	neutral	bulls
+NA	T15115469	neutral	bulls
+NA	T15115528	neutral	bulls
+NA	T15115585	neutral	bulls
+NA	T15115597	neutral	bulls
+NA	T15115806	neutral	bulls
+NA	T15112020	neutral	carlo ancelotti
+NA	T15112055	neutral	carlo ancelotti
+NA	T15112206	neutral	carlo ancelotti
+NA	T15112356	neutral	carlo ancelotti
+NA	T15112490	neutral	carlo ancelotti
+NA	T15112601	neutral	carlo ancelotti
+NA	T15112641	neutral	carlo ancelotti
+NA	T15112741	neutral	carlo ancelotti
+NA	T15112843	neutral	carlo ancelotti
+NA	T15112875	neutral	carlo ancelotti
+NA	T15112988	neutral	carlo ancelotti
+NA	T15113078	neutral	carlo ancelotti
+NA	T15113125	neutral	carlo ancelotti
+NA	T15113135	neutral	carlo ancelotti
+NA	T15113255	neutral	carlo ancelotti
+NA	T15113362	neutral	carlo ancelotti
+NA	T15113451	neutral	carlo ancelotti
+NA	T15113601	neutral	carlo ancelotti
+NA	T15113671	neutral	carlo ancelotti
+NA	T15113860	neutral	cfb
+NA	T15113898	neutral	cfb
+NA	T15113930	neutral	cfb
+NA	T15113978	neutral	cfb
+NA	T15114057	neutral	cfb
+NA	T15114077	neutral	cfb
+NA	T15114110	neutral	cfb
+NA	T15114131	neutral	cfb
+NA	T15114252	neutral	cfb
+NA	T15114260	neutral	cfb
+NA	T15114269	neutral	cfb
+NA	T15114325	neutral	cfb
+NA	T15114541	neutral	cfb
+NA	T15114543	neutral	cfb
+NA	T15114558	neutral	cfb
+NA	T15114560	neutral	cfb
+NA	T15114695	neutral	cfb
+NA	T15114787	neutral	cfb
+NA	T15114793	neutral	cfb
+NA	T15114809	neutral	cfb
+NA	T15112104	neutral	charles darwin
+NA	T15112177	neutral	charles darwin
+NA	T15112440	neutral	charles darwin
+NA	T15112619	neutral	charles darwin
+NA	T15112663	neutral	charles darwin
+NA	T15113083	neutral	charles darwin
+NA	T15113549	neutral	charles darwin
+NA	T15115114	neutral	chelsea
+NA	T15115225	neutral	chelsea
+NA	T15115230	neutral	chelsea
+NA	T15115233	neutral	chelsea
+NA	T15115247	neutral	chelsea
+NA	T15115262	neutral	chelsea
+NA	T15115417	neutral	chelsea
+NA	T15115446	neutral	chelsea
+NA	T15115501	neutral	chelsea
+NA	T15115565	neutral	chelsea
+NA	T15115601	neutral	chelsea
+NA	T15115619	neutral	chelsea
+NA	T15115707	neutral	chelsea
+NA	T15115729	neutral	chelsea
+NA	T15115762	neutral	chelsea
+NA	T15115776	neutral	chelsea
+NA	T15115801	neutral	chelsea
+NA	T15115814	neutral	chelsea
+NA	T15112731	neutral	chris maguire
+NA	T15112978	neutral	chris maguire
+NA	T15113061	neutral	chris maguire
+NA	T15113196	neutral	chris maguire
+NA	T15113430	neutral	chris maguire
+NA	T15113901	neutral	christian ponder
+NA	T15113991	neutral	christian ponder
+NA	T15114000	neutral	christian ponder
+NA	T15114021	neutral	christian ponder
+NA	T15114082	neutral	christian ponder
+NA	T15114137	neutral	christian ponder
+NA	T15114213	neutral	christian ponder
+NA	T15114243	neutral	christian ponder
+NA	T15114406	neutral	christian ponder
+NA	T15114499	neutral	christian ponder
+NA	T15114514	neutral	christian ponder
+NA	T15114570	neutral	christian ponder
+NA	T15114711	neutral	christian ponder
+NA	T15114717	neutral	christian ponder
+NA	T15114844	neutral	christian ponder
+NA	T15114872	neutral	christian ponder
+NA	T15111227	neutral	christmas
+NA	T15111294	neutral	christmas
+NA	T15111376	neutral	christmas
+NA	T15111380	neutral	christmas
+NA	T15111394	neutral	christmas
+NA	T15111430	neutral	christmas
+NA	T15111495	neutral	christmas
+NA	T15111529	neutral	christmas
+NA	T15111562	neutral	christmas
+NA	T15111605	neutral	christmas
+NA	T15111623	neutral	christmas
+NA	T15111701	neutral	christmas
+NA	T15111773	neutral	christmas
+NA	T15111790	neutral	christmas
+NA	T15111802	neutral	christmas
+NA	T15111824	neutral	christmas
+NA	T15111870	neutral	christmas
+NA	T15111882	neutral	christmas
+NA	T15111972	neutral	christmas
+NA	T15112016	neutral	christmas
+NA	T15115836	neutral	coffee
+NA	T15115873	neutral	coffee
+NA	T15115881	neutral	coffee
+NA	T15115912	neutral	coffee
+NA	T15116152	neutral	coffee
+NA	T15116253	neutral	coffee
+NA	T15116279	neutral	coffee
+NA	T15116437	neutral	coffee
+NA	T15116439	neutral	coffee
+NA	T15116464	neutral	coffee
+NA	T15116505	neutral	coffee
+NA	T15116508	neutral	coffee
+NA	T15116539	neutral	coffee
+NA	T15116553	neutral	coffee
+NA	T15116614	neutral	coffee
+NA	T15116628	neutral	coffee
+NA	T15116644	neutral	coffee
+NA	T15116651	neutral	coffee
+NA	T15116724	neutral	coffee
+NA	T15115869	neutral	colts
+NA	T15115879	neutral	colts
+NA	T15115984	neutral	colts
+NA	T15116044	neutral	colts
+NA	T15116073	neutral	colts
+NA	T15116112	neutral	colts
+NA	T15116132	neutral	colts
+NA	T15116178	neutral	colts
+NA	T15116187	neutral	colts
+NA	T15116228	neutral	colts
+NA	T15116344	neutral	colts
+NA	T15116377	neutral	colts
+NA	T15116451	neutral	colts
+NA	T15116475	neutral	colts
+NA	T15116562	neutral	colts
+NA	T15116589	neutral	colts
+NA	T15116646	neutral	colts
+NA	T15116663	neutral	colts
+NA	T15114956	neutral	cowboys
+NA	T15114996	neutral	cowboys
+NA	T15115210	neutral	cowboys
+NA	T15115224	neutral	cowboys
+NA	T15115263	neutral	cowboys
+NA	T15115272	neutral	cowboys
+NA	T15115287	neutral	cowboys
+NA	T15115331	neutral	cowboys
+NA	T15115396	neutral	cowboys
+NA	T15115397	neutral	cowboys
+NA	T15115467	neutral	cowboys
+NA	T15115484	neutral	cowboys
+NA	T15115485	neutral	cowboys
+NA	T15115504	neutral	cowboys
+NA	T15115580	neutral	cowboys
+NA	T15115646	neutral	cowboys
+NA	T15115648	neutral	cowboys
+NA	T15115786	neutral	cowboys
+NA	T15113776	neutral	delhi police
+NA	T15113874	neutral	delhi police
+NA	T15113883	neutral	delhi police
+NA	T15114009	neutral	delhi police
+NA	T15114015	neutral	delhi police
+NA	T15114041	neutral	delhi police
+NA	T15114245	neutral	delhi police
+NA	T15114251	neutral	delhi police
+NA	T15114279	neutral	delhi police
+NA	T15114390	neutral	delhi police
+NA	T15114432	neutral	delhi police
+NA	T15114555	neutral	delhi police
+NA	T15114617	neutral	delhi police
+NA	T15114675	neutral	delhi police
+NA	T15114755	neutral	delhi police
+NA	T15115857	neutral	demi lovato
+NA	T15115865	neutral	demi lovato
+NA	T15115919	neutral	demi lovato
+NA	T15115923	neutral	demi lovato
+NA	T15115936	neutral	demi lovato
+NA	T15116027	neutral	demi lovato
+NA	T15116036	neutral	demi lovato
+NA	T15116065	neutral	demi lovato
+NA	T15116080	neutral	demi lovato
+NA	T15116120	neutral	demi lovato
+NA	T15116144	neutral	demi lovato
+NA	T15116169	neutral	demi lovato
+NA	T15116200	neutral	demi lovato
+NA	T15116289	neutral	demi lovato
+NA	T15116449	neutral	demi lovato
+NA	T15116542	neutral	demi lovato
+NA	T15116600	neutral	demi lovato
+NA	T15116618	neutral	demi lovato
+NA	T15116648	neutral	demi lovato
+NA	T15116721	neutral	demi lovato
+NA	T15114029	neutral	dharamsala
+NA	T15114038	neutral	dharamsala
+NA	T15114046	neutral	dharamsala
+NA	T15114054	neutral	dharamsala
+NA	T15114064	neutral	dharamsala
+NA	T15114109	neutral	dharamsala
+NA	T15114146	neutral	dharamsala
+NA	T15114202	neutral	dharamsala
+NA	T15114248	neutral	dharamsala
+NA	T15114294	neutral	dharamsala
+NA	T15114405	neutral	dharamsala
+NA	T15114540	neutral	dharamsala
+NA	T15114564	neutral	dharamsala
+NA	T15114581	neutral	dharamsala
+NA	T15114593	neutral	dharamsala
+NA	T15114601	neutral	dharamsala
+NA	T15114615	neutral	dharamsala
+NA	T15114816	neutral	dharamsala
+NA	T15114865	neutral	dharamsala
+NA	T15114906	neutral	dharamsala
+NA	T15113701	neutral	disney
+NA	T15113779	neutral	disney
+NA	T15113793	neutral	disney
+NA	T15113798	neutral	disney
+NA	T15113815	neutral	disney
+NA	T15113917	neutral	disney
+NA	T15113921	neutral	disney
+NA	T15113953	neutral	disney
+NA	T15114320	neutral	disney
+NA	T15114373	neutral	disney
+NA	T15114388	neutral	disney
+NA	T15114485	neutral	disney
+NA	T15114523	neutral	disney
+NA	T15114533	neutral	disney
+NA	T15114680	neutral	disney
+NA	T15114696	neutral	disney
+NA	T15114707	neutral	disney
+NA	T15114780	neutral	disney
+NA	T15114819	neutral	disney
+NA	T15114858	neutral	disney
+NA	T15113716	neutral	disney world
+NA	T15113768	neutral	disney world
+NA	T15113871	neutral	disney world
+NA	T15113907	neutral	disney world
+NA	T15113909	neutral	disney world
+NA	T15114024	neutral	disney world
+NA	T15114042	neutral	disney world
+NA	T15114092	neutral	disney world
+NA	T15114175	neutral	disney world
+NA	T15114189	neutral	disney world
+NA	T15114256	neutral	disney world
+NA	T15114315	neutral	disney world
+NA	T15114475	neutral	disney world
+NA	T15114495	neutral	disney world
+NA	T15114552	neutral	disney world
+NA	T15114553	neutral	disney world
+NA	T15114722	neutral	disney world
+NA	T15114856	neutral	disney world
+NA	T15114886	neutral	disney world
+NA	T15112114	neutral	donny
+NA	T15112126	neutral	donny
+NA	T15112164	neutral	donny
+NA	T15112401	neutral	donny
+NA	T15112408	neutral	donny
+NA	T15112488	neutral	donny
+NA	T15112550	neutral	donny
+NA	T15112750	neutral	donny
+NA	T15112858	neutral	donny
+NA	T15113066	neutral	donny
+NA	T15113122	neutral	donny
+NA	T15113217	neutral	donny
+NA	T15113266	neutral	donny
+NA	T15113421	neutral	donny
+NA	T15113624	neutral	donny
+NA	T15113681	neutral	ducks
+NA	T15113791	neutral	ducks
+NA	T15113843	neutral	ducks
+NA	T15113885	neutral	ducks
+NA	T15113977	neutral	ducks
+NA	T15114055	neutral	ducks
+NA	T15114063	neutral	ducks
+NA	T15114247	neutral	ducks
+NA	T15114326	neutral	ducks
+NA	T15114332	neutral	ducks
+NA	T15114453	neutral	ducks
+NA	T15114538	neutral	ducks
+NA	T15114622	neutral	ducks
+NA	T15114669	neutral	ducks
+NA	T15114715	neutral	ducks
+NA	T15114798	neutral	ducks
+NA	T15114808	neutral	ducks
+NA	T15114817	neutral	ducks
+NA	T15114823	neutral	ducks
+NA	T15114868	neutral	ducks
+NA	T15111170	neutral	ebola
+NA	T15111258	neutral	ebola
+NA	T15111334	neutral	ebola
+NA	T15111355	neutral	ebola
+NA	T15111409	neutral	ebola
+NA	T15111535	neutral	ebola
+NA	T15111608	neutral	ebola
+NA	T15111646	neutral	ebola
+NA	T15111668	neutral	ebola
+NA	T15111688	neutral	ebola
+NA	T15111763	neutral	ebola
+NA	T15111794	neutral	ebola
+NA	T15111797	neutral	ebola
+NA	T15111809	neutral	ebola
+NA	T15111862	neutral	ebola
+NA	T15111873	neutral	ebola
+NA	T15111889	neutral	ebola
+NA	T15111901	neutral	ebola
+NA	T15111949	neutral	ebola
+NA	T15111982	neutral	ebola
+NA	T15114348	neutral	edmonton
+NA	T15112102	neutral	elton
+NA	T15112209	neutral	elton
+NA	T15112221	neutral	elton
+NA	T15112285	neutral	elton
+NA	T15112310	neutral	elton
+NA	T15112354	neutral	elton
+NA	T15112433	neutral	elton
+NA	T15112627	neutral	elton
+NA	T15112660	neutral	elton
+NA	T15112784	neutral	elton
+NA	T15112822	neutral	elton
+NA	T15112869	neutral	elton
+NA	T15112917	neutral	elton
+NA	T15113088	neutral	elton
+NA	T15113128	neutral	elton
+NA	T15113342	neutral	elton
+NA	T15113448	neutral	elton
+NA	T15113497	neutral	elton
+NA	T15113621	neutral	elton
+NA	T15113670	neutral	elton
+NA	T15112186	neutral	equalizer
+NA	T15112214	neutral	equalizer
+NA	T15112342	neutral	equalizer
+NA	T15112479	neutral	equalizer
+NA	T15112557	neutral	equalizer
+NA	T15112609	neutral	equalizer
+NA	T15112613	neutral	equalizer
+NA	T15112633	neutral	equalizer
+NA	T15112795	neutral	equalizer
+NA	T15112916	neutral	equalizer
+NA	T15113063	neutral	equalizer
+NA	T15113092	neutral	equalizer
+NA	T15113095	neutral	equalizer
+NA	T15113298	neutral	equalizer
+NA	T15113425	neutral	equalizer
+NA	T15113446	neutral	equalizer
+NA	T15113650	neutral	equalizer
+NA	T15113661	neutral	equalizer
+NA	T15113673	neutral	equalizer
+NA	T15113832	neutral	europa league
+NA	T15113853	neutral	europa league
+NA	T15113928	neutral	europa league
+NA	T15113992	neutral	europa league
+NA	T15114080	neutral	europa league
+NA	T15114102	neutral	europa league
+NA	T15114119	neutral	europa league
+NA	T15114143	neutral	europa league
+NA	T15114164	neutral	europa league
+NA	T15114254	neutral	europa league
+NA	T15114298	neutral	europa league
+NA	T15114364	neutral	europa league
+NA	T15114396	neutral	europa league
+NA	T15114474	neutral	europa league
+NA	T15114620	neutral	europa league
+NA	T15114639	neutral	europa league
+NA	T15114710	neutral	europa league
+NA	T15114725	neutral	europa league
+NA	T15114803	neutral	europa league
+NA	T15114806	neutral	europa league
+NA	T15113683	neutral	fabian delph
+NA	T15113896	neutral	fabian delph
+NA	T15114305	neutral	fabian delph
+NA	T15114337	neutral	fabian delph
+NA	T15114450	neutral	fabian delph
+NA	T15114854	neutral	fabian delph
+NA	T15114877	neutral	fabian delph
+NA	T15114888	neutral	fabian delph
+NA	T15115838	neutral	fec
+NA	T15115937	neutral	fec
+NA	T15115949	neutral	fec
+NA	T15116078	neutral	fec
+NA	T15116127	neutral	fec
+NA	T15116166	neutral	fec
+NA	T15116215	neutral	fec
+NA	T15116260	neutral	fec
+NA	T15116270	neutral	fec
+NA	T15116283	neutral	fec
+NA	T15116381	neutral	fec
+NA	T15116467	neutral	fec
+NA	T15116474	neutral	fec
+NA	T15116483	neutral	fec
+NA	T15116718	neutral	fec
+NA	T15116722	neutral	fec
+NA	T15113715	neutral	friday night lights
+NA	T15113755	neutral	friday night lights
+NA	T15113774	neutral	friday night lights
+NA	T15113934	neutral	friday night lights
+NA	T15114027	neutral	friday night lights
+NA	T15114091	neutral	friday night lights
+NA	T15114136	neutral	friday night lights
+NA	T15114221	neutral	friday night lights
+NA	T15114303	neutral	friday night lights
+NA	T15114308	neutral	friday night lights
+NA	T15114323	neutral	friday night lights
+NA	T15114366	neutral	friday night lights
+NA	T15114368	neutral	friday night lights
+NA	T15114370	neutral	friday night lights
+NA	T15114395	neutral	friday night lights
+NA	T15114467	neutral	friday night lights
+NA	T15114566	neutral	friday night lights
+NA	T15114762	neutral	friday night lights
+NA	T15114901	neutral	friday night lights
+NA	T15114913	neutral	friday night lights
+NA	T15111115	neutral	gala
+NA	T15111122	neutral	gala
+NA	T15111190	neutral	gala
+NA	T15111214	neutral	gala
+NA	T15111281	neutral	gala
+NA	T15111337	neutral	gala
+NA	T15111338	neutral	gala
+NA	T15111441	neutral	gala
+NA	T15111455	neutral	gala
+NA	T15111514	neutral	gala
+NA	T15111521	neutral	gala
+NA	T15111578	neutral	gala
+NA	T15111714	neutral	gala
+NA	T15111736	neutral	gala
+NA	T15111894	neutral	gala
+NA	T15111904	neutral	gala
+NA	T15111906	neutral	gala
+NA	T15112012	neutral	gala
+NA	T15111180	neutral	galatasaray
+NA	T15111195	neutral	galatasaray
+NA	T15111236	neutral	galatasaray
+NA	T15111268	neutral	galatasaray
+NA	T15111321	neutral	galatasaray
+NA	T15111404	neutral	galatasaray
+NA	T15111477	neutral	galatasaray
+NA	T15111500	neutral	galatasaray
+NA	T15111544	neutral	galatasaray
+NA	T15111546	neutral	galatasaray
+NA	T15111698	neutral	galatasaray
+NA	T15111728	neutral	galatasaray
+NA	T15111752	neutral	galatasaray
+NA	T15111798	neutral	galatasaray
+NA	T15111885	neutral	galatasaray
+NA	T15111887	neutral	galatasaray
+NA	T15111910	neutral	galatasaray
+NA	T15111980	neutral	galatasaray
+NA	T15113835	neutral	gandhi
+NA	T15113875	neutral	gandhi
+NA	T15113881	neutral	gandhi
+NA	T15113931	neutral	gandhi
+NA	T15113938	neutral	gandhi
+NA	T15113959	neutral	gandhi
+NA	T15114060	neutral	gandhi
+NA	T15114069	neutral	gandhi
+NA	T15114206	neutral	gandhi
+NA	T15114261	neutral	gandhi
+NA	T15114355	neutral	gandhi
+NA	T15114497	neutral	gandhi
+NA	T15114616	neutral	gandhi
+NA	T15114679	neutral	gandhi
+NA	T15114700	neutral	gandhi
+NA	T15114716	neutral	gandhi
+NA	T15114723	neutral	gandhi
+NA	T15114757	neutral	gandhi
+NA	T15114892	neutral	gandhi
+NA	T15114915	neutral	gandhi
+NA	T15111120	neutral	georgia dome
+NA	T15111132	neutral	georgia dome
+NA	T15111139	neutral	georgia dome
+NA	T15111212	neutral	georgia dome
+NA	T15111309	neutral	georgia dome
+NA	T15111323	neutral	georgia dome
+NA	T15111325	neutral	georgia dome
+NA	T15111346	neutral	georgia dome
+NA	T15111425	neutral	georgia dome
+NA	T15111448	neutral	georgia dome
+NA	T15111532	neutral	georgia dome
+NA	T15111568	neutral	georgia dome
+NA	T15111588	neutral	georgia dome
+NA	T15111718	neutral	georgia dome
+NA	T15111781	neutral	georgia dome
+NA	T15111788	neutral	georgia dome
+NA	T15111803	neutral	georgia dome
+NA	T15111897	neutral	georgia dome
+NA	T15111914	neutral	georgia dome
+NA	T15112003	neutral	georgia dome
+NA	T15112503	neutral	ghoncheh ghavami
+NA	T15112591	neutral	ghoncheh ghavami
+NA	T15112611	neutral	ghoncheh ghavami
+NA	T15112649	neutral	ghoncheh ghavami
+NA	T15112657	neutral	ghoncheh ghavami
+NA	T15113188	neutral	ghoncheh ghavami
+NA	T15111128	neutral	gilmore girls
+NA	T15111159	neutral	gilmore girls
+NA	T15111183	neutral	gilmore girls
+NA	T15111203	neutral	gilmore girls
+NA	T15111248	neutral	gilmore girls
+NA	T15111385	neutral	gilmore girls
+NA	T15111475	neutral	gilmore girls
+NA	T15111483	neutral	gilmore girls
+NA	T15111509	neutral	gilmore girls
+NA	T15111543	neutral	gilmore girls
+NA	T15111565	neutral	gilmore girls
+NA	T15111784	neutral	gilmore girls
+NA	T15111924	neutral	gilmore girls
+NA	T15111931	neutral	gilmore girls
+NA	T15111954	neutral	gilmore girls
+NA	T15111968	neutral	gilmore girls
+NA	T15111992	neutral	gilmore girls
+NA	T15111999	neutral	gilmore girls
+NA	T15115841	neutral	google
+NA	T15116032	neutral	google
+NA	T15116051	neutral	google
+NA	T15116069	neutral	google
+NA	T15116093	neutral	google
+NA	T15116114	neutral	google
+NA	T15116153	neutral	google
+NA	T15116183	neutral	google
+NA	T15116208	neutral	google
+NA	T15116216	neutral	google
+NA	T15116249	neutral	google
+NA	T15116274	neutral	google
+NA	T15116331	neutral	google
+NA	T15116444	neutral	google
+NA	T15116484	neutral	google
+NA	T15116544	neutral	google
+NA	T15116556	neutral	google
+NA	T15116565	neutral	google
+NA	T15116585	neutral	google
+NA	T15116661	neutral	google
+NA	T15115874	neutral	green bay
+NA	T15115896	neutral	green bay
+NA	T15115946	neutral	green bay
+NA	T15115972	neutral	green bay
+NA	T15115977	neutral	green bay
+NA	T15115987	neutral	green bay
+NA	T15115989	neutral	green bay
+NA	T15116097	neutral	green bay
+NA	T15116131	neutral	green bay
+NA	T15116167	neutral	green bay
+NA	T15116205	neutral	green bay
+NA	T15116232	neutral	green bay
+NA	T15116361	neutral	green bay
+NA	T15116410	neutral	green bay
+NA	T15116446	neutral	green bay
+NA	T15116525	neutral	green bay
+NA	T15116534	neutral	green bay
+NA	T15116536	neutral	green bay
+NA	T15116691	neutral	green bay
+NA	T15111137	neutral	green day
+NA	T15111165	neutral	green day
+NA	T15111219	neutral	green day
+NA	T15111256	neutral	green day
+NA	T15111282	neutral	green day
+NA	T15111297	neutral	green day
+NA	T15111312	neutral	green day
+NA	T15111507	neutral	green day
+NA	T15111547	neutral	green day
+NA	T15111650	neutral	green day
+NA	T15111679	neutral	green day
+NA	T15111819	neutral	green day
+NA	T15111829	neutral	green day
+NA	T15111832	neutral	green day
+NA	T15111837	neutral	green day
+NA	T15111890	neutral	green day
+NA	T15111940	neutral	green day
+NA	T15111988	neutral	green day
+NA	T15111117	neutral	halloween
+NA	T15111171	neutral	halloween
+NA	T15111187	neutral	halloween
+NA	T15111235	neutral	halloween
+NA	T15111306	neutral	halloween
+NA	T15111308	neutral	halloween
+NA	T15111310	neutral	halloween
+NA	T15111464	neutral	halloween
+NA	T15111551	neutral	halloween
+NA	T15111603	neutral	halloween
+NA	T15111628	neutral	halloween
+NA	T15111683	neutral	halloween
+NA	T15111712	neutral	halloween
+NA	T15111744	neutral	halloween
+NA	T15111864	neutral	halloween
+NA	T15111922	neutral	halloween
+NA	T15111951	neutral	halloween
+NA	T15113680	neutral	hiv
+NA	T15113688	neutral	hiv
+NA	T15114032	neutral	hiv
+NA	T15114115	neutral	hiv
+NA	T15114182	neutral	hiv
+NA	T15114212	neutral	hiv
+NA	T15114457	neutral	hiv
+NA	T15114535	neutral	hiv
+NA	T15114557	neutral	hiv
+NA	T15114656	neutral	hiv
+NA	T15114681	neutral	hiv
+NA	T15114698	neutral	hiv
+NA	T15114732	neutral	hiv
+NA	T15114742	neutral	hiv
+NA	T15114756	neutral	hiv
+NA	T15114783	neutral	hiv
+NA	T15114812	neutral	hiv
+NA	T15112194	neutral	icc
+NA	T15112279	neutral	icc
+NA	T15112338	neutral	icc
+NA	T15112465	neutral	icc
+NA	T15112515	neutral	icc
+NA	T15112630	neutral	icc
+NA	T15112632	neutral	icc
+NA	T15112696	neutral	icc
+NA	T15112800	neutral	icc
+NA	T15112823	neutral	icc
+NA	T15112929	neutral	icc
+NA	T15112932	neutral	icc
+NA	T15113118	neutral	icc
+NA	T15113121	neutral	icc
+NA	T15113261	neutral	icc
+NA	T15113431	neutral	icc
+NA	T15113458	neutral	icc
+NA	T15113523	neutral	icc
+NA	T15113578	neutral	icc
+NA	T15112081	neutral	independence day
+NA	T15112082	neutral	independence day
+NA	T15112161	neutral	independence day
+NA	T15112199	neutral	independence day
+NA	T15112314	neutral	independence day
+NA	T15112323	neutral	independence day
+NA	T15112334	neutral	independence day
+NA	T15112340	neutral	independence day
+NA	T15112406	neutral	independence day
+NA	T15112435	neutral	independence day
+NA	T15112524	neutral	independence day
+NA	T15112568	neutral	independence day
+NA	T15112571	neutral	independence day
+NA	T15112735	neutral	independence day
+NA	T15112914	neutral	independence day
+NA	T15113184	neutral	independence day
+NA	T15113403	neutral	independence day
+NA	T15113428	neutral	independence day
+NA	T15113524	neutral	independence day
+NA	T15112172	neutral	isco
+NA	T15112516	neutral	isco
+NA	T15112561	neutral	isco
+NA	T15112646	neutral	isco
+NA	T15112698	neutral	isco
+NA	T15112700	neutral	isco
+NA	T15112790	neutral	isco
+NA	T15112796	neutral	isco
+NA	T15112962	neutral	isco
+NA	T15112971	neutral	isco
+NA	T15113187	neutral	isco
+NA	T15113208	neutral	isco
+NA	T15113325	neutral	isco
+NA	T15113685	neutral	james franklin
+NA	T15113696	neutral	james franklin
+NA	T15113725	neutral	james franklin
+NA	T15113772	neutral	james franklin
+NA	T15113855	neutral	james franklin
+NA	T15113878	neutral	james franklin
+NA	T15113947	neutral	james franklin
+NA	T15114047	neutral	james franklin
+NA	T15114094	neutral	james franklin
+NA	T15114215	neutral	james franklin
+NA	T15114328	neutral	james franklin
+NA	T15114334	neutral	james franklin
+NA	T15114507	neutral	james franklin
+NA	T15114516	neutral	james franklin
+NA	T15114690	neutral	james franklin
+NA	T15114771	neutral	james franklin
+NA	T15114790	neutral	james franklin
+NA	T15114796	neutral	james franklin
+NA	T15114893	neutral	james franklin
+NA	T15112064	neutral	james rodriguez
+NA	T15112122	neutral	james rodriguez
+NA	T15112183	neutral	james rodriguez
+NA	T15112201	neutral	james rodriguez
+NA	T15112388	neutral	james rodriguez
+NA	T15112393	neutral	james rodriguez
+NA	T15112505	neutral	james rodriguez
+NA	T15112521	neutral	james rodriguez
+NA	T15112776	neutral	james rodriguez
+NA	T15112780	neutral	james rodriguez
+NA	T15113045	neutral	james rodriguez
+NA	T15113057	neutral	james rodriguez
+NA	T15113087	neutral	james rodriguez
+NA	T15113258	neutral	james rodriguez
+NA	T15113267	neutral	james rodriguez
+NA	T15113344	neutral	james rodriguez
+NA	T15113379	neutral	james rodriguez
+NA	T15113460	neutral	james rodriguez
+NA	T15113514	neutral	james rodriguez
+NA	T15113517	neutral	james rodriguez
+NA	T15115181	neutral	jan hooks
+NA	T15115190	neutral	jan hooks
+NA	T15115206	neutral	jan hooks
+NA	T15115378	neutral	jan hooks
+NA	T15115383	neutral	jan hooks
+NA	T15115487	neutral	jan hooks
+NA	T15115529	neutral	jan hooks
+NA	T15115530	neutral	jan hooks
+NA	T15115541	neutral	jan hooks
+NA	T15115562	neutral	jan hooks
+NA	T15115589	neutral	jan hooks
+NA	T15115618	neutral	jan hooks
+NA	T15115642	neutral	jan hooks
+NA	T15115722	neutral	jan hooks
+NA	T15112019	neutral	jennifer lawrence
+NA	T15112132	neutral	jennifer lawrence
+NA	T15112142	neutral	jennifer lawrence
+NA	T15112242	neutral	jennifer lawrence
+NA	T15112289	neutral	jennifer lawrence
+NA	T15112400	neutral	jennifer lawrence
+NA	T15112495	neutral	jennifer lawrence
+NA	T15112530	neutral	jennifer lawrence
+NA	T15112575	neutral	jennifer lawrence
+NA	T15112691	neutral	jennifer lawrence
+NA	T15112763	neutral	jennifer lawrence
+NA	T15112770	neutral	jennifer lawrence
+NA	T15112818	neutral	jennifer lawrence
+NA	T15112855	neutral	jennifer lawrence
+NA	T15113012	neutral	jennifer lawrence
+NA	T15113245	neutral	jennifer lawrence
+NA	T15113280	neutral	jennifer lawrence
+NA	T15113388	neutral	jennifer lawrence
+NA	T15113657	neutral	jennifer lawrence
+NA	T15112146	neutral	jessica
+NA	T15112273	neutral	jessica
+NA	T15112374	neutral	jessica
+NA	T15112385	neutral	jessica
+NA	T15112462	neutral	jessica
+NA	T15112543	neutral	jessica
+NA	T15112676	neutral	jessica
+NA	T15112864	neutral	jessica
+NA	T15112924	neutral	jessica
+NA	T15112968	neutral	jessica
+NA	T15113014	neutral	jessica
+NA	T15113016	neutral	jessica
+NA	T15113075	neutral	jessica
+NA	T15113241	neutral	jessica
+NA	T15113332	neutral	jessica
+NA	T15113352	neutral	jessica
+NA	T15113354	neutral	jessica
+NA	T15113385	neutral	jessica
+NA	T15113482	neutral	jessica
+NA	T15113636	neutral	jessica
+NA	T15115832	neutral	jimmy fallon
+NA	T15115934	neutral	jimmy fallon
+NA	T15115965	neutral	jimmy fallon
+NA	T15116040	neutral	jimmy fallon
+NA	T15116085	neutral	jimmy fallon
+NA	T15116150	neutral	jimmy fallon
+NA	T15116158	neutral	jimmy fallon
+NA	T15116296	neutral	jimmy fallon
+NA	T15116315	neutral	jimmy fallon
+NA	T15116346	neutral	jimmy fallon
+NA	T15116445	neutral	jimmy fallon
+NA	T15116493	neutral	jimmy fallon
+NA	T15116522	neutral	jimmy fallon
+NA	T15116555	neutral	jimmy fallon
+NA	T15116559	neutral	jimmy fallon
+NA	T15116561	neutral	jimmy fallon
+NA	T15116568	neutral	jimmy fallon
+NA	T15116574	neutral	jimmy fallon
+NA	T15116671	neutral	jimmy fallon
+NA	T15116682	neutral	jimmy fallon
+NA	T15115846	neutral	jpmorgan chase
+NA	T15116190	neutral	jpmorgan chase
+NA	T15116214	neutral	jpmorgan chase
+NA	T15116507	neutral	jpmorgan chase
+NA	T15116634	neutral	jpmorgan chase
+NA	T15112092	neutral	julie andrews
+NA	T15112294	neutral	julie andrews
+NA	T15112366	neutral	julie andrews
+NA	T15112427	neutral	julie andrews
+NA	T15112447	neutral	julie andrews
+NA	T15112546	neutral	julie andrews
+NA	T15112615	neutral	julie andrews
+NA	T15112759	neutral	julie andrews
+NA	T15112900	neutral	julie andrews
+NA	T15112920	neutral	julie andrews
+NA	T15112925	neutral	julie andrews
+NA	T15112952	neutral	julie andrews
+NA	T15112998	neutral	julie andrews
+NA	T15113002	neutral	julie andrews
+NA	T15113036	neutral	julie andrews
+NA	T15113436	neutral	julie andrews
+NA	T15113488	neutral	julie andrews
+NA	T15113550	neutral	julie andrews
+NA	T15113577	neutral	julie andrews
+NA	T15113722	neutral	katy perry
+NA	T15113749	neutral	katy perry
+NA	T15113831	neutral	katy perry
+NA	T15113963	neutral	katy perry
+NA	T15113965	neutral	katy perry
+NA	T15114044	neutral	katy perry
+NA	T15114122	neutral	katy perry
+NA	T15114151	neutral	katy perry
+NA	T15114400	neutral	katy perry
+NA	T15114449	neutral	katy perry
+NA	T15114481	neutral	katy perry
+NA	T15114583	neutral	katy perry
+NA	T15114588	neutral	katy perry
+NA	T15114624	neutral	katy perry
+NA	T15114666	neutral	katy perry
+NA	T15114677	neutral	katy perry
+NA	T15114768	neutral	katy perry
+NA	T15114786	neutral	katy perry
+NA	T15114851	neutral	katy perry
+NA	T15114938	neutral	kershaw
+NA	T15115049	neutral	kershaw
+NA	T15115090	neutral	kershaw
+NA	T15115193	neutral	kershaw
+NA	T15115260	neutral	kershaw
+NA	T15115281	neutral	kershaw
+NA	T15115334	neutral	kershaw
+NA	T15115364	neutral	kershaw
+NA	T15115437	neutral	kershaw
+NA	T15115472	neutral	kershaw
+NA	T15115559	neutral	kershaw
+NA	T15115626	neutral	kershaw
+NA	T15115645	neutral	kershaw
+NA	T15115679	neutral	kershaw
+NA	T15115714	neutral	kershaw
+NA	T15115734	neutral	kershaw
+NA	T15115766	neutral	kershaw
+NA	T15115802	neutral	kershaw
+NA	T15115822	neutral	kershaw
+NA	T15112037	neutral	kesha
+NA	T15112066	neutral	kesha
+NA	T15112195	neutral	kesha
+NA	T15112281	neutral	kesha
+NA	T15112286	neutral	kesha
+NA	T15112349	neutral	kesha
+NA	T15112533	neutral	kesha
+NA	T15112583	neutral	kesha
+NA	T15112594	neutral	kesha
+NA	T15112677	neutral	kesha
+NA	T15112825	neutral	kesha
+NA	T15112907	neutral	kesha
+NA	T15112963	neutral	kesha
+NA	T15112990	neutral	kesha
+NA	T15113100	neutral	kesha
+NA	T15113115	neutral	kesha
+NA	T15113293	neutral	kesha
+NA	T15113587	neutral	kesha
+NA	T15113641	neutral	kesha
+NA	T15115893	neutral	knott
+NA	T15115940	neutral	knott
+NA	T15115960	neutral	knott
+NA	T15116029	neutral	knott
+NA	T15116113	neutral	knott
+NA	T15116239	neutral	knott
+NA	T15116304	neutral	knott
+NA	T15116306	neutral	knott
+NA	T15116335	neutral	knott
+NA	T15116357	neutral	knott
+NA	T15116359	neutral	knott
+NA	T15116405	neutral	knott
+NA	T15116417	neutral	knott
+NA	T15116432	neutral	knott
+NA	T15116448	neutral	knott
+NA	T15116473	neutral	knott
+NA	T15116684	neutral	knott
+NA	T15116689	neutral	knott
+NA	T15116707	neutral	knott
+NA	T15111167	neutral	kobe bryant
+NA	T15111262	neutral	kobe bryant
+NA	T15111302	neutral	kobe bryant
+NA	T15111318	neutral	kobe bryant
+NA	T15111357	neutral	kobe bryant
+NA	T15111391	neutral	kobe bryant
+NA	T15111414	neutral	kobe bryant
+NA	T15111466	neutral	kobe bryant
+NA	T15111468	neutral	kobe bryant
+NA	T15111504	neutral	kobe bryant
+NA	T15111582	neutral	kobe bryant
+NA	T15111644	neutral	kobe bryant
+NA	T15111695	neutral	kobe bryant
+NA	T15111706	neutral	kobe bryant
+NA	T15111776	neutral	kobe bryant
+NA	T15111858	neutral	kobe bryant
+NA	T15111915	neutral	kobe bryant
+NA	T15111927	neutral	kobe bryant
+NA	T15111942	neutral	kobe bryant
+NA	T15111957	neutral	kobe bryant
+NA	T15112224	neutral	kris jenner
+NA	T15112458	neutral	kris jenner
+NA	T15112655	neutral	kris jenner
+NA	T15112723	neutral	kris jenner
+NA	T15112804	neutral	kris jenner
+NA	T15112910	neutral	kris jenner
+NA	T15112911	neutral	kris jenner
+NA	T15112944	neutral	kris jenner
+NA	T15113017	neutral	kris jenner
+NA	T15113373	neutral	kris jenner
+NA	T15113393	neutral	kris jenner
+NA	T15113420	neutral	kris jenner
+NA	T15113520	neutral	kris jenner
+NA	T15113521	neutral	kris jenner
+NA	T15113539	neutral	kris jenner
+NA	T15113610	neutral	kris jenner
+NA	T15113626	neutral	kris jenner
+NA	T15111143	neutral	kunle afolayan
+NA	T15111147	neutral	kunle afolayan
+NA	T15111244	neutral	kunle afolayan
+NA	T15111267	neutral	kunle afolayan
+NA	T15111280	neutral	kunle afolayan
+NA	T15111331	neutral	kunle afolayan
+NA	T15111340	neutral	kunle afolayan
+NA	T15111399	neutral	kunle afolayan
+NA	T15111436	neutral	kunle afolayan
+NA	T15111613	neutral	kunle afolayan
+NA	T15111619	neutral	kunle afolayan
+NA	T15111632	neutral	kunle afolayan
+NA	T15111665	neutral	kunle afolayan
+NA	T15111675	neutral	kunle afolayan
+NA	T15111733	neutral	kunle afolayan
+NA	T15111749	neutral	kunle afolayan
+NA	T15111817	neutral	kunle afolayan
+NA	T15111874	neutral	kunle afolayan
+NA	T15111892	neutral	kunle afolayan
+NA	T15111943	neutral	kunle afolayan
+NA	T15112024	neutral	kyle
+NA	T15112191	neutral	kyle
+NA	T15112403	neutral	kyle
+NA	T15112453	neutral	kyle
+NA	T15112572	neutral	kyle
+NA	T15112705	neutral	kyle
+NA	T15112771	neutral	kyle
+NA	T15112792	neutral	kyle
+NA	T15112827	neutral	kyle
+NA	T15112871	neutral	kyle
+NA	T15112878	neutral	kyle
+NA	T15112982	neutral	kyle
+NA	T15113146	neutral	kyle
+NA	T15113176	neutral	kyle
+NA	T15113210	neutral	kyle
+NA	T15113233	neutral	kyle
+NA	T15113405	neutral	kyle
+NA	T15113456	neutral	kyle
+NA	T15113559	neutral	kyle
+NA	T15111153	neutral	lax
+NA	T15111176	neutral	lax
+NA	T15111186	neutral	lax
+NA	T15111204	neutral	lax
+NA	T15111221	neutral	lax
+NA	T15111397	neutral	lax
+NA	T15111402	neutral	lax
+NA	T15111486	neutral	lax
+NA	T15111487	neutral	lax
+NA	T15111585	neutral	lax
+NA	T15111595	neutral	lax
+NA	T15111616	neutral	lax
+NA	T15111653	neutral	lax
+NA	T15111657	neutral	lax
+NA	T15111689	neutral	lax
+NA	T15111767	neutral	lax
+NA	T15111865	neutral	lax
+NA	T15111871	neutral	lax
+NA	T15111917	neutral	lax
+NA	T15111962	neutral	lax
+NA	T15115887	neutral	lee soo man
+NA	T15116020	neutral	lee soo man
+NA	T15116154	neutral	lee soo man
+NA	T15116175	neutral	lee soo man
+NA	T15116271	neutral	lee soo man
+NA	T15116277	neutral	lee soo man
+NA	T15116309	neutral	lee soo man
+NA	T15116316	neutral	lee soo man
+NA	T15116318	neutral	lee soo man
+NA	T15116350	neutral	lee soo man
+NA	T15116390	neutral	lee soo man
+NA	T15116452	neutral	lee soo man
+NA	T15116460	neutral	lee soo man
+NA	T15116657	neutral	lee soo man
+NA	T15116698	neutral	lee soo man
+NA	T15116713	neutral	lee soo man
+NA	T15111111	neutral	leeds united
+NA	T15111181	neutral	leeds united
+NA	T15111215	neutral	leeds united
+NA	T15111247	neutral	leeds united
+NA	T15111252	neutral	leeds united
+NA	T15111315	neutral	leeds united
+NA	T15111366	neutral	leeds united
+NA	T15111416	neutral	leeds united
+NA	T15111489	neutral	leeds united
+NA	T15111503	neutral	leeds united
+NA	T15111531	neutral	leeds united
+NA	T15111572	neutral	leeds united
+NA	T15111617	neutral	leeds united
+NA	T15111740	neutral	leeds united
+NA	T15111746	neutral	leeds united
+NA	T15111867	neutral	leeds united
+NA	T15111912	neutral	leeds united
+NA	T15111993	neutral	leeds united
+NA	T15111995	neutral	leeds united
+NA	T15113698	neutral	lenny kravitz
+NA	T15113765	neutral	lenny kravitz
+NA	T15113771	neutral	lenny kravitz
+NA	T15113916	neutral	lenny kravitz
+NA	T15113943	neutral	lenny kravitz
+NA	T15114050	neutral	lenny kravitz
+NA	T15114153	neutral	lenny kravitz
+NA	T15114187	neutral	lenny kravitz
+NA	T15114249	neutral	lenny kravitz
+NA	T15114272	neutral	lenny kravitz
+NA	T15114276	neutral	lenny kravitz
+NA	T15114380	neutral	lenny kravitz
+NA	T15114463	neutral	lenny kravitz
+NA	T15114585	neutral	lenny kravitz
+NA	T15114691	neutral	lenny kravitz
+NA	T15114751	neutral	lenny kravitz
+NA	T15114752	neutral	lenny kravitz
+NA	T15114826	neutral	lenny kravitz
+NA	T15114835	neutral	lenny kravitz
+NA	T15111152	neutral	liam
+NA	T15111166	neutral	liam
+NA	T15111169	neutral	liam
+NA	T15111234	neutral	liam
+NA	T15111361	neutral	liam
+NA	T15111373	neutral	liam
+NA	T15111406	neutral	liam
+NA	T15111538	neutral	liam
+NA	T15111555	neutral	liam
+NA	T15111570	neutral	liam
+NA	T15111611	neutral	liam
+NA	T15111636	neutral	liam
+NA	T15111637	neutral	liam
+NA	T15111641	neutral	liam
+NA	T15111811	neutral	liam
+NA	T15111822	neutral	liam
+NA	T15111834	neutral	liam
+NA	T15111844	neutral	liam
+NA	T15111907	neutral	liam
+NA	T15111970	neutral	liam
+NA	T15114927	neutral	lsu
+NA	T15114965	neutral	lsu
+NA	T15115007	neutral	lsu
+NA	T15115143	neutral	lsu
+NA	T15115269	neutral	lsu
+NA	T15115279	neutral	lsu
+NA	T15115290	neutral	lsu
+NA	T15115440	neutral	lsu
+NA	T15115456	neutral	lsu
+NA	T15115475	neutral	lsu
+NA	T15115512	neutral	lsu
+NA	T15115569	neutral	lsu
+NA	T15115628	neutral	lsu
+NA	T15115691	neutral	lsu
+NA	T15115693	neutral	lsu
+NA	T15115718	neutral	lsu
+NA	T15115760	neutral	lsu
+NA	T15115767	neutral	lsu
+NA	T15115781	neutral	lsu
+NA	T15113734	neutral	mclaren
+NA	T15113761	neutral	mclaren
+NA	T15113939	neutral	mclaren
+NA	T15113951	neutral	mclaren
+NA	T15113974	neutral	mclaren
+NA	T15113982	neutral	mclaren
+NA	T15114061	neutral	mclaren
+NA	T15114073	neutral	mclaren
+NA	T15114108	neutral	mclaren
+NA	T15114117	neutral	mclaren
+NA	T15114124	neutral	mclaren
+NA	T15114162	neutral	mclaren
+NA	T15114277	neutral	mclaren
+NA	T15114597	neutral	mclaren
+NA	T15114631	neutral	mclaren
+NA	T15114773	neutral	mclaren
+NA	T15114795	neutral	mclaren
+NA	T15114908	neutral	mclaren
+NA	T15114910	neutral	mclaren
+NA	T15112068	neutral	mikasa
+NA	T15112095	neutral	mikasa
+NA	T15112129	neutral	mikasa
+NA	T15112203	neutral	mikasa
+NA	T15112347	neutral	mikasa
+NA	T15112390	neutral	mikasa
+NA	T15112536	neutral	mikasa
+NA	T15112744	neutral	mikasa
+NA	T15112891	neutral	mikasa
+NA	T15112942	neutral	mikasa
+NA	T15113035	neutral	mikasa
+NA	T15113151	neutral	mikasa
+NA	T15113198	neutral	mikasa
+NA	T15113397	neutral	mikasa
+NA	T15113471	neutral	mikasa
+NA	T15113537	neutral	mikasa
+NA	T15113582	neutral	mikasa
+NA	T15113584	neutral	mikasa
+NA	T15113590	neutral	mikasa
+NA	T15113608	neutral	mikasa
+NA	T15115859	neutral	modi
+NA	T15115931	neutral	modi
+NA	T15115967	neutral	modi
+NA	T15116046	neutral	modi
+NA	T15116125	neutral	modi
+NA	T15116147	neutral	modi
+NA	T15116148	neutral	modi
+NA	T15116223	neutral	modi
+NA	T15116246	neutral	modi
+NA	T15116267	neutral	modi
+NA	T15116362	neutral	modi
+NA	T15116365	neutral	modi
+NA	T15116478	neutral	modi
+NA	T15116486	neutral	modi
+NA	T15116517	neutral	modi
+NA	T15116572	neutral	modi
+NA	T15116582	neutral	modi
+NA	T15116597	neutral	modi
+NA	T15116673	neutral	modi
+NA	T15112106	neutral	monster hunter
+NA	T15112179	neutral	monster hunter
+NA	T15112315	neutral	monster hunter
+NA	T15112580	neutral	monster hunter
+NA	T15112703	neutral	monster hunter
+NA	T15112709	neutral	monster hunter
+NA	T15112755	neutral	monster hunter
+NA	T15112803	neutral	monster hunter
+NA	T15112808	neutral	monster hunter
+NA	T15112961	neutral	monster hunter
+NA	T15113043	neutral	monster hunter
+NA	T15113048	neutral	monster hunter
+NA	T15113072	neutral	monster hunter
+NA	T15113173	neutral	monster hunter
+NA	T15113302	neutral	monster hunter
+NA	T15113334	neutral	monster hunter
+NA	T15113368	neutral	monster hunter
+NA	T15112819	neutral	nabeel rajab
+NA	T15113165	neutral	nabeel rajab
+NA	T15113167	neutral	nabeel rajab
+NA	T15113203	neutral	nabeel rajab
+NA	T15113224	neutral	nabeel rajab
+NA	T15113613	neutral	nabeel rajab
+NA	T15113846	neutral	narendra modi
+NA	T15113927	neutral	narendra modi
+NA	T15113944	neutral	narendra modi
+NA	T15113961	neutral	narendra modi
+NA	T15114049	neutral	narendra modi
+NA	T15114104	neutral	narendra modi
+NA	T15114184	neutral	narendra modi
+NA	T15114262	neutral	narendra modi
+NA	T15114288	neutral	narendra modi
+NA	T15114434	neutral	narendra modi
+NA	T15114452	neutral	narendra modi
+NA	T15114462	neutral	narendra modi
+NA	T15114470	neutral	narendra modi
+NA	T15114479	neutral	narendra modi
+NA	T15114491	neutral	narendra modi
+NA	T15114550	neutral	narendra modi
+NA	T15114764	neutral	narendra modi
+NA	T15114774	neutral	narendra modi
+NA	T15114869	neutral	narendra modi
+NA	T15114918	neutral	narendra modi
+NA	T15111135	neutral	netflix
+NA	T15111142	neutral	netflix
+NA	T15111162	neutral	netflix
+NA	T15111344	neutral	netflix
+NA	T15111353	neutral	netflix
+NA	T15111360	neutral	netflix
+NA	T15111363	neutral	netflix
+NA	T15111365	neutral	netflix
+NA	T15111446	neutral	netflix
+NA	T15111462	neutral	netflix
+NA	T15111482	neutral	netflix
+NA	T15111576	neutral	netflix
+NA	T15111590	neutral	netflix
+NA	T15111620	neutral	netflix
+NA	T15111640	neutral	netflix
+NA	T15111760	neutral	netflix
+NA	T15111786	neutral	netflix
+NA	T15112001	neutral	netflix
+NA	T15112014	neutral	netflix
+NA	T15115826	neutral	nfl
+NA	T15115901	neutral	nfl
+NA	T15115997	neutral	nfl
+NA	T15116039	neutral	nfl
+NA	T15116054	neutral	nfl
+NA	T15116082	neutral	nfl
+NA	T15116225	neutral	nfl
+NA	T15116248	neutral	nfl
+NA	T15116264	neutral	nfl
+NA	T15116334	neutral	nfl
+NA	T15116352	neutral	nfl
+NA	T15116369	neutral	nfl
+NA	T15116393	neutral	nfl
+NA	T15116406	neutral	nfl
+NA	T15116501	neutral	nfl
+NA	T15116529	neutral	nfl
+NA	T15116537	neutral	nfl
+NA	T15116551	neutral	nfl
+NA	T15116639	neutral	nfl
+NA	T15115964	neutral	nia
+NA	T15115978	neutral	nia
+NA	T15116024	neutral	nia
+NA	T15116094	neutral	nia
+NA	T15116100	neutral	nia
+NA	T15116110	neutral	nia
+NA	T15116181	neutral	nia
+NA	T15116182	neutral	nia
+NA	T15116207	neutral	nia
+NA	T15116220	neutral	nia
+NA	T15116300	neutral	nia
+NA	T15116348	neutral	nia
+NA	T15116383	neutral	nia
+NA	T15116389	neutral	nia
+NA	T15116401	neutral	nia
+NA	T15116481	neutral	nia
+NA	T15116491	neutral	nia
+NA	T15116578	neutral	nia
+NA	T15116619	neutral	nia
+NA	T15116686	neutral	nia
+NA	T15114974	neutral	niall
+NA	T15114976	neutral	niall
+NA	T15114981	neutral	niall
+NA	T15114985	neutral	niall
+NA	T15115047	neutral	niall
+NA	T15115078	neutral	niall
+NA	T15115122	neutral	niall
+NA	T15115214	neutral	niall
+NA	T15115283	neutral	niall
+NA	T15115309	neutral	niall
+NA	T15115336	neutral	niall
+NA	T15115449	neutral	niall
+NA	T15115452	neutral	niall
+NA	T15115493	neutral	niall
+NA	T15115539	neutral	niall
+NA	T15115582	neutral	niall
+NA	T15115673	neutral	niall
+NA	T15115700	neutral	niall
+NA	T15115765	neutral	niall
+NA	T15115825	neutral	niall
+NA	T15115861	neutral	niki lauda
+NA	T15115933	neutral	niki lauda
+NA	T15115962	neutral	niki lauda
+NA	T15115983	neutral	niki lauda
+NA	T15116048	neutral	niki lauda
+NA	T15116063	neutral	niki lauda
+NA	T15116136	neutral	niki lauda
+NA	T15116173	neutral	niki lauda
+NA	T15116281	neutral	niki lauda
+NA	T15116368	neutral	niki lauda
+NA	T15116424	neutral	niki lauda
+NA	T15116495	neutral	niki lauda
+NA	T15116626	neutral	niki lauda
+NA	T15116675	neutral	niki lauda
+NA	T15116708	neutral	niki lauda
+NA	T15116710	neutral	niki lauda
+NA	T15116727	neutral	niki lauda
+NA	T15115850	neutral	norman reedus
+NA	T15115903	neutral	norman reedus
+NA	T15115904	neutral	norman reedus
+NA	T15115980	neutral	norman reedus
+NA	T15115998	neutral	norman reedus
+NA	T15116067	neutral	norman reedus
+NA	T15116171	neutral	norman reedus
+NA	T15116240	neutral	norman reedus
+NA	T15116258	neutral	norman reedus
+NA	T15116292	neutral	norman reedus
+NA	T15116386	neutral	norman reedus
+NA	T15116419	neutral	norman reedus
+NA	T15116498	neutral	norman reedus
+NA	T15116550	neutral	norman reedus
+NA	T15116576	neutral	norman reedus
+NA	T15116637	neutral	norman reedus
+NA	T15116660	neutral	norman reedus
+NA	T15114931	neutral	ole miss
+NA	T15115094	neutral	ole miss
+NA	T15115124	neutral	ole miss
+NA	T15115149	neutral	ole miss
+NA	T15115183	neutral	ole miss
+NA	T15115254	neutral	ole miss
+NA	T15115359	neutral	ole miss
+NA	T15115372	neutral	ole miss
+NA	T15115459	neutral	ole miss
+NA	T15115636	neutral	ole miss
+NA	T15115652	neutral	ole miss
+NA	T15115689	neutral	ole miss
+NA	T15115695	neutral	ole miss
+NA	T15115696	neutral	ole miss
+NA	T15115725	neutral	ole miss
+NA	T15115791	neutral	ole miss
+NA	T15115794	neutral	ole miss
+NA	T15115812	neutral	ole miss
+NA	T15115875	neutral	packers
+NA	T15115885	neutral	packers
+NA	T15115911	neutral	packers
+NA	T15115951	neutral	packers
+NA	T15116033	neutral	packers
+NA	T15116121	neutral	packers
+NA	T15116165	neutral	packers
+NA	T15116185	neutral	packers
+NA	T15116219	neutral	packers
+NA	T15116324	neutral	packers
+NA	T15116433	neutral	packers
+NA	T15116512	neutral	packers
+NA	T15116580	neutral	packers
+NA	T15116584	neutral	packers
+NA	T15116623	neutral	packers
+NA	T15116641	neutral	packers
+NA	T15116678	neutral	packers
+NA	T15116705	neutral	packers
+NA	T15113759	neutral	parliament
+NA	T15113773	neutral	parliament
+NA	T15113877	neutral	parliament
+NA	T15113969	neutral	parliament
+NA	T15113994	neutral	parliament
+NA	T15114010	neutral	parliament
+NA	T15114155	neutral	parliament
+NA	T15114419	neutral	parliament
+NA	T15114445	neutral	parliament
+NA	T15114473	neutral	parliament
+NA	T15114547	neutral	parliament
+NA	T15114571	neutral	parliament
+NA	T15114589	neutral	parliament
+NA	T15114737	neutral	parliament
+NA	T15114745	neutral	parliament
+NA	T15114805	neutral	parliament
+NA	T15114827	neutral	parliament
+NA	T15114862	neutral	parliament
+NA	T15114890	neutral	parliament
+NA	T15112268	neutral	rbi
+NA	T15112300	neutral	rbi
+NA	T15112499	neutral	rbi
+NA	T15112560	neutral	rbi
+NA	T15112604	neutral	rbi
+NA	T15112607	neutral	rbi
+NA	T15112672	neutral	rbi
+NA	T15112679	neutral	rbi
+NA	T15112686	neutral	rbi
+NA	T15112758	neutral	rbi
+NA	T15112895	neutral	rbi
+NA	T15113041	neutral	rbi
+NA	T15113371	neutral	rbi
+NA	T15113401	neutral	rbi
+NA	T15113450	neutral	rbi
+NA	T15113474	neutral	rbi
+NA	T15113509	neutral	rbi
+NA	T15113574	neutral	rbi
+NA	T15113655	neutral	rbi
+NA	T15114962	neutral	rebecca black
+NA	T15114986	neutral	rebecca black
+NA	T15115059	neutral	rebecca black
+NA	T15115066	neutral	rebecca black
+NA	T15115076	neutral	rebecca black
+NA	T15115100	neutral	rebecca black
+NA	T15115119	neutral	rebecca black
+NA	T15115151	neutral	rebecca black
+NA	T15115180	neutral	rebecca black
+NA	T15115203	neutral	rebecca black
+NA	T15115256	neutral	rebecca black
+NA	T15115258	neutral	rebecca black
+NA	T15115307	neutral	rebecca black
+NA	T15115330	neutral	rebecca black
+NA	T15115354	neutral	rebecca black
+NA	T15115390	neutral	rebecca black
+NA	T15115465	neutral	rebecca black
+NA	T15115518	neutral	rebecca black
+NA	T15115778	neutral	rebecca black
+NA	T15114933	neutral	red bull
+NA	T15115013	neutral	red bull
+NA	T15115042	neutral	red bull
+NA	T15115098	neutral	red bull
+NA	T15115166	neutral	red bull
+NA	T15115246	neutral	red bull
+NA	T15115271	neutral	red bull
+NA	T15115321	neutral	red bull
+NA	T15115348	neutral	red bull
+NA	T15115353	neutral	red bull
+NA	T15115404	neutral	red bull
+NA	T15115426	neutral	red bull
+NA	T15115444	neutral	red bull
+NA	T15115576	neutral	red bull
+NA	T15115612	neutral	red bull
+NA	T15115632	neutral	red bull
+NA	T15115745	neutral	red bull
+NA	T15115807	neutral	red bull
+NA	T15114975	neutral	redskins
+NA	T15114988	neutral	redskins
+NA	T15115030	neutral	redskins
+NA	T15115108	neutral	redskins
+NA	T15115160	neutral	redskins
+NA	T15115207	neutral	redskins
+NA	T15115268	neutral	redskins
+NA	T15115350	neutral	redskins
+NA	T15115357	neutral	redskins
+NA	T15115520	neutral	redskins
+NA	T15115522	neutral	redskins
+NA	T15115533	neutral	redskins
+NA	T15115534	neutral	redskins
+NA	T15115543	neutral	redskins
+NA	T15115603	neutral	redskins
+NA	T15115653	neutral	redskins
+NA	T15115688	neutral	redskins
+NA	T15115742	neutral	redskins
+NA	T15115817	neutral	redskins
+NA	T15115823	neutral	redskins
+NA	T15113738	neutral	rodgers
+NA	T15113741	neutral	rodgers
+NA	T15113822	neutral	rodgers
+NA	T15113887	neutral	rodgers
+NA	T15114172	neutral	rodgers
+NA	T15114188	neutral	rodgers
+NA	T15114259	neutral	rodgers
+NA	T15114265	neutral	rodgers
+NA	T15114266	neutral	rodgers
+NA	T15114296	neutral	rodgers
+NA	T15114313	neutral	rodgers
+NA	T15114343	neutral	rodgers
+NA	T15114579	neutral	rodgers
+NA	T15114599	neutral	rodgers
+NA	T15114619	neutral	rodgers
+NA	T15114633	neutral	rodgers
+NA	T15114654	neutral	rodgers
+NA	T15114834	neutral	rodgers
+NA	T15114941	neutral	russell wilson
+NA	T15114947	neutral	russell wilson
+NA	T15114966	neutral	russell wilson
+NA	T15115054	neutral	russell wilson
+NA	T15115061	neutral	russell wilson
+NA	T15115088	neutral	russell wilson
+NA	T15115302	neutral	russell wilson
+NA	T15115328	neutral	russell wilson
+NA	T15115339	neutral	russell wilson
+NA	T15115407	neutral	russell wilson
+NA	T15115454	neutral	russell wilson
+NA	T15115497	neutral	russell wilson
+NA	T15115594	neutral	russell wilson
+NA	T15115635	neutral	russell wilson
+NA	T15115732	neutral	russell wilson
+NA	T15115740	neutral	russell wilson
+NA	T15115752	neutral	russell wilson
+NA	T15113705	neutral	ruto
+NA	T15113802	neutral	ruto
+NA	T15113823	neutral	ruto
+NA	T15113825	neutral	ruto
+NA	T15113847	neutral	ruto
+NA	T15113863	neutral	ruto
+NA	T15113919	neutral	ruto
+NA	T15113984	neutral	ruto
+NA	T15114335	neutral	ruto
+NA	T15114425	neutral	ruto
+NA	T15114447	neutral	ruto
+NA	T15114505	neutral	ruto
+NA	T15114536	neutral	ruto
+NA	T15114539	neutral	ruto
+NA	T15114685	neutral	ruto
+NA	T15114703	neutral	ruto
+NA	T15114880	neutral	ruto
+NA	T15114903	neutral	ruto
+NA	T15114905	neutral	ruto
+NA	T15115848	neutral	sangam university bhilwara
+NA	T15115899	neutral	sangam university bhilwara
+NA	T15115950	neutral	sangam university bhilwara
+NA	T15115971	neutral	sangam university bhilwara
+NA	T15116106	neutral	sangam university bhilwara
+NA	T15116193	neutral	sangam university bhilwara
+NA	T15116329	neutral	sangam university bhilwara
+NA	T15116355	neutral	sangam university bhilwara
+NA	T15116477	neutral	sangam university bhilwara
+NA	T15116669	neutral	sangam university bhilwara
+NA	T15116719	neutral	sangam university bhilwara
+NA	T15115005	neutral	school
+NA	T15115010	neutral	school
+NA	T15115112	neutral	school
+NA	T15115158	neutral	school
+NA	T15115175	neutral	school
+NA	T15115222	neutral	school
+NA	T15115226	neutral	school
+NA	T15115273	neutral	school
+NA	T15115345	neutral	school
+NA	T15115385	neutral	school
+NA	T15115402	neutral	school
+NA	T15115409	neutral	school
+NA	T15115463	neutral	school
+NA	T15115507	neutral	school
+NA	T15115551	neutral	school
+NA	T15115556	neutral	school
+NA	T15115677	neutral	school
+NA	T15115712	neutral	school
+NA	T15115726	neutral	school
+NA	T15115796	neutral	school
+NA	T15111272	neutral	selena
+NA	T15111277	neutral	selena
+NA	T15111291	neutral	selena
+NA	T15111333	neutral	selena
+NA	T15111398	neutral	selena
+NA	T15111417	neutral	selena
+NA	T15111471	neutral	selena
+NA	T15111480	neutral	selena
+NA	T15111490	neutral	selena
+NA	T15111516	neutral	selena
+NA	T15111575	neutral	selena
+NA	T15111660	neutral	selena
+NA	T15111772	neutral	selena
+NA	T15111778	neutral	selena
+NA	T15111935	neutral	selena
+NA	T15111938	neutral	selena
+NA	T15111966	neutral	selena
+NA	T15111979	neutral	selena
+NA	T15111984	neutral	selena
+NA	T15112010	neutral	selena
+NA	T15112118	neutral	simmons
+NA	T15112188	neutral	simmons
+NA	T15112192	neutral	simmons
+NA	T15112225	neutral	simmons
+NA	T15112248	neutral	simmons
+NA	T15112260	neutral	simmons
+NA	T15112329	neutral	simmons
+NA	T15112359	neutral	simmons
+NA	T15112419	neutral	simmons
+NA	T15112486	neutral	simmons
+NA	T15112666	neutral	simmons
+NA	T15112729	neutral	simmons
+NA	T15112861	neutral	simmons
+NA	T15113159	neutral	simmons
+NA	T15113220	neutral	simmons
+NA	T15113359	neutral	simmons
+NA	T15113468	neutral	simmons
+NA	T15113529	neutral	simmons
+NA	T15113615	neutral	simmons
+NA	T15113751	neutral	skylynn
+NA	T15113778	neutral	skylynn
+NA	T15113794	neutral	skylynn
+NA	T15113799	neutral	skylynn
+NA	T15113837	neutral	skylynn
+NA	T15113894	neutral	skylynn
+NA	T15113954	neutral	skylynn
+NA	T15114012	neutral	skylynn
+NA	T15114070	neutral	skylynn
+NA	T15114112	neutral	skylynn
+NA	T15114128	neutral	skylynn
+NA	T15114208	neutral	skylynn
+NA	T15114219	neutral	skylynn
+NA	T15114401	neutral	skylynn
+NA	T15114510	neutral	skylynn
+NA	T15114563	neutral	skylynn
+NA	T15114667	neutral	skylynn
+NA	T15114721	neutral	skylynn
+NA	T15114748	neutral	skylynn
+NA	T15114924	neutral	skylynn
+NA	T15112061	neutral	spx
+NA	T15112134	neutral	spx
+NA	T15112223	neutral	spx
+NA	T15112233	neutral	spx
+NA	T15112274	neutral	spx
+NA	T15112417	neutral	spx
+NA	T15112596	neutral	spx
+NA	T15112668	neutral	spx
+NA	T15112752	neutral	spx
+NA	T15112764	neutral	spx
+NA	T15112766	neutral	spx
+NA	T15112850	neutral	spx
+NA	T15112881	neutral	spx
+NA	T15112981	neutral	spx
+NA	T15112997	neutral	spx
+NA	T15113228	neutral	spx
+NA	T15113487	neutral	spx
+NA	T15113546	neutral	spx
+NA	T15113723	neutral	stoops
+NA	T15113812	neutral	stoops
+NA	T15113862	neutral	stoops
+NA	T15113956	neutral	stoops
+NA	T15114160	neutral	stoops
+NA	T15114311	neutral	stoops
+NA	T15114353	neutral	stoops
+NA	T15114378	neutral	stoops
+NA	T15114413	neutral	stoops
+NA	T15114420	neutral	stoops
+NA	T15114439	neutral	stoops
+NA	T15114488	neutral	stoops
+NA	T15114591	neutral	stoops
+NA	T15114595	neutral	stoops
+NA	T15114608	neutral	stoops
+NA	T15114640	neutral	stoops
+NA	T15114664	neutral	stoops
+NA	T15114814	neutral	stoops
+NA	T15114838	neutral	stoops
+NA	T15114843	neutral	stoops
+NA	T15115033	neutral	supernatural
+NA	T15115164	neutral	supernatural
+NA	T15115509	neutral	supernatural
+NA	T15115704	neutral	supernatural
+NA	T15113714	neutral	swachh bharat
+NA	T15113729	neutral	swachh bharat
+NA	T15113746	neutral	swachh bharat
+NA	T15113840	neutral	swachh bharat
+NA	T15113865	neutral	swachh bharat
+NA	T15113922	neutral	swachh bharat
+NA	T15114037	neutral	swachh bharat
+NA	T15114098	neutral	swachh bharat
+NA	T15114156	neutral	swachh bharat
+NA	T15114186	neutral	swachh bharat
+NA	T15114424	neutral	swachh bharat
+NA	T15114526	neutral	swachh bharat
+NA	T15114530	neutral	swachh bharat
+NA	T15114531	neutral	swachh bharat
+NA	T15114537	neutral	swachh bharat
+NA	T15114568	neutral	swachh bharat
+NA	T15114629	neutral	swachh bharat
+NA	T15114775	neutral	swachh bharat
+NA	T15114882	neutral	swachh bharat
+NA	T15114919	neutral	swachh bharat
+NA	T15112317	neutral	tegan
+NA	T15112397	neutral	tegan
+NA	T15112467	neutral	tegan
+NA	T15112518	neutral	tegan
+NA	T15112682	neutral	tegan
+NA	T15112814	neutral	tegan
+NA	T15112959	neutral	tegan
+NA	T15113051	neutral	tegan
+NA	T15113055	neutral	tegan
+NA	T15113272	neutral	tegan
+NA	T15113282	neutral	tegan
+NA	T15113308	neutral	tegan
+NA	T15113330	neutral	tegan
+NA	T15113378	neutral	tegan
+NA	T15113429	neutral	tegan
+NA	T15113432	neutral	tegan
+NA	T15113443	neutral	tegan
+NA	T15113511	neutral	tegan
+NA	T15113644	neutral	tegan
+NA	T15112043	neutral	the big bang theory
+NA	T15112088	neutral	the big bang theory
+NA	T15112311	neutral	the big bang theory
+NA	T15112371	neutral	the big bang theory
+NA	T15112443	neutral	the big bang theory
+NA	T15112838	neutral	the big bang theory
+NA	T15113007	neutral	the big bang theory
+NA	T15113030	neutral	the big bang theory
+NA	T15113133	neutral	the big bang theory
+NA	T15113143	neutral	the big bang theory
+NA	T15113232	neutral	the big bang theory
+NA	T15113275	neutral	the big bang theory
+NA	T15113313	neutral	the big bang theory
+NA	T15113349	neutral	the big bang theory
+NA	T15113366	neutral	the big bang theory
+NA	T15113412	neutral	the big bang theory
+NA	T15113527	neutral	the big bang theory
+NA	T15113557	neutral	the big bang theory
+NA	T15113572	neutral	the big bang theory
+NA	T15113669	neutral	the big bang theory
+NA	T15111161	neutral	the coast guard
+NA	T15111491	neutral	the coast guard
+NA	T15111987	neutral	the coast guard
+NA	T15111998	neutral	the coast guard
+NA	T15112034	neutral	the horn
+NA	T15112085	neutral	the horn
+NA	T15112098	neutral	the horn
+NA	T15112100	neutral	the horn
+NA	T15112231	neutral	the horn
+NA	T15112239	neutral	the horn
+NA	T15112257	neutral	the horn
+NA	T15112598	neutral	the horn
+NA	T15112642	neutral	the horn
+NA	T15112652	neutral	the horn
+NA	T15112757	neutral	the horn
+NA	T15112806	neutral	the horn
+NA	T15112996	neutral	the horn
+NA	T15113130	neutral	the horn
+NA	T15113195	neutral	the horn
+NA	T15113315	neutral	the horn
+NA	T15113395	neutral	the horn
+NA	T15113454	neutral	the horn
+NA	T15113631	neutral	the horn
+NA	T15113652	neutral	the horn
+NA	T15114950	neutral	the royals
+NA	T15115035	neutral	the royals
+NA	T15115095	neutral	the royals
+NA	T15115127	neutral	the royals
+NA	T15115147	neutral	the royals
+NA	T15115148	neutral	the royals
+NA	T15115152	neutral	the royals
+NA	T15115168	neutral	the royals
+NA	T15115184	neutral	the royals
+NA	T15115219	neutral	the royals
+NA	T15115343	neutral	the royals
+NA	T15115379	neutral	the royals
+NA	T15115387	neutral	the royals
+NA	T15115411	neutral	the royals
+NA	T15115431	neutral	the royals
+NA	T15115537	neutral	the royals
+NA	T15115584	neutral	the royals
+NA	T15115623	neutral	the royals
+NA	T15115692	neutral	the royals
+NA	T15115755	neutral	the royals
+NA	T15111157	neutral	toyota
+NA	T15111207	neutral	toyota
+NA	T15111225	neutral	toyota
+NA	T15111320	neutral	toyota
+NA	T15111342	neutral	toyota
+NA	T15111350	neutral	toyota
+NA	T15111358	neutral	toyota
+NA	T15111359	neutral	toyota
+NA	T15111378	neutral	toyota
+NA	T15111412	neutral	toyota
+NA	T15111524	neutral	toyota
+NA	T15111560	neutral	toyota
+NA	T15111607	neutral	toyota
+NA	T15111662	neutral	toyota
+NA	T15111795	neutral	toyota
+NA	T15111807	neutral	toyota
+NA	T15111808	neutral	toyota
+NA	T15111896	neutral	toyota
+NA	T15111985	neutral	toyota
+NA	T15113787	neutral	tvd
+NA	T15113892	neutral	tvd
+NA	T15113986	neutral	tvd
+NA	T15114133	neutral	tvd
+NA	T15114191	neutral	tvd
+NA	T15114198	neutral	tvd
+NA	T15114227	neutral	tvd
+NA	T15114292	neutral	tvd
+NA	T15114295	neutral	tvd
+NA	T15114317	neutral	tvd
+NA	T15114471	neutral	tvd
+NA	T15114644	neutral	tvd
+NA	T15114661	neutral	tvd
+NA	T15114753	neutral	tvd
+NA	T15114841	neutral	tvd
+NA	T15114895	neutral	tvd
+NA	T15113709	neutral	ucla
+NA	T15113782	neutral	ucla
+NA	T15113933	neutral	ucla
+NA	T15113989	neutral	ucla
+NA	T15114028	neutral	ucla
+NA	T15114075	neutral	ucla
+NA	T15114148	neutral	ucla
+NA	T15114231	neutral	ucla
+NA	T15114385	neutral	ucla
+NA	T15114456	neutral	ucla
+NA	T15114483	neutral	ucla
+NA	T15114512	neutral	ucla
+NA	T15114521	neutral	ucla
+NA	T15114606	neutral	ucla
+NA	T15114613	neutral	ucla
+NA	T15114674	neutral	ucla
+NA	T15114785	neutral	ucla
+NA	T15114857	neutral	ucla
+NA	T15114870	neutral	ucla
+NA	T15115930	neutral	us bank arena
+NA	T15115954	neutral	us bank arena
+NA	T15116206	neutral	us bank arena
+NA	T15116262	neutral	us bank arena
+NA	T15116338	neutral	us bank arena
+NA	T15116664	neutral	us bank arena
+NA	T15113699	neutral	vampire diaries
+NA	T15113766	neutral	vampire diaries
+NA	T15113789	neutral	vampire diaries
+NA	T15113850	neutral	vampire diaries
+NA	T15113970	neutral	vampire diaries
+NA	T15114007	neutral	vampire diaries
+NA	T15114106	neutral	vampire diaries
+NA	T15114141	neutral	vampire diaries
+NA	T15114168	neutral	vampire diaries
+NA	T15114376	neutral	vampire diaries
+NA	T15114394	neutral	vampire diaries
+NA	T15114465	neutral	vampire diaries
+NA	T15114492	neutral	vampire diaries
+NA	T15114626	neutral	vampire diaries
+NA	T15114642	neutral	vampire diaries
+NA	T15114724	neutral	vampire diaries
+NA	T15114831	neutral	vampire diaries
+NA	T15114900	neutral	vampire diaries
+NA	T15114922	neutral	vampire diaries
+NA	T15114925	neutral	vampire diaries
+NA	T15112025	neutral	ventura
+NA	T15112072	neutral	ventura
+NA	T15112251	neutral	ventura
+NA	T15112376	neutral	ventura
+NA	T15112382	neutral	ventura
+NA	T15112391	neutral	ventura
+NA	T15112475	neutral	ventura
+NA	T15112545	neutral	ventura
+NA	T15112788	neutral	ventura
+NA	T15112887	neutral	ventura
+NA	T15112950	neutral	ventura
+NA	T15113191	neutral	ventura
+NA	T15113277	neutral	ventura
+NA	T15113289	neutral	ventura
+NA	T15113357	neutral	ventura
+NA	T15113399	neutral	ventura
+NA	T15113603	neutral	ventura
+NA	T15113647	neutral	ventura
+NA	T15114935	neutral	vettel
+NA	T15114943	neutral	vettel
+NA	T15114968	neutral	vettel
+NA	T15115195	neutral	vettel
+NA	T15115237	neutral	vettel
+NA	T15115249	neutral	vettel
+NA	T15115253	neutral	vettel
+NA	T15115275	neutral	vettel
+NA	T15115300	neutral	vettel
+NA	T15115337	neutral	vettel
+NA	T15115406	neutral	vettel
+NA	T15115425	neutral	vettel
+NA	T15115489	neutral	vettel
+NA	T15115511	neutral	vettel
+NA	T15115521	neutral	vettel
+NA	T15115607	neutral	vettel
+NA	T15115638	neutral	vettel
+NA	T15115667	neutral	vettel
+NA	T15115789	neutral	vettel
+NA	T15115855	neutral	vikings
+NA	T15115871	neutral	vikings
+NA	T15115976	neutral	vikings
+NA	T15115994	neutral	vikings
+NA	T15116002	neutral	vikings
+NA	T15116071	neutral	vikings
+NA	T15116139	neutral	vikings
+NA	T15116162	neutral	vikings
+NA	T15116237	neutral	vikings
+NA	T15116322	neutral	vikings
+NA	T15116327	neutral	vikings
+NA	T15116373	neutral	vikings
+NA	T15116399	neutral	vikings
+NA	T15116415	neutral	vikings
+NA	T15116500	neutral	vikings
+NA	T15116520	neutral	vikings
+NA	T15116530	neutral	vikings
+NA	T15116615	neutral	vikings
+NA	T15116703	neutral	vikings
+NA	T15112139	neutral	wednesday adams
+NA	T15112196	neutral	wednesday adams
+NA	T15112335	neutral	wednesday adams
+NA	T15112420	neutral	wednesday adams
+NA	T15112484	neutral	wednesday adams
+NA	T15112539	neutral	wednesday adams
+NA	T15112578	neutral	wednesday adams
+NA	T15112738	neutral	wednesday adams
+NA	T15112836	neutral	wednesday adams
+NA	T15112973	neutral	wednesday adams
+NA	T15113106	neutral	wednesday adams
+NA	T15113156	neutral	wednesday adams
+NA	T15113157	neutral	wednesday adams
+NA	T15113178	neutral	wednesday adams
+NA	T15113335	neutral	wednesday adams
+NA	T15113418	neutral	wednesday adams
+NA	T15113569	neutral	wednesday adams
+NA	T15113570	neutral	wednesday adams
+NA	T15113648	neutral	wednesday adams
+NA	T15112077	neutral	welbeck
+NA	T15112115	neutral	welbeck
+NA	T15112155	neutral	welbeck
+NA	T15112292	neutral	welbeck
+NA	T15112319	neutral	welbeck
+NA	T15112622	neutral	welbeck
+NA	T15112635	neutral	welbeck
+NA	T15112719	neutral	welbeck
+NA	T15112938	neutral	welbeck
+NA	T15112955	neutral	welbeck
+NA	T15113149	neutral	welbeck
+NA	T15113169	neutral	welbeck
+NA	T15113252	neutral	welbeck
+NA	T15113377	neutral	welbeck
+NA	T15113410	neutral	welbeck
+NA	T15113477	neutral	welbeck
+NA	T15113480	neutral	welbeck
+NA	T15113535	neutral	welbeck
+NA	T15113763	neutral	white house
+NA	T15113810	neutral	white house
+NA	T15113842	neutral	white house
+NA	T15113905	neutral	white house
+NA	T15113929	neutral	white house
+NA	T15113990	neutral	white house
+NA	T15114025	neutral	white house
+NA	T15114066	neutral	white house
+NA	T15114088	neutral	white house
+NA	T15114114	neutral	white house
+NA	T15114157	neutral	white house
+NA	T15114310	neutral	white house
+NA	T15114392	neutral	white house
+NA	T15114402	neutral	white house
+NA	T15114444	neutral	white house
+NA	T15114704	neutral	white house
+NA	T15114734	neutral	white house
+NA	T15114850	neutral	white house
+NA	T15114875	neutral	white house
+NA	T15114884	neutral	white house
+NA	T15114978	neutral	wwa
+NA	T15115014	neutral	wwa
+NA	T15115015	neutral	wwa
+NA	T15115022	neutral	wwa
+NA	T15115073	neutral	wwa
+NA	T15115141	neutral	wwa
+NA	T15115161	neutral	wwa
+NA	T15115186	neutral	wwa
+NA	T15115198	neutral	wwa
+NA	T15115310	neutral	wwa
+NA	T15115422	neutral	wwa
+NA	T15115505	neutral	wwa
+NA	T15115514	neutral	wwa
+NA	T15115567	neutral	wwa
+NA	T15115572	neutral	wwa
+NA	T15115654	neutral	wwa
+NA	T15115770	neutral	wwa
+NA	T15115779	neutral	wwa
+NA	T15114971	neutral	wwat
+NA	T15115044	neutral	wwat
+NA	T15115063	neutral	wwat
+NA	T15115132	neutral	wwat
+NA	T15115138	neutral	wwat
+NA	T15115172	neutral	wwat
+NA	T15115200	neutral	wwat
+NA	T15115323	neutral	wwat
+NA	T15115393	neutral	wwat
+NA	T15115424	neutral	wwat
+NA	T15115433	neutral	wwat
+NA	T15115479	neutral	wwat
+NA	T15115535	neutral	wwat
+NA	T15115609	neutral	wwat
+NA	T15115661	neutral	wwat
+NA	T15115739	neutral	wwat
+NA	T15115749	neutral	wwat
+NA	T15115809	neutral	wwat
+NA	T15115819	neutral	wwat
+NA	T15112029	neutral	xmas
+NA	T15112069	neutral	xmas
+NA	T15112144	neutral	xmas
+NA	T15112217	neutral	xmas
+NA	T15112235	neutral	xmas
+NA	T15112364	neutral	xmas
+NA	T15112396	neutral	xmas
+NA	T15112431	neutral	xmas
+NA	T15112437	neutral	xmas
+NA	T15112468	neutral	xmas
+NA	T15112477	neutral	xmas
+NA	T15112586	neutral	xmas
+NA	T15112779	neutral	xmas
+NA	T15112948	neutral	xmas
+NA	T15113139	neutral	xmas
+NA	T15113229	neutral	xmas
+NA	T15113300	neutral	xmas
+NA	T15113640	neutral	xmas
+NA	T15112040	neutral	yougov
+NA	T15112210	neutral	yougov
+NA	T15112263	neutral	yougov
+NA	T15112472	neutral	yougov
+NA	T15112525	neutral	yougov
+NA	T15112774	neutral	yougov
+NA	T15112958	neutral	yougov
+NA	T15113010	neutral	yougov
+NA	T15113021	neutral	yougov
+NA	T15113059	neutral	yougov
+NA	T15113120	neutral	yougov
+NA	T15113141	neutral	yougov
+NA	T15113274	neutral	yougov
+NA	T15113292	neutral	yougov
+NA	T15113295	neutral	yougov
+NA	T15113383	neutral	yougov
+NA	T15113543	neutral	yougov
+NA	T15113588	neutral	yougov
+NA	T15113593	neutral	yougov
+NA	T15112245	neutral	younique
+NA	T15112259	neutral	younique
+NA	T15112298	neutral	younique
+NA	T15112345	neutral	younique
+NA	T15112386	neutral	younique
+NA	T15112640	neutral	younique
+NA	T15112782	neutral	younique
+NA	T15112889	neutral	younique
+NA	T15112946	neutral	younique
+NA	T15113004	neutral	younique
+NA	T15113022	neutral	younique
+NA	T15113054	neutral	younique
+NA	T15113090	neutral	younique
+NA	T15113326	neutral	younique
+NA	T15113340	neutral	younique
+NA	T15113495	neutral	younique
+NA	T15113561	neutral	younique
+NA	T15113575	neutral	younique
+NA	T15113619	neutral	younique

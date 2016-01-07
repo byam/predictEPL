@@ -1,0 +1,178 @@
+*** SUMMARY ***
+
+Official scorer for SemEval-2014 Task 9: Sentiment Analysis in Twitter.
+This scorer was used to score the systems that participated in the task.
+See http://alt.qcri.org/semeval2014/task9/ for more detail.
+
+Sara Rosenthal, Alan Ritter, Veselin Stoyanov, and Preslav Nakov.
+SemEval-2014 Task 9: Sentiment Analysis in Twitter.
+In Proceedings of the Eighth International Workshop on Semantic Evaluation (SemEval'14).
+August 23-24, 2014, Dublin, Ireland.
+
+
+Version 1.0: April 6, 2014.
+
+
+Organizers:
+Sara Rosenthal		Columbia University
+Alan Ritter		The Ohio State University
+Veselin Stoyanov	Facebook
+Preslav Nakov		Qatar Computing Research Institute
+
+Scorer written by Preslav Nakov.
+
+
+This software is released under a Creative Commons Attribution 3.0 Unported License
+	http://creativecommons.org/licenses/by/3.0/
+
+
+
+
+*** MAIN DIRECTORY CONTENT ***
+
+The following important files can be found in the directory:
+
+score-semeval2014-task9-subtaskA.pl --> the official scorer for subtask A
+score-semeval2014-task9-subtaskB.pl --> the official scorer for subtask B
+SemEval2014-task9-test-A-gold.txt   --> the gold standard answers for the test data for subtask A
+SemEval2014-task9-test-B-gold.txt   --> the gold standard answers for the test data for subtask B
+
+
+
+*** USAGE ***
+
+SemEval-2014 Task 9 participants can score their systems as follows:
+	perl score-semeval2014-task9-subtaskA.pl <INPUT_FILE_FOR_A>
+	perl score-semeval2014-task9-subtaskB.pl <INPUT_FILE_FOR_B>
+
+
+
+*** EXAMPLE USAGE ***
+	perl score-semeval2014-task9-subtaskA.pl sample/SemEval2014-task9-test-A-candidate.txt
+	perl score-semeval2014-task9-subtaskB.pl sample/SemEval2014-task9-test-B-candidate.txt
+
+
+
+*** OUTPUT ***
+
+The above command produce an output like this,
+which shows the evaluation score for each of the five corpora used for evaluation:
+
+LiveJournal2014 43.61   SMS2013	44.89   Twitter2013     46.61   Twitter2014     47.32   Twitter2014Sarcasm	47.27
+
+Moreover, a file with a ".scored" extension is generated, which gives more 
+
+
+Scoring LiveJournal2014:
+	positive: P=58.18, R=48.79, F1=53.08
+	negative: P=32.68, R=35.76, F1=34.15
+	 neutral: P=4.17, R=9.84, F1=5.85
+	OVERALL SCORE : 43.61
+
+Scoring SMS2013:
+	positive: P=57.52, R=45.26, F1=50.66
+	negative: P=34.42, R=45.29, F1=39.11
+	 neutral: P=5.03, R=5.97, F1=5.46
+	OVERALL SCORE : 44.89
+
+Scoring Twitter2013:
+	positive: P=58.60, R=60.84, F1=59.70
+	negative: P=33.87, R=33.18, F1=33.53
+	 neutral: P=5.00, R=3.49, F1=4.11
+	OVERALL SCORE : 46.61
+
+Scoring Twitter2014:
+	positive: P=60.76, R=73.40, F1=66.49
+	negative: P=34.78, R=23.65, F1=28.15
+	 neutral: P=6.82, R=4.72, F1=5.58
+	OVERALL SCORE : 47.32
+
+Scoring Twitter2014Sarcasm:
+	positive: P=62.20, R=66.23, F1=64.15
+	negative: P=32.43, R=28.57, F1=30.38
+	 neutral: P=0.00, R=0.00, F1=0.00
+	OVERALL SCORE : 47.27
+
+
+*** FILE FORMATS ***
+
+-----------------------TASK A-----------------------------------------
+
+--Test Data--
+The format for the test file is as follows:
+	id1<TAB>id2<TAB>start_token<TAB>end_token<TAB>unknwn<TAB>tweet_text
+
+For example:
+	418381654813081609      15115101        2       2       unknwn  amoure wins oscar
+	418381654813081610      15115101        3       4       unknwn  who's a master brogramer now?
+	...
+
+--System Output--
+We expect the following format for the prediction file:
+	id1<TAB>id2<TAB>start_token<TAB>end_token<TAB>pred_class<TAB>tweet_text
+    OR just this:
+	id1<TAB>id2<TAB>start_token<TAB>end_token<TAB>pred_class
+
+For example:
+	418381654813081609      15115101        2       2       positive  amoure wins oscar
+	418381654813081610      15115101        3       4       neutral  who's a master brogramer now?
+	...
+
+OR just this:
+	418381654813081609      15115101        2       2       positive
+	418381654813081610      15115101        3       4       neutral
+	...
+
+
+--Gold Standard--
+The gold standard follows a similar format to the output above, but it differs a bit as the second ID indicates the dataset the current line belongs to.
+
+For example:
+	NA	LiveJournal2014	8	9	negative
+	NA	Twitter2014	15	15	positive
+	NA	Twitter2013	1	5	negative
+	NA	Twitter2013	4	5	positive
+	NA	SMS2013	9	9	positive
+	...
+
+
+
+-----------------------TASK B-----------------------------------------
+(Task B uses the same format as Task A, but it excludes the start and end token fields.)
+
+--Test Data--
+The format for the test file is as follows:
+	id1<TAB>id2<TAB>unknwn<TAB>tweet_text
+
+For example:
+	418381654813081609      15115101        unknwn  amoure wins oscar
+	418381654813081610      15115101        unknwn  who's a master brogramer now?
+	...
+
+--System Output--
+We expect the following format for the prediction file:
+	id1<TAB>id2<TAB>pred_class<TAB>tweet_text
+    OR just this:
+	id1<TAB>id2<TAB>pred_class
+
+For example:
+	418381654813081609      15115101        positive  amoure wins oscar
+	418381654813081610      15115101        neutral  who's a master brogramer now?
+	...
+
+OR just this:
+	418381654813081609      15115101        positive
+	418381654813081610      15115101        neutral
+	...
+
+
+--Gold Standard--
+The gold standard follows a similar format to the output above, but it differs a bit as the second ID indicates the dataset the current line belongs to.
+
+For example:
+	NA	LiveJournal2014	negative
+	NA	Twitter2014	positive
+	NA	Twitter2013	negative
+	NA	Twitter2013	positive
+	NA	SMS2013	positive
+	...
