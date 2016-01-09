@@ -29,4 +29,8 @@ STOP_WORDS = {
     'city',
     'spur',
     'saint',
+    'bale',
+    'united',
+    'live',
+    'penalty',
 }
