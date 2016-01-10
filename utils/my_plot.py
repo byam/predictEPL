@@ -163,7 +163,9 @@ def Pos3Neg4NoPoints(dfEmolex, title=''):
 
 
 # Plotting Emolex's selected categories
-def EmolexCats(dfEmolex, emolex_cats, goals_dic, attacks_dic, fouls_dic, title=''):
+def EmolexCats(dfEmolex, emolex_cats,
+        goals_dic=False, attacks_dic=False, fouls_dic=False, title=''):
+
     # Adding Emolex Category
     my_list_list = []
     labels = []
@@ -172,6 +174,12 @@ def EmolexCats(dfEmolex, emolex_cats, goals_dic, attacks_dic, fouls_dic, title='
         my_list_list.append(list(dfEmolex[emolex_cat]))
         labels.append(emolex_cat)
         colors.append(colors_el[categorys.index(emolex_cat)])
+
+    # if no gamecast
+    if not goals_dic:
+        points = False
+    else:
+        points = [goals_dic, attacks_dic, fouls_dic]
 
     # Plot Line Chart
     PlotLineChart(
@@ -183,7 +191,7 @@ def EmolexCats(dfEmolex, emolex_cats, goals_dic, attacks_dic, fouls_dic, title='
         width=20, height=7,
         grid=True,
         x_interval=5,
-        points=[goals_dic, attacks_dic, fouls_dic]
+        points=points
     )
 
 

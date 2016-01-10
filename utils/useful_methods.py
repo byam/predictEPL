@@ -110,6 +110,9 @@ def DateToMinute(date_string, start_time):
     return ith_minute
 
 
+# Filtering Tweets
+# remove: live stream tweets, bot accounts
+# ith_minute starts: 1
 def FilterDF(df):
     df = df.copy()
 
@@ -190,105 +193,6 @@ def MostCommonUsersByWeek(week, users_number=20, filtered=False):
     pprint(most_common)
 
 
-def cleanHash(word):
-    if word[0] == '#':
-        return word[1::]
-    elif word[0] == '@':
-        return '@'
-    elif word[0:4] == 'http':
-        return 'http'
-    else:
-        return word
-
-
-def PreprocessingTweet(tweet, debug=False):
-    if debug:
-        print("====================================")
-        print("[Original Tweet]: \n\n %s \n\n" % tweet)
-
-    # can't -> cannot, bya's -> bya is
-    replacer = replacers.RegexpReplacer()
-    tweet = replacer.replace(tweet.lower())
-    if debug:
-        print("====================================")
-        print("[Replaced Tweet]: \n\n %s \n\n" % tweet)
-
-    # Tweet tokenizer and lower case
-    words = TweetTokenizer().tokenize(tweet)
-    words = [word.lower() for word in words]
-    if debug:
-        print("====================================")
-        print("[Tokenized Tweet]: \n\n %s \n\n" % words)
-
-    # defining stopwords
-    english_stops = set(stopwords.words('english'))
-    english_stops_added = english_stops | {'!', '.', ',', ':', ';', '#', '?', 'RT', '-', '@', 'rt', 'http'}
-    words = [word for word in words if word not in english_stops_added]
-    if debug:
-        print("====================================")
-        print("[Cleaned Stopwords Tweet]: \n\n %s \n\n" % words)
-
-    # words = map(lambda word: cleanHash(word), words)
-    words = [cleanHash(word) for word in words]
-    if debug:
-        print("====================================")
-        print("[Clean hash Tweet]: \n\n %s \n\n" % words)
-
-    # Stemmer
-    stemmer = PorterStemmer()
-    words_stemmed = list(map(lambda word: stemmer.stem(word), words))
-    if debug:
-        print("====================================")
-        print("[Stemmed hash Tweet]: \n\n %s \n\n" % words_stemmed)
-
-    return words, words_stemmed
-
-
-# Porter Stemmer & PreprocessingTweet
-def tokenizer(tweet):
-    # can't -> cannot, bya's -> bya is
-    replacer = replacers.RegexpReplacer()
-    tweet = replacer.replace(tweet.lower())
-
-    # Tweet tokenizer and lower case
-    words = TweetTokenizer().tokenize(tweet)
-    words = [word.lower() for word in words]
-
-    # defining stopwords
-    english_stops = set(stopwords.words('english'))
-    english_stops_added = english_stops | {
-        '.', ',', ':', ';', '#', '-', '@', 'rt', 'http',
-        'kickoff',
-        'http',
-        'sterling',
-        'attack',
-        'attacking',
-        'strike',
-        'words',
-        'shot',
-        'hit',
-        'cross',
-        'rocket',
-        'watch',
-        'team',
-        'football',
-        'score',
-        'time',
-        'start',
-        'league',
-        'premier',
-        'player',
-        'boy',
-        'fire'}
-
-    words = [word for word in words if word not in english_stops_added]
-
-    # words = map(lambda word: cleanHash(word), words)
-    words = [cleanHash(word) for word in words]
-
-    return words
-
-
 # Read oddsportal.com
 def OddsPortalDf():
     lines = odds_portal.RAW_ODDS.split("\n")
@@ -338,3 +242,39 @@ def OddsPortalDf():
             continue
 
     return dfOdds
+
+
+# Read Single Game as DF
+# input: week, home, away teams
+# output: dataframe
+def SingleGameDf(week, team_home, team_away, filtering=False, retweet=True):
+    GW = 'GW' + str(week)
+
+    # ex: ['Chelsea_vs_Norwich.csv', ...]
+    filenames = FolderFiles(GW + '/SingleGames', paths.READ_PATH_EXTRACTED_CSV, ends='.csv')
+
+    # ex: [('Chelsea, Norwich.csv'), ...]
+    filenames_teams = [(filename.split('_vs_')[0], filename.split('_vs_')[1].split('.csv')[0]) for filename in filenames]
+
+    # if game not exists
+    if (team_home, team_away) not in filenames_teams:
+        print("[Not Game Exists]: Check your inputs")
+        return
+
+    # Set Game
+    filename = team_home + '_vs_' + team_away + '.csv'
+
+    # Read DF
+    os.chdir(paths.READ_PATH_EXTRACTED_CSV + GW + '/SingleGames')
+    df = csv_dic_df(filename)
+
+    # Exclude retweet
+    if not retweet:
+        df = df[df.status != 'retweet']
+        df = df.reset_index(drop=True)
+
+    # Filter:
+    if filtering:
+        df = FilterDF(df)
+
+    return df

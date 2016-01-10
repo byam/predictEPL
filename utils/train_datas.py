@@ -1,11 +1,7 @@
 import os
 import sys
 import time
-import collections
-from pprint import pprint
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
 
 sys.path.append("/Users/Bya/git/predictEPL/utils/")
 sys.path.append("/Users/Bya/git/predictEPL/config/")
@@ -51,7 +47,6 @@ def HashEmolexAllCreate():
     hash_emolexs = []
     sentiments = []
 
-
     start_time = time.time()
 
     # Start All Here
@@ -61,7 +56,6 @@ def HashEmolexAllCreate():
             filename = home_teams[index] + '_vs_' + away_teams[index] + '.csv'
             os.chdir(paths.READ_PATH_EXTRACTED_CSV + 'GW' + str(weeks[index]) + '/SingleGames/')
             df = useful_methods.csv_dic_df(filename)
-
 
             ###########################################################################
             # Filter DF: remove tweets of stream, bots ...
@@ -91,7 +85,6 @@ def HashEmolexAllCreate():
 
     print("[Done]: %.2f" % (time.time() - start_time))
 
-
     # Result
     dfNewHashEmolex['text'] = texts
     dfNewHashEmolex['hash_emolex_word'] = hash_emolexs
@@ -106,4 +99,11 @@ def HashEmolexAllCreate():
 def HashEmolexAllRead():
     os.chdir("/Users/Bya/Dropbox/Research/datas/TweetsPN/")
     df = useful_methods.csv_dic_df('hash_emolex_all.csv')
+    return df
+
+
+# Read CSV Twitter Pos, Nega Equal Soccer Data
+def TweetPnEqualRead():
+    os.chdir("/Users/Bya/Dropbox/Research/datas/TweetsPN/")
+    df = useful_methods.csv_dic_df('tweets_pn_eq.csv')
     return df
