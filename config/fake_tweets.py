@@ -3,4 +3,5 @@ STREAM_TWEETS_TUPLES = [
     ['live', 'stream'],
     ['live', 'link'],
     ['live', 'streaming'],
+    ['premierleague', 'live match'],
 ]

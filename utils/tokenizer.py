@@ -31,7 +31,33 @@ SOCCER_STOP_WORDS_LEMMA = set([lemmatizer.lemmatize(word) for word in list(SOCCE
 ##########################################################
 
 
+# Checking text has negation marks,
+# if has, adding '_NEG' suffix
+def NegationMark(text, debug=False):
+    # lower case
+    text = " " + text.lower() + '.'
+
+    # adding '_NEG' suffix
+    neglected_text = re.sub(
+        r'''((n\'t|n\’t)|(\W(?:never|no|nothing|nowhere|noone|none|not|havent|hasnt|hadnt|cant|couldnt|
+        shouldnt|wont|wouldnt|dont|doesnt|didnt|isnt|arent|aint)))\s[\w\s#-']+[(.|:|;|!|?|,|\n)$]''',
+        lambda match: re.sub(r'(\s+)(\w+)', r' \2_neg', match.group(0)),
+        text,
+        flags=re.IGNORECASE)
+
+    # show results
+    if debug:
+        print("---Txt---")
+        print(text)
+        print("---NEG---")
+        print(neglected_text)
+
+    # Return Suffixed text
+    return neglected_text[1:-1]
+
+
 # Text to Words as List
+# Remove: '@, #, !, . ...'
 def TextToWords(text):
     # text to words as list
     text = text.lower()
@@ -44,7 +70,7 @@ def TextToWords(text):
 # Porter Stemmer, Not Remove Stop Words
 def StemNoStops(text):
     # text to words as list
-    words = Stem(text, english_stops=False, soccer_stops=False)
+    words = Stem(text, negation=False, english_stops=False, soccer_stops=False)
 
     return words
 
@@ -53,7 +79,7 @@ def StemNoStops(text):
 # Porter Stemmer, Not Remove English Stop Words
 def StemNoEnglishStops(text):
     # text to words as list
-    words = Stem(text, english_stops=False)
+    words = Stem(text, negation=False, english_stops=False)
 
     return words
 
@@ -62,14 +88,29 @@ def StemNoEnglishStops(text):
 # Porter Stemmer, Not Remove Soccer Stop Words
 def StemNoSoccerStops(text):
     # text to words as list
-    words = Stem(text, soccer_stops=False)
+    words = Stem(text, negation=False, soccer_stops=False)
+
+    return words
+
+
+# Text to Words
+# Porter Stemmer
+# Remove English, Soccer Stop Words
+# Not use Negation Mark
+def StemNoNegation(text):
+    # text to words as list
+    words = Stem(text, negation=False)
 
     return words
 
 
 # Text to Words
 # Porter Stemmer & Remove English, Soccer Stopwords
-def Stem(text, english_stops=True, soccer_stops=True):
+def Stem(text, negation=True, english_stops=True, soccer_stops=True):
+    if negation:
+        # Adding '_neg' suffix to negation word clause
+        text = NegationMark(text)
+
     # text to words as list
     words = TextToWords(text)
 
@@ -92,7 +133,11 @@ def Stem(text, english_stops=True, soccer_stops=True):
 
 # Text to Words
 # WordNet Lemmatizer & Remove English Stopwords
-def Lemma(text, english_stops=True, soccer_stops=True):
+def Lemma(text, negation=True, english_stops=True, soccer_stops=True):
+    if negation:
+        # Adding '_neg' suffix to negation word clause
+        text = NegationMark(text)
+
     # text to words as list
     words = TextToWords(text)
 
@@ -117,7 +162,7 @@ def Lemma(text, english_stops=True, soccer_stops=True):
 # WordNet Lemmatizer, Not Remove Stop Words
 def LemmaNoStops(text):
     # text to words as list
-    words = Lemma(text, english_stops=False, soccer_stops=False)
+    words = Lemma(text, negation=False, english_stops=False, soccer_stops=False)
 
     return words
 
@@ -126,7 +171,7 @@ def LemmaNoStops(text):
 # WordNet Lemmatizer, Not Remove English Stop Words
 def LemmaNoEnglishStops(text):
     # text to words as list
-    words = Lemma(text, english_stops=False)
+    words = Lemma(text, negation=False, english_stops=False)
 
     return words
 
@@ -135,7 +180,18 @@ def LemmaNoEnglishStops(text):
 # WordNet Lemmatizer, Not Remove Soccer Stop Words
 def LemmaNoSoccerStops(text):
     # text to words as list
-    words = Lemma(text, soccer_stops=False)
+    words = Lemma(text, negation=False, soccer_stops=False)
+
+    return words
+
+
+# Text to Words
+# WordNet Lemmatizer
+# Remove English, Soccer Stop Words
+# Not use Negation Mark
+def LemmaNoNegation(text):
+    # text to words as list
+    words = Lemma(text, negation=False)
 
     return words
 
@@ -239,35 +295,6 @@ def TweetLemmaSoccerEmolex(text, stops=True):
     words_not_lemma = [word for word in words_not_lemma if not word.startswith('t.co')]
 
     return words_not_lemma, words_lemma
-
-
-# Checking text has negation marks,
-# if has, adding '_NEG' suffix
-def NegationMark(text, debug=False):
-    # lower case
-    text = text.lower() + '.'
-
-    # adding '_NEG' suffix
-    neglected_text = re.sub(
-        r'''((n\'t|n\’t)|(\s+(?:never|no|nothing|nowhere|noone|none|not|havent|hasnt|hadnt|cant|couldnt|
-        shouldnt|wont|wouldnt|dont|doesnt|didnt|isnt|arent|aint)))\s[\w\s#-']+[(.|:|;|!|?|,|\n)$]''',
-        lambda match: re.sub(r'(\s+)(\w+)', r' \2_NEG', match.group(0)),
-        text,
-        flags=re.IGNORECASE)
-
-    # show results
-    if debug:
-        print("---Txt---")
-        print(text)
-        print("---NEG---")
-        print(neglected_text)
-
-    # no negation in text
-    if '_NEG' not in neglected_text:
-        return None
-
-    # Return Suffixed text
-    return neglected_text
 
 
 # Check Hashtag Words in Emolex

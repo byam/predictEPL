@@ -75,11 +75,13 @@ def HashEmolexAllCreate():
                 # each tag
                 for emo in set(hash_emolex):
                     if emo in dic_emolex_soccer:
-                        # appedings
-                        texts.append(dfHashEmolex.iloc[i]['text'])
-                        hash_emolexs.append(emo)
-                        sentiment = ",".join([key for key, value in dic_emolex_soccer[emo].items() if value > 0])
-                        sentiments.append(sentiment)
+                        text = (dfHashEmolex.iloc[i]['text'])
+                        if text not in texts:
+                            # appedings
+                            texts.append(text)
+                            hash_emolexs.append(emo)
+                            sentiment = ",".join([key for key, value in dic_emolex_soccer[emo].items() if (value > 0)])
+                            sentiments.append(sentiment)
         except:
             continue
 

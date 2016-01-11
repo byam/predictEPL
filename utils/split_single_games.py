@@ -111,5 +111,18 @@ def WeekSplit(week):
         SplitSingleGameAndSave(week_files[i], week_games[i], GW)
 
 if __name__ == '__main__':
-    week = int(sys.argv[1])
-    WeekSplit(week)
+    week_number = sys.argv[1]
+
+    # weeks as : 4to20
+    if 'to' in week_number:
+        start, end = list(map(int, week_number.split('to')))
+        for week in range(start, end + 1):
+            # gw 12 data is no available
+            if week == 12:
+                continue
+            print("\n\n=======================================")
+            print("[Week]: ", week)
+            WeekSplit(week)
+    # only week : 4
+    else:
+        WeekSplit(week_number)
