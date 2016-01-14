@@ -285,6 +285,21 @@ GAMES = {
             ('Everton', 'Tottenham'),
         ],
 
+    'GW21':
+        [
+            ('Villa', 'Crystal'),
+            ('Bournemouth', 'WestHam'),
+            ('Newcastle', 'United'),
+
+            ('Chelsea', 'WestBromwich'),
+            ('City', 'Everton'),
+            ('Southampton', 'Watford'),
+            ('Stoke', 'Norwich'),
+            ('Swansea', 'Sunderland'),
+            ('Liverpool', 'Arsenal'),
+            ('Tottenham', 'Leicester'),
+        ],
+
 }
 
 # 'Bournemouth'

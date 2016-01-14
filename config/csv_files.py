@@ -280,4 +280,19 @@ FILES = {
 
             'game10.csv',
         ],
+
+    'GW21':
+        [
+            'game1_3.csv',
+            'game1_3.csv',
+            'game1_3.csv',
+
+            'game4_10.csv',
+            'game4_10.csv',
+            'game4_10.csv',
+            'game4_10.csv',
+            'game4_10.csv',
+            'game4_10.csv',
+            'game4_10.csv',
+        ],
 }
