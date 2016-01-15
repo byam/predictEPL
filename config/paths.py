@@ -3,7 +3,7 @@ HOME = "/Users/Bya/git/predictEPL/"
 DATA_HOME = "/Users/Bya/Dropbox/Research/datas/"
 
 # UEC Server ####################################
-# HOME = "/home/res/S0008/byam_15/predictEPL/"
+# HOME = "/home/res/S0008/byam_15/git/predictEPL/"
 # DATA_HOME = "/home/res/S0008/byam_15/datas/"
 
 

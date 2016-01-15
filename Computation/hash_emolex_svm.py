@@ -154,7 +154,8 @@ def ClassifierTrain(save=False):
     # print computed time
     print("\n\n### COMPUTED TIME #########################\n")
     taken_time = time() - start_time
-    print(str(datetime.timedelta(seconds=taken_time)))
+    print("[Started Time]: ", date_now)
+    print("\n[Taken Time]: ", str(datetime.timedelta(seconds=taken_time)))
 
     # print classifier test results
     DetecterMetrics(X_test, y_test, grid_search, title="Test")
@@ -167,6 +168,7 @@ def ClassifierTrain(save=False):
         filename = "dtr_hash_svn_" + date_now + ".pkl"
         with open(paths.DETECTER_HOME + filename, 'wb') as fout:
             pickle.dump(grid_search, fout)
+            print("\n\n[Saved in]: ", paths.DETECTER_HOME + filename)
 
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "save":
