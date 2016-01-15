@@ -1,0 +1,151 @@
+
+---
+
+### Connect UEC server
+
+*terminal*:
+```sh
+# using ssh
+$ ssh byam_15@130.153.16.2
+# $ ssh roo.cc.uec.ac.jp
+
+
+# server os details
+[byam_15@roo datas]$ uname -a
+Linux roo.cc.uec.ac.jp 2.6.32-573.3.1.el6.x86_64 #1 SMP Mon Aug 10 09:44:54 EDT 2015 x86_64 x86_64 x86_64 GNU/Linux
+
+# cpus
+[byam_15@roo datas]$ lscpu
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                160
+On-line CPU(s) list:   0-159
+コアあたりのスレッド数:2
+ソケットあたりのコア数:10
+Socket(s):             8
+NUMAノード:         8
+ベンダーID:        GenuineIntel
+CPUファミリー:    6
+モデル:             47
+ステッピング:    2
+CPU MHz:               2395.000
+BogoMIPS:              4787.90
+仮想化:             VT-x
+L1d キャッシュ:   32K
+L1i キャッシュ:   32K
+L2 キャッシュ:    256K
+L3 キャッシュ:    30720K
+NUMA node0 CPU(s):     0-9,80-89
+NUMA node1 CPU(s):     10-19,90-99
+NUMA node2 CPU(s):     20-29,100-109
+NUMA node3 CPU(s):     30-39,110-119
+NUMA node4 CPU(s):     40-49,120-129
+NUMA node5 CPU(s):     50-59,130-139
+NUMA node6 CPU(s):     60-69,140-149
+NUMA node7 CPU(s):     70-79,150-159
+```
+
+---
+
+## Install Python Packages
+
+#### Install [Anaconda](https://www.continuum.io/downloads)
+
+```sh
+# download linux 64-bit anaconda
+[byam_15@roo datas]$ wget https://3230d63b5fc54e62148e-c95ac804525aac4b6dba79b00b39d1d3.ssl.cf1.rackcdn.com/Anaconda3-2.4.1-Linux-x86_64.sh
+
+
+# verify conda
+[byam_15@roo ~]$ anaconda3/bin/conda --version
+conda 3.18.8
+
+# python version
+[byam_15@roo ~]$ anaconda3/bin/python --version
+Python 3.5.1 :: Anaconda 2.4.1 (64-bit)
+
+# python package list
+...
+...
+numpy (1.10.1)
+pandas (0.17.1)
+scikit-image (0.11.3)
+scikit-learn (0.17)
+scipy (0.16.0)
+...
+...
+```
+
+#### Install Single Python Package
+
+```sh
+# install python package
+[byam_15@roo ~]$ anaconda3/bin/pip install textblob
+Collecting textblob
+  Using cached textblob-0.11.0-py2.py3-none-any.whl
+Requirement already satisfied (use --upgrade to upgrade): nltk>=3.1 in ./anaconda3/lib/python3.5/site-packages (from textblob)
+Installing collected packages: textblob
+Successfully installed textblob-0.11.0
+
+# install bpython
+[byam_15@roo ~]$ anaconda3/bin/pip install bpython
+
+```
+
+
+#### Download Neccesary Corporas
+
+```sh
+# Download TextBlob's corpora
+[byam_15@roo ~]$ anaconda3/bin/python -m textblob.download_corpora
+```
+
+```python
+# download nltk's wordnet
+>>> import nltk
+>>> nltk.download()
+...
+>>>
+which corpora: wordnet
+...
+```
+
+#### Create Environment
+
+```sh
+# build new environment
+[byam_15@roo ~]$ anaconda3/bin/conda create --name py3 python=3 numpy scipy scikit-learn pandas nltk
+
+Proceed ([y]/n)? y
+
+Fetching packages ...
+openssl-1.0.2e 100% |####################################################| Time: 0:00:04 803.54 kB/s
+sqlite-3.9.2-0 100% |####################################################| Time: 0:00:03   1.03 MB/s
+numpy-1.10.2-p 100% |####################################################| Time: 0:00:04   1.39 MB/s
+setuptools-19. 100% |####################################################| Time: 0:00:01 260.96 kB/s
+scipy-0.16.1-n 100% |####################################################| Time: 0:00:06   3.51 MB/s
+Extracting packages ...
+[      COMPLETE      ]|#######################################################################| 100%
+Linking packages ...
+[      COMPLETE      ]|#######################################################################| 100%
+#
+# To activate this environment, use:
+# $ source activate py3
+#
+# To deactivate this environment, use:
+# $ source deactivate
+#
+```
+
+
+---
+
+### Upload file to UEC server
+
+```sh
+$ scp file byam_15@130.153.16.2:/home/res/S0008/byam_15/pathToSave
+
+# examples:
+$ scp ~/Dropbox/Research/datas/TweetsPN/tweet_hash_emolex_pn.csv byam_15@130.153.16.2:/home/res/S0008/byam_15/predictEPL/datas
+```

@@ -4,8 +4,11 @@ from nltk.stem import WordNetLemmatizer
 
 import re
 import sys
+import os
 
-sys.path.append("/Users/Bya/git/predictEPL/config/")
+# Local Imports
+path = str(os.path.expanduser('~')) + '/git/predictEPL/config'
+sys.path.append(path)
 import soccer_stopwords
 import english_stopwords
 
@@ -196,105 +199,6 @@ def LemmaNoNegation(text):
     return words
 
 ##########################################################
-
-
-# Removing Soccer Stop Words
-def TweetLemmaSoccer(text, stops=True):
-    text = text.lower()
-    words = TextBlob(text).words
-
-    # Lemma
-    words = [word.lemma for word in words]
-
-    if stops:
-        # Removing STOP WORDS(includes Soccer stops)
-        english_stops = ENGLISH_STOP_WORDS
-        english_stops_soccer = english_stops | soccer_stopwords.STOP_WORDS
-        words = [word for word in words if word not in english_stops_soccer]
-
-    # Removing Twitter Links
-    words = [word for word in words if not word.startswith('t.co')]
-
-    return words
-
-
-def TweetLemmaSoccerNeg(text, stops=True):
-    # Checking negation words: 'not good'
-    # if found add suffix: 'not good_NEG'
-    neglect_text = NegationMark(text)
-    if neglect_text is not None:
-        text = neglect_text
-
-    # Text to Words
-    text = text.lower()
-    words = TextBlob(text).words
-
-    # Lemma
-    words_lemma = []
-    for word in words:
-        # if word has negation mark: bad_neg, good_neg
-        if word.endswith('_neg'):
-            word = word[0:-4]
-            word = TextBlob(word).words[0].lemma + "_neg"
-
-        # regular words
-        else:
-            word = word.lemma
-
-        words_lemma.append(word)
-
-    if stops:
-        # Removing STOP WORDS(includes Soccer stops)
-        english_stops = ENGLISH_STOP_WORDS
-        english_stops_soccer = english_stops | soccer_stopwords.STOP_WORDS
-
-        words_lemma = [word for word in words_lemma if word not in english_stops_soccer]
-
-    # Removing Twitter Links
-    words_lemma = [word for word in words_lemma if not word.startswith('t.co')]
-
-    return words_lemma
-
-
-def TweetLemmaSoccerEmolex(text, stops=True):
-    # Checking negation words: 'not good'
-    # if found add suffix: 'not good_NEG'
-    neglect_text = NegationMark(text)
-    if neglect_text is not None:
-        text = neglect_text
-
-    text = text.lower()
-    words = TextBlob(text).words
-
-    words_not_lemma = words
-
-    # Lemma
-    words_lemma = []
-    for word in words:
-        # if word has negation mark: bad_neg, good_neg
-        if word.endswith('_neg'):
-            word = word[0:-4]
-            word = TextBlob(word).words[0].lemma + "_neg"
-
-        # regular words
-        else:
-            word = word.lemma
-
-        words_lemma.append(word)
-
-    if stops:
-        # Removing STOP WORDS(includes Soccer stops)
-        english_stops = ENGLISH_STOP_WORDS
-        english_stops_soccer = english_stops | soccer_stopwords.STOP_WORDS
-
-        words_lemma = [word for word in words_lemma if word not in english_stops_soccer]
-        words_not_lemma = [word for word in words_not_lemma if word not in english_stops_soccer]
-
-    # Removing Twitter Links
-    words_lemma = [word for word in words_lemma if not word.startswith('t.co')]
-    words_not_lemma = [word for word in words_not_lemma if not word.startswith('t.co')]
-
-    return words_not_lemma, words_lemma
 
 
 # Check Hashtag Words in Emolex

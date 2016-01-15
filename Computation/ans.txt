@@ -1,0 +1,56 @@
+
+
+### DATA ##################################
+ 
+	Train data: 	 5772 
+	Test data: 	 1443 
+	All data: 	 7215
+
+
+### COMPUTED TIME #########################
+
+0:11:10.143101
+
+
+### PARAMS ################################
+
+[All Params Results]:
+
+[mean: 0.87717, std: 0.01583, params: {'clf__gamma': 1e-05, 'vect__analyzer': <function Stem at 0x11360c950>, 'clf__C': 1},
+ mean: 0.88531, std: 0.01778, params: {'clf__gamma': 1e-05, 'vect__analyzer': <function Lemma at 0x11360c9d8>, 'clf__C': 1},
+ mean: 0.87717, std: 0.01583, params: {'clf__gamma': 0.0001, 'vect__analyzer': <function Stem at 0x11360c950>, 'clf__C': 1},
+ mean: 0.88531, std: 0.01778, params: {'clf__gamma': 0.0001, 'vect__analyzer': <function Lemma at 0x11360c9d8>, 'clf__C': 1},
+ mean: 0.87717, std: 0.01583, params: {'clf__gamma': 0.1, 'vect__analyzer': <function Stem at 0x11360c950>, 'clf__C': 1},
+ mean: 0.88531, std: 0.01778, params: {'clf__gamma': 0.1, 'vect__analyzer': <function Lemma at 0x11360c9d8>, 'clf__C': 1},
+ mean: 0.87474, std: 0.01083, params: {'clf__gamma': 1e-05, 'vect__analyzer': <function Stem at 0x11360c950>, 'clf__C': 10},
+ mean: 0.87959, std: 0.01507, params: {'clf__gamma': 1e-05, 'vect__analyzer': <function Lemma at 0x11360c9d8>, 'clf__C': 10},
+ mean: 0.87474, std: 0.01083, params: {'clf__gamma': 0.0001, 'vect__analyzer': <function Stem at 0x11360c950>, 'clf__C': 10},
+ mean: 0.87959, std: 0.01507, params: {'clf__gamma': 0.0001, 'vect__analyzer': <function Lemma at 0x11360c9d8>, 'clf__C': 10},
+ mean: 0.87474, std: 0.01083, params: {'clf__gamma': 0.1, 'vect__analyzer': <function Stem at 0x11360c950>, 'clf__C': 10},
+ mean: 0.87959, std: 0.01507, params: {'clf__gamma': 0.1, 'vect__analyzer': <function Lemma at 0x11360c9d8>, 'clf__C': 10},
+ mean: 0.87110, std: 0.01291, params: {'clf__gamma': 1e-05, 'vect__analyzer': <function Stem at 0x11360c950>, 'clf__C': 100},
+ mean: 0.87855, std: 0.01525, params: {'clf__gamma': 1e-05, 'vect__analyzer': <function Lemma at 0x11360c9d8>, 'clf__C': 100},
+ mean: 0.87110, std: 0.01291, params: {'clf__gamma': 0.0001, 'vect__analyzer': <function Stem at 0x11360c950>, 'clf__C': 100},
+ mean: 0.87855, std: 0.01525, params: {'clf__gamma': 0.0001, 'vect__analyzer': <function Lemma at 0x11360c9d8>, 'clf__C': 100},
+ mean: 0.87110, std: 0.01291, params: {'clf__gamma': 0.1, 'vect__analyzer': <function Stem at 0x11360c950>, 'clf__C': 100},
+ mean: 0.87855, std: 0.01525, params: {'clf__gamma': 0.1, 'vect__analyzer': <function Lemma at 0x11360c9d8>, 'clf__C': 100}]
+
+
+[SVM Detecter Params]: 
+
+Best Score:  0.885308385308
+Best Params:  {'clf__gamma': 1e-05, 'vect__analyzer': <function Lemma at 0x11360c9d8>, 'clf__C': 1}
+
+
+### METRICS ###############################
+
+[Test Results]: 
+
+             precision    recall  f1-score   support
+
+          0       0.90      0.92      0.91       797
+          1       0.89      0.87      0.88       646
+
+avg / total       0.90      0.90      0.90      1443
+
+[Accuracy]:  0.895356895357

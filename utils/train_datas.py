@@ -3,8 +3,8 @@ import sys
 import time
 import pandas as pd
 
-sys.path.append("/Users/Bya/git/predictEPL/utils/")
-sys.path.append("/Users/Bya/git/predictEPL/config/")
+sys.path.append("../utils/")
+sys.path.append("../config/")
 
 import paths
 import emolex

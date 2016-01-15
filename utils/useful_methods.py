@@ -6,19 +6,12 @@ import math
 import pandas as pd
 import csv
 
-from nltk.tokenize import TweetTokenizer
-from nltk.corpus import stopwords
-from nltk.stem import PorterStemmer
-
-
-sys.path.append('/Users/Bya/git/predictEPL/config/')
-sys.path.append('/Users/Bya/git/predictEPL/MyFunctions/')
-
+# Local Imports
+path = str(os.path.expanduser('~')) + '/git/predictEPL/config'
+sys.path.append(path)
 import paths
-import replacers
 import odds_portal
 import names
-import soccer_stopwords
 
 
 # Return Directory's file names

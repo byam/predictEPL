@@ -76,7 +76,7 @@ def EmolexSoccerDic():
             dic_emolex_stemmed[PorterStemmer().stem(word)][category] = flag
             dic_emolex_stemmed[PorterStemmer().stem(word)]["_original_word"] = word
 
-    print("All Words: %s" % len(dic_emolex.keys()))
+    print("[Emolex Dic's All Words]: %s" % len(dic_emolex.keys()))
 
     return dic_emolex, dic_emolex_stemmed
 

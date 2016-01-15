@@ -1,9 +1,24 @@
-READ_PATH_EXTRACTED_CSV = "/Users/Bya/Dropbox/Research/datas/EPL/ExtractedCsvData/"
+# Bya Mac OSX ###################################
+HOME = "/Users/Bya/git/predictEPL/"
+DATA_HOME = "/Users/Bya/Dropbox/Research/datas/"
 
-SAVE_PATH_SINGLE_GAME = "/Users/Bya/Dropbox/Research/datas/EPL/ExtractedCsvData/"
+# UEC Server ####################################
+# HOME = "/home/res/S0008/byam_15/predictEPL/"
+# DATA_HOME = "/home/res/S0008/byam_15/datas/"
 
-READ_PATH_EMOLEX = "/Users/Bya/Dropbox/Research/resources/NRC-Emotion-Lexicon-v0.92/"
 
-READ_PATH_GAME_INFO = "/Users/Bya/Dropbox/Research/datas/EPL/"
+CONFIG = HOME + "config"
+UTILS = HOME + "utils"
+COMPUTATION = HOME + "Computation"
+DETECTER_HOME = DATA_HOME + "Detecter/"
 
-READ_PATH_REVIEW_SHORT = "/Users/Bya/Dropbox/Research/datas/ShortReviews/"
+
+READ_PATH_EXTRACTED_CSV = DATA_HOME + "EPL/ExtractedCsvData/"
+
+SAVE_PATH_SINGLE_GAME = DATA_HOME + "EPL/ExtractedCsvData/"
+
+READ_PATH_EMOLEX = DATA_HOME + "NRC-Emotion-Lexicon-v0.92/"
+
+READ_PATH_GAME_INFO = DATA_HOME + "EPL/"
+
+READ_PATH_REVIEW_SHORT = DATA_HOME + "ShortReviews/"
