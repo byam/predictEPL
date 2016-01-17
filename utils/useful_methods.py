@@ -242,6 +242,9 @@ def OddsPortalDf():
 # output: dataframe
 def SingleGameDf(week, team_home, team_away, filtering=False, retweet=True):
     GW = 'GW' + str(week)
+    if GW in ['GW1', 'GW2', 'GW3', 'GW4', 'GW12']:
+        print("[Not Game Exists]: Check your inputs")
+        return
 
     # ex: ['Chelsea_vs_Norwich.csv', ...]
     filenames = FolderFiles(GW + '/SingleGames', paths.READ_PATH_EXTRACTED_CSV, ends='.csv')

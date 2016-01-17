@@ -1,7 +1,6 @@
 import os
 import sys
 import pandas as pd
-from nltk.stem import PorterStemmer
 
 
 sys.path.append('/Users/Bya/git/predictEPL/config/')
@@ -23,7 +22,6 @@ def EmolexDic():
 
     # create emotion word dic
     dic_emolex = {}
-    dic_emolex_stemmed = {}
 
     for line in emoleRaw:
         word, category, flag = line.split()
@@ -31,15 +29,12 @@ def EmolexDic():
 
         if word not in dic_emolex:
             dic_emolex[word] = {}
-            dic_emolex_stemmed[PorterStemmer().stem(word)] = {}
 
         dic_emolex[word][category] = flag
-        dic_emolex_stemmed[PorterStemmer().stem(word)][category] = flag
-        dic_emolex_stemmed[PorterStemmer().stem(word)]["_original_word"] = word
 
     print("[Emolex Dic All Words]: %s" % len(dic_emolex.keys()))
 
-    return dic_emolex, dic_emolex_stemmed
+    return dic_emolex
 
 
 # Create Emotion Lexicon, not include some soccer words
@@ -52,7 +47,6 @@ def EmolexSoccerDic():
 
     # create emotion word dic
     dic_emolex = {}
-    dic_emolex_stemmed = {}
 
     # Not Include Soccer Words
     ng_words = list(soccer_stopwords.STOP_WORDS)
@@ -70,15 +64,12 @@ def EmolexSoccerDic():
 
             if word not in dic_emolex:
                 dic_emolex[word] = {}
-                dic_emolex_stemmed[PorterStemmer().stem(word)] = {}
 
             dic_emolex[word][category] = flag
-            dic_emolex_stemmed[PorterStemmer().stem(word)][category] = flag
-            dic_emolex_stemmed[PorterStemmer().stem(word)]["_original_word"] = word
 
     print("[Emolex Dic's All Words]: %s" % len(dic_emolex.keys()))
 
-    return dic_emolex, dic_emolex_stemmed
+    return dic_emolex
 
 
 # add 2 dics values
@@ -99,8 +90,7 @@ def AddDics(dic_x, dic_y, neg_mark):
 
 # input: words list
 # output: emolex score as dic
-def CountEmolexWords(dic_emolex, dic_emolex_stemmed,
-                     words, debug=False):
+def CountEmolexWords(dic_emolex, words, debug=False):
     # initialize emolex
     emolex_score = {
         'anger': 0, 'fear': 0, 'disgust': 0, 'sadness': 0,
@@ -131,8 +121,8 @@ def CountEmolexWords(dic_emolex, dic_emolex_stemmed,
 # input: SingleGames's 1 game as DF
 # outpute: Emolex DF by ith_minute
 # NOTE: declare dic emolex before calling method
-# => dic_emolex, dic_emolex_stemmed = EmolexDic()
-def CreateEmolexDF(df, dic_emolex, dic_emolex_stemmed):
+# => dic_emolex = EmolexDic()
+def CreateEmolexDF(df, dic_emolex):
     columns = ['ith_minute',
                'anger', 'fear', 'disgust', 'sadness',
                'surprise',
@@ -145,7 +135,7 @@ def CreateEmolexDF(df, dic_emolex, dic_emolex_stemmed):
     # Add emolex dic by minute
     for m_i in range(110):
         # set minute
-        ith_minute = str(m_i + 1)
+        ith_minute = m_i + 1
 
         # ith_minute's tweet list
         tweets = list(df[df['ith_minute'] == ith_minute]['text'])
@@ -160,10 +150,10 @@ def CreateEmolexDF(df, dic_emolex, dic_emolex_stemmed):
 
         # PreprocessingTweet & Counting Emolex Score
         for tweet in tweets:
-            words = tokenizer.TweetLemmaSoccerLemma(tweet)
+            words = tokenizer.Lemma(tweet)
 
             # Count emolex words
-            emolex_score = CountEmolexWords(dic_emolex, dic_emolex_stemmed, words)
+            emolex_score = CountEmolexWords(dic_emolex, words)
 
             # Add values
             AddDics(emolex_score_ith_minute, emolex_score, False)
