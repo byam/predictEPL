@@ -300,6 +300,44 @@ GAMES = {
             ('Tottenham', 'Leicester'),
         ],
 
+    'GW22':
+        [
+            ('Tottenham', 'Sunderland'),
+
+            ('Bournemouth', 'Norwich'),
+            ('Chelsea', 'Everton'),
+            ('City', 'Crystal'),
+            ('Newcastle', 'WestHam'),
+            ('Southampton', 'WestBromwich'),
+
+            ('Villa', 'Leicester'),
+
+            ('Liverpool', 'United'),
+
+            ('Stoke', 'Arsenal'),
+
+            ('Swansea', 'Watford'),
+        ],
+
+    'GW23':
+        [
+            ('Norwich', 'Liverpool'),
+
+            ('Crystal', 'Tottenham'),
+            ('Leicester', 'Stoke'),
+            ('United', 'Southampton'),
+            ('Sunderland', 'Bournemouth'),
+            ('Watford', 'Newcastle'),
+            ('WestBromwich', 'Villa'),
+
+
+            ('WestHam', 'City'),
+
+            ('Everton', 'Swansea'),
+
+            ('Arsenal', 'Chelsea'),
+        ],
+
 }
 
 # 'Bournemouth'

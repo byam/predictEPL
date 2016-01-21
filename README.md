@@ -163,8 +163,11 @@ Add 'GW16' inside `games.py` and `csv_files.py`.
 ```sh
 $ python utils/split_single_games.py week_number
 
-# example
+# example: only week 16
 $ python utils/split_single_games.py 16
+
+# weeks as : 4to20
+$ python utils/split_single_games.py 4to22
 
 Norwich vs Everton :
 
