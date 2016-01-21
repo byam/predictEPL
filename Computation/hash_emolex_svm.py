@@ -56,7 +56,7 @@ def SVM(y_train, n_folds=10):
             tokenizer.Stem,
             tokenizer.Lemma
         ),
-        'clf__kernal': ('linear', 'poly', 'rbf', 'sigmoid', 'precomputed'),
+        'clf__kernel': ('linear', 'poly', 'rbf', 'sigmoid', 'precomputed'),
         # 'clf__gamma': (0.00001, 0.0001, 00.1),
         # 'clf__C': (1, 10, 100),
     }
