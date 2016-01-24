@@ -382,6 +382,11 @@ my_plot.EmolexCats(dfFilterEmolexNonRtAway, ['joy', 'anger', 'surprise'], goals_
 
 
 
+* Logistic Regressionがこの場合使える。Too Simple Model
+Decision Tree, SVMがデータが多くなると精度が上がる。If input become difficult, Accuracy Up.
+
+* Historical Data(Last Year Rank, Goal Rate)
+* Current Year Data
 
 
 
