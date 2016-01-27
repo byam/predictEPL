@@ -338,6 +338,22 @@ GAMES = {
             ('Arsenal', 'Chelsea'),
         ],
 
+    'GW24':
+        [
+            ('Arsenal', 'Southampton'),
+            ('Leicester', 'Liverpool'),
+            ('Norwich', 'Tottenham'),
+            ('Sunderland', 'City'),
+            ('WestHam', 'Villa'),
+
+            ('Crystal', 'Bournemouth'),
+            ('United', 'Stoke'),
+            ('WestBromwich', 'Swansea'),
+
+            ('Everton', 'Newcastle'),
+            ('Watford', 'Chelsea'),
+        ],
+
 }
 
 # 'Bournemouth'

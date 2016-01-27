@@ -111,34 +111,6 @@ which corpora: wordnet
 ...
 ```
 
-#### Create Environment
-
-```sh
-# build new environment
-[byam_15@roo ~]$ anaconda3/bin/conda create --name py3 python=3 numpy scipy scikit-learn pandas nltk
-
-Proceed ([y]/n)? y
-
-Fetching packages ...
-openssl-1.0.2e 100% |####################################################| Time: 0:00:04 803.54 kB/s
-sqlite-3.9.2-0 100% |####################################################| Time: 0:00:03   1.03 MB/s
-numpy-1.10.2-p 100% |####################################################| Time: 0:00:04   1.39 MB/s
-setuptools-19. 100% |####################################################| Time: 0:00:01 260.96 kB/s
-scipy-0.16.1-n 100% |####################################################| Time: 0:00:06   3.51 MB/s
-Extracting packages ...
-[      COMPLETE      ]|#######################################################################| 100%
-Linking packages ...
-[      COMPLETE      ]|#######################################################################| 100%
-#
-# To activate this environment, use:
-# $ source activate py3
-#
-# To deactivate this environment, use:
-# $ source deactivate
-#
-```
-
-
 ---
 
 ### Upload file to UEC server
@@ -148,4 +120,25 @@ $ scp file byam_15@130.153.16.2:/home/res/S0008/byam_15/pathToSave
 
 # examples:
 $ scp ~/Dropbox/Research/datas/TweetsPN/tweet_hash_emolex_pn.csv byam_15@130.153.16.2:/home/res/S0008/byam_15/predictEPL/datas
+```
+
+
+
+### Script run Background
+
+```sh
+$ pwd
+/home/res/S0008/byam_15
+
+# run background
+$ nohup python file.py&
+
+# example
+[byam_15@roo ~]$ nohup ~/anaconda3/bin/python ~/git/predictEPL/Parallel/emolex_count_all_game.py > ~/datas/log_emolex_all.csv&
+
+
+
+# check jobs
+[byam_15@roo ~]$ jobs
+[1]  + 実行中です               ~/anaconda3/bin/python ~/git/predictEPL/Parallel/hash_emolex_pn_score_all_game.py > ~/datas/Results/log_hash_all_ft.csv
 ```

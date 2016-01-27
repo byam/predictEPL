@@ -274,3 +274,44 @@ def SingleGameDf(week, team_home, team_away, filtering=False, retweet=True):
         df = FilterDF(df)
 
     return df
+
+
+# Checking Single Game's data is available
+# return: True or False
+def CheckSingleGameFile(week, team_home, team_away):
+    GW = 'GW' + str(week)
+    if GW in ['GW1', 'GW2', 'GW3', 'GW4', 'GW12']:
+        return False
+
+    # ex: ['Chelsea_vs_Norwich.csv', ...]
+    filenames = FolderFiles(GW + '/SingleGames', paths.READ_PATH_EXTRACTED_CSV, ends='.csv')
+
+    # ex: [('Chelsea, Norwich.csv'), ...]
+    filenames_teams = [(filename.split('_vs_')[0], filename.split('_vs_')[1].split('.csv')[0]) for filename in filenames]
+
+    # if game not exists
+    if (team_home, team_away) not in filenames_teams:
+        return False
+
+    return True
+
+
+# Dropping No Data Games
+# return: df
+def DropNanGames(dfGameInfos):
+    df = dfGameInfos.copy()
+
+    drop_index = []
+
+    for ith_row in range(len(df)):
+        # Team names
+        week = df.iloc[ith_row]['GW']
+        team_home = df.iloc[ith_row]['home_team']
+        team_away = df.iloc[ith_row]['away_team']
+
+        if not CheckSingleGameFile(week, team_home, team_away):
+            drop_index.append(ith_row)
+
+    df = df.drop(df.index[drop_index]).copy().reset_index(drop=True)
+
+    return df

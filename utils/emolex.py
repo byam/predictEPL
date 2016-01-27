@@ -3,10 +3,12 @@ import sys
 import pandas as pd
 
 
-sys.path.append('/Users/Bya/git/predictEPL/config/')
-sys.path.append('/Users/Bya/git/predictEPL/utils/')
-
+# Local Imports
+path = str(os.path.expanduser('~')) + '/git/predictEPL/config'
+sys.path.append(path)
 import paths
+
+sys.path.append(paths.UTILS)
 import soccer_emolex
 import soccer_stopwords
 import useful_methods
@@ -67,7 +69,7 @@ def EmolexSoccerDic():
 
             dic_emolex[word][category] = flag
 
-    print("[Emolex Dic's All Words]: %s" % len(dic_emolex.keys()))
+    # print("[Emolex Dic's All Words]: %s" % len(dic_emolex.keys()))
 
     return dic_emolex
 
