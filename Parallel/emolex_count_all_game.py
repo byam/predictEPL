@@ -23,11 +23,11 @@ import useful_methods
 # *******************************************************
 
 # Limitations
-TIME_LIMIT = 60
+TIME_LIMIT = 108
 RETWEET_STATUS = False
 FILTER_STATUS = True
 START_TIME = 1
-END_TIME = 60
+END_TIME = 108
 
 
 # *******************************************************
@@ -114,7 +114,7 @@ def EmolexCountSingleMatch(ith_row):
     emolex_count = CountGameEmolex(week, team_home, team_away)
 
     # print each rows
-    print('%s, %s, %s, %s, %s' %
+    print('%s,%s,%s,%s,%s' %
         (week, team_home, team_away, emolex_count[0], emolex_count[1]))
 
     return emolex_count
@@ -133,7 +133,7 @@ inputs = range(len(dfGameInfos))
 start_taken_time = time.time()
 
 # columns
-print('GW, home_team, away_team, emolex_home, emolex_away')
+print('GW,home_team,away_team,emolex_home,emolex_away')
 
 results = Parallel(n_jobs=num_cores)(delayed(EmolexCountSingleMatch)(i) for i in inputs)
 
@@ -141,6 +141,7 @@ results = Parallel(n_jobs=num_cores)(delayed(EmolexCountSingleMatch)(i) for i in
 taken_time = time.strftime('%H:%M:%S', time.gmtime(time.time() - start_taken_time))
 print("[Done]: ", taken_time)
 print("[Date]: ", datetime.datetime.now())
+
 
 
 
