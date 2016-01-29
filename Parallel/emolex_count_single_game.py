@@ -4,6 +4,7 @@ import os
 import sys
 import time
 import datetime
+import pandas as pd
 import numpy as np
 from joblib import Parallel, delayed
 import multiprocessing
@@ -22,15 +23,12 @@ import useful_methods
 # *******************************************************
 # *******************************************************
 
-# which week
-WEEK_NUM = input()
-
 # Limitations
-TIME_LIMIT = 60
+TIME_LIMIT = 63
 RETWEET_STATUS = False
 FILTER_STATUS = True
 START_TIME = 1
-END_TIME = 60
+END_TIME = 63
 
 
 # *******************************************************
@@ -40,6 +38,10 @@ END_TIME = 60
 os.chdir(paths.READ_PATH_GAME_INFO)
 dfGameInfos = useful_methods.csv_dic_df('game_infos.csv')
 dfGameInfos = useful_methods.DropNanGames(dfGameInfos)
+
+
+# which week
+WEEK_NUM = input()
 dfGameInfos = dfGameInfos[dfGameInfos.GW == str(WEEK_NUM)].copy().reset_index(drop=True)
 
 
@@ -121,11 +123,15 @@ def EmolexCountSingleMatch(ith_row):
     print('%s, %s, %s, %s, %s' %
         (week, team_home, team_away, emolex_count[0], emolex_count[1]))
 
-    return emolex_count
+    result = (week, team_home, team_away, emolex_count[0], emolex_count[1])
+
+    return result
 
 
 # *******************************************************
 # *******************************************************
+
+# Parallel computing
 
 # number of cores
 num_cores = multiprocessing.cpu_count()
@@ -136,17 +142,24 @@ inputs = range(len(dfGameInfos))
 # parallel loop
 start_taken_time = time.time()
 
-# columns
-print('GW, home_team, away_team, emolex_home, emolex_away')
 
+# results
 results = Parallel(n_jobs=num_cores)(delayed(EmolexCountSingleMatch)(i) for i in inputs)
 
 
+# print time
 taken_time = time.strftime('%H:%M:%S', time.gmtime(time.time() - start_taken_time))
 print("[Done]: ", taken_time)
 print("[Date]: ", datetime.datetime.now())
 
 
+# columns
+columns = ['GW', 'home_team', 'away_team', 'emolex_home', 'emolex_away']
+dfResult = pd.DataFrame(results, columns=columns)
+
+# Save as CSV
+useful_methods.DFtoCSV(dfResult, paths.READ_PATH_RESULTS, 'emolex_all', index=False)
+print("[Saved in]: %s" % (paths.READ_PATH_RESULTS + 'emolex_all.csv'))
 
 
 

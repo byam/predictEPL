@@ -6,6 +6,7 @@ import sys
 import pickle
 import time
 import datetime
+import pandas as pd
 from joblib import Parallel, delayed
 import multiprocessing
 
@@ -22,11 +23,11 @@ import useful_methods
 # *******************************************************
 
 # Limitations
-TIME_LIMIT = 108
+TIME_LIMIT = 63
 RETWEET_STATUS = False
 FILTER_STATUS = True
 START_TIME = 1
-END_TIME = 108
+END_TIME = 63
 
 
 # *******************************************************
@@ -36,6 +37,7 @@ END_TIME = 108
 os.chdir(paths.READ_PATH_GAME_INFO)
 dfGameInfos = useful_methods.csv_dic_df('game_infos.csv')
 dfGameInfos = useful_methods.DropNanGames(dfGameInfos)
+
 
 # Convert number strings to integers
 dfGameInfos['GW'] = [int(GW) for GW in dfGameInfos['GW']]
@@ -113,7 +115,9 @@ def PnScoringSingleMatch(ith_row):
         (week, team_home, team_away,
             pn_score[0], pn_score[1], pn_score[2], pn_score[3]))
 
-    return pn_score
+    result = (week, team_home, team_away, pn_score[0], pn_score[1], pn_score[2], pn_score[3])
+
+    return result
 
 
 # *******************************************************
@@ -130,15 +134,23 @@ inputs = range(len(dfGameInfos))
 # parallel loop
 start_taken_time = time.time()
 
-# columns
-print('GW,home_team,away_team,pn_home_pos,pn_home_neg,pn_away_pos,pn_away_neg')
 
+# results
 results = Parallel(n_jobs=num_cores)(delayed(PnScoringSingleMatch)(i) for i in inputs)
 
 
+# print time
 taken_time = time.strftime('%H:%M:%S', time.gmtime(time.time() - start_taken_time))
 print("[Done]: ", taken_time)
 print("[Date]: ", datetime.datetime.now())
+
+# Create DF
+columns = ['GW', 'home_team', 'away_team', 'pn_home_pos', 'pn_home_neg', 'pn_away_pos', 'pn_away_neg']
+dfResult = pd.DataFrame(results, columns=columns)
+
+# Save as CSV
+useful_methods.DFtoCSV(dfResult, paths.READ_PATH_RESULTS, 'hash_all', index=False)
+print("[Saved in]: %s" % (paths.READ_PATH_RESULTS + 'hash_all.csv'))
 
 
 

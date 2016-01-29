@@ -315,3 +315,27 @@ def DropNanGames(dfGameInfos):
     df = df.drop(df.index[drop_index]).copy().reset_index(drop=True)
 
     return df
+
+
+# Real EPL score table as df
+# return: df
+def ReadEplScoreTable():
+    dfScoreTable = csv_dic_df(paths.DATA_HOME + "EPL/" + 'info_team_wld.csv')
+
+    # change col name: str to int
+    [dfScoreTable.rename(columns={str(i): i}, inplace=True) for i in range(1, 24)]
+
+    # values: str to int
+    for i in range(1, 24):
+        dfScoreTable[i] = dfScoreTable[i].astype(int)
+
+    # sum all scores
+    dfScoreTable['pts'] = dfScoreTable.sum(axis=1)
+
+    # rearrange columns
+    dfScoreTable = dfScoreTable[['team', 'pts'] + list(range(1, 24))]
+
+    # sort by overall points
+    df = dfScoreTable.sort_values(['pts'], ascending=False).reset_index(drop=True)
+
+    return df
