@@ -1,8 +1,6 @@
 # Englad Premier League's 20 teams hashtags
 class HashTags(object):
     dic = {
-      # debug
-      'debug': ['byambasuren'],
 
       # AFC Bournemouth
       'Bournemouth': ['#afcb', '#bournemouth'],
