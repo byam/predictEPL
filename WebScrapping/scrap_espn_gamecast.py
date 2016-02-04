@@ -49,7 +49,7 @@ def ScrapEspnMatch(url):
 
 # check text include team's names
 def WhichSide(text, home_team, away_team):
-    text = text.lower()
+    text = str(text).lower()
     home_team = home_team.lower()
     away_team = away_team.lower()
 
@@ -65,7 +65,7 @@ def WhichSide(text, home_team, away_team):
 
 # check text's meaning
 def CommentStatus(text):
-    text = text.lower()
+    text = str(text).lower()
 
     if text[0:6] == 'corner':
         return 'corner'
@@ -142,7 +142,7 @@ def AttackMinutes(dfGameCast, side):
     attacks_dic = {
         'xdata': attack_minutes,
         'types': 'k^',
-        'label': 'attack',
+        'label': u'攻撃',
     }
 
     return attacks_dic
@@ -165,7 +165,7 @@ def FoulMinutes(dfGameCast, side):
     fouls_dic = {
         'xdata': foul_minutes,
         'types': 'ks',
-        'label': 'foul',
+        'label': u'ファール',
     }
 
     return fouls_dic
@@ -181,7 +181,7 @@ def GoalMinutes(dfGameCast):
     goals_dic = {
         'xdata': goal_minutes,
         'types': 'co',
-        'label': 'goal',
+        'label': u'ゴール',
     }
 
     return goals_dic

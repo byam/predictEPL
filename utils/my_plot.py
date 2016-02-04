@@ -1,6 +1,8 @@
 import matplotlib.pyplot as plt
+from matplotlib.font_manager import FontProperties
 import numpy as np
 
+fp_small = FontProperties(fname=r'/Library/Fonts/ヒラギノ丸ゴ ProN W4.ttc', size=14)
 # red circle, red dashes, blue squares and green triangles
 # point_types = ['ro', 'r--', 'bs', 'g^']
 
@@ -82,10 +84,10 @@ def PlotLineChart(my_list_list, labels, colors, title, xlabel, ylabel,
     if y_interval:
         plt.yticks(np.arange(ylim_min, ylim_max + 1, y_interval))
 
-    plt.xlabel(xlabel)
-    plt.ylabel(ylabel)
-    plt.title(title)
-    plt.legend()
+    plt.xlabel(xlabel, fontproperties=fp_small)
+    plt.ylabel(ylabel, fontproperties=fp_small)
+    # plt.title(title)
+    plt.legend(prop=fp_small, loc="upper right")
 
 
 # Plotting Emolex POS3, NEG4 Categories
