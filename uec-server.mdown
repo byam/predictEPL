@@ -57,6 +57,9 @@ NUMA node7 CPU(s):     70-79,150-159
 [byam_15@roo datas]$ wget https://3230d63b5fc54e62148e-c95ac804525aac4b6dba79b00b39d1d3.ssl.cf1.rackcdn.com/Anaconda3-2.4.1-Linux-x86_64.sh
 
 
+# install
+[byam_15@roo datas]$ bash Anaconda3-2.5.0-Linux-x86_64.sh
+
 # verify conda
 [byam_15@roo ~]$ anaconda3/bin/conda --version
 conda 3.18.8
@@ -130,15 +133,19 @@ $ scp ~/Dropbox/Research/datas/TweetsPN/tweet_hash_emolex_pn.csv byam_15@130.153
 $ pwd
 /home/res/S0008/byam_15
 
-# run background
-$ nohup python file.py&
 
-# example
-[byam_15@roo ~]$ nohup ~/anaconda3/bin/python ~/git/predictEPL/Parallel/emolex_count_all_game.py > ~/datas/log_emolex_all.csv&
+# using screen (http://dotnsf.blog.jp/archives/1003331169.html)
+[byam_15@roo ~]$ screen -ls
+There are screens on:
+        162893.pts-0.roo        (Detached)
+        155850.pts-0.roo        (Detached)
+2 Sockets in /var/run/screen/S-byam_15.
 
 
+# go to first screen
+[byam_15@roo Parallel]$ screen -r 162893.pts-0.roo
 
-# check jobs
-[byam_15@roo ~]$ jobs
-[1]  + 実行中です               ~/anaconda3/bin/python ~/git/predictEPL/Parallel/hash_emolex_pn_score_all_game.py > ~/datas/Results/log_hash_all_ft.csv
+
+# run python
+[byam_15@roo ~]$ anaconda3/bin/python git/predictEPL/Parallel/review_all_game.py
 ```

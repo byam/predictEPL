@@ -4,6 +4,7 @@ import collections
 from pprint import pprint
 import math
 import pandas as pd
+import numpy as np
 import csv
 
 # Local Imports
@@ -12,6 +13,8 @@ sys.path.append(path)
 import paths
 import odds_portal
 import names
+sys.path.append(paths.UTILS)
+import tokenizer
 
 
 # Return Directory's file names
@@ -339,3 +342,107 @@ def ReadEplScoreTable():
     df = dfScoreTable.sort_values(['pts'], ascending=False).reset_index(drop=True)
 
     return df
+
+
+# Read Game infos as Df
+def ReadGameInfoDf():
+    # read csv as df
+    dfGameInfo = csv_dic_df("/Users/Bya/Dropbox/Research/datas/EPL/game_infos.csv")
+
+    # convert cell numbers to int
+    col_to_int = ['GW', 'score_ht_away', 'score_ht_home', 'score_ft_away', 'score_ft_home']
+    for col in col_to_int:
+        dfGameInfo[col] = [int(item) for item in dfGameInfo[col]]
+
+    return dfGameInfo
+
+
+# Drop Nan Games
+def ReadGameInfoDfDropNan():
+    # read Game Infos
+    df = ReadGameInfoDf()
+
+    # drop row indexes
+    drop_rows = []
+
+    # check game file exists
+    for ith_row in range(len(df)):
+        GW = 'GW' + str(df.loc[ith_row]['GW'])
+        home_team = df.loc[ith_row]['home_team']
+        away_team = df.loc[ith_row]['away_team']
+
+        path_csv = paths.DATA_HOME + 'EPL/ExtractedCsvData/'
+        match_name = home_team + '_vs_' + away_team + '.csv'
+
+        # check file exists
+        isfile = os.path.isfile(path_csv + GW + '/SingleGames/' + match_name)
+
+        if not isfile:
+            drop_rows.append(ith_row)
+
+    # drop rows
+    df = df.drop(df.index[drop_rows]).copy().reset_index(drop=True)
+
+    return df
+
+
+# Read Emoji Sentiment Rank
+def ReadEmojiSentiment():
+    dfEmojiSent = csv_dic_df(paths.DATA_HOME + "EPL/emoji_sentiment.csv")
+
+    col_to_int = ['neg', 'neut', 'occurences', 'pos', 'position', 'sentiment_score']
+
+    for col in col_to_int:
+        dfEmojiSent[col] = [np.float(item) for item in dfEmojiSent[col]]
+
+    return dfEmojiSent
+
+
+# Count Emoji Sentiment Count
+# return dic
+def EmojiSentimentCount(df, side, start_time, end_time):
+    # emoji sentiment as df
+    dfEmojiSent = ReadEmojiSentiment()
+
+    # df home or away
+    df = df[(df.side == side) &
+            (df.ith_minute >= start_time) & (df.ith_minute <= end_time)].copy().reset_index(drop=True)
+
+    # add emoji column
+    df['emoji'] = [tokenizer.EmojiText(text) for text in df.text]
+
+    # all emojis as list
+    emoji_list = list(df[df['emoji'] != '']['emoji'])
+
+    all_emoji = []
+    for emoji in emoji_list:
+        emojis = emoji.split(',')
+        all_emoji += emojis
+
+    # counted emoji
+    counted_emoji = collections.Counter(all_emoji)
+
+    # return max type
+    def EmoType(pos, neg, neut):
+        if pos > neg and pos > neut:
+            return 'pos'
+        elif neg > pos and neg > neut:
+            return 'neg'
+        else:
+            return 'neut'
+
+    # count emojis
+    dic_emoji_sent_counted = {'pos': 0, 'neg': 0, 'neut': 0}
+
+    emoji_chars = list(counted_emoji.keys())
+    for char in emoji_chars:
+        try:
+            pos = np.float(dfEmojiSent[dfEmojiSent.char == char]['pos'])
+            neg = np.float(dfEmojiSent[dfEmojiSent.char == char]['neg'])
+            neut = np.float(dfEmojiSent[dfEmojiSent.char == char]['neut'])
+
+            dic_emoji_sent_counted[EmoType(pos, neg, neut)] += counted_emoji[char]
+        except:
+            continue
+
+    return dic_emoji_sent_counted

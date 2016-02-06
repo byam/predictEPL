@@ -1,4 +1,161 @@
 RAW_ODDS = """
+24 Jan 2016 1   X   2   B's
+16:00   Arsenal - Chelsea   0:1 
+2.25
+3.25
+3.41
+57
+13:30   Everton - Swansea   1:2 
+1.73
+3.71
+5.09
+57
+23 Jan 2016 1   X   2   B's
+17:30   West Ham - Manchester City  2:2 
+4.84
+3.97
+1.70
+57
+15:00   Crystal Palace - Tottenham  1:3 
+3.57
+3.32
+2.15
+57
+15:00   Leicester - Stoke City  3:0 
+1.89
+3.48
+4.34
+56
+15:00   Manchester United - Southampton 0:1 
+2.03
+3.26
+4.07
+57
+15:00   Sunderland - Bournemouth    1:1 
+2.76
+3.29
+2.63
+57
+15:00   Watford - Newcastle Utd 2:1 
+1.97
+3.48
+3.97
+57
+15:00   West Brom - Aston Villa 0:0 
+2.26
+3.09
+3.55
+57
+12:45   Norwich - Liverpool 4:5 
+4.03
+3.39
+1.99
+57
+18 Jan 2016 1   X   2   B's
+20:00   Swansea - Watford   1:0 
+2.27
+3.22
+3.40
+57
+17 Jan 2016 1   X   2   B's
+16:15   Stoke City - Arsenal    0:0 
+3.31
+3.20
+2.31
+57
+14:05   Liverpool - Manchester United   0:1 
+2.57
+3.03
+3.05
+57
+16 Jan 2016 1   X   2   B's
+17:30   Aston Villa - Leicester 1:1 
+3.53
+3.37
+2.14
+57
+15:00   Bournemouth - Norwich   3:0 
+1.89
+3.48
+4.38
+57
+15:00   Chelsea - Everton   3:3 
+1.69
+3.89
+5.10
+56
+15:00   Manchester City - Crystal Palace    4:0 
+1.39
+4.94
+8.36
+56
+15:00   Newcastle Utd - West Ham    2:1 
+2.33
+3.34
+3.15
+56
+15:00   Southampton - West Brom 3:0 
+1.70
+3.58
+5.66
+57
+12:45   Tottenham - Sunderland  4:1 
+1.36
+5.01
+8.90
+57
+13 Jan 2016 1   X   2   B's
+20:00   Liverpool - Arsenal 3:3 
+2.61
+3.32
+2.79
+57
+20:00   Tottenham - Leicester   0:1 
+1.81
+3.63
+4.60
+57
+19:45   Chelsea - West Brom 2:2 
+1.44
+4.30
+8.31
+57
+19:45   Manchester City - Everton   0:0 
+1.53
+4.44
+6.11
+57
+19:45   Southampton - Watford   2:0 
+2.00
+3.40
+3.98
+57
+19:45   Stoke City - Norwich    3:1 
+2.01
+3.34
+4.00
+57
+19:45   Swansea - Sunderland    2:4 
+1.83
+3.50
+4.72
+57
+12 Jan 2016 1   X   2   B's
+19:45   Aston Villa - Crystal Palace    1:0 
+3.22
+3.15
+2.39
+57
+19:45   Bournemouth - West Ham  1:3 
+1.98
+3.57
+3.82
+57
+19:45   Newcastle Utd - Manchester United   3:3 
+4.79
+3.60
+1.79
+57
 Yesterday, 03 Jan   1   X   2   B's
 16:00   Everton - Tottenham 1:1 
 2.55
