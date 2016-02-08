@@ -302,22 +302,22 @@ def CheckSingleGameFile(week, team_home, team_away):
 # Dropping No Data Games
 # return: df
 def DropNanGames(dfGameInfos):
-    df = dfGameInfos.copy()
+    # df = dfGameInfos.copy()
 
-    drop_index = []
+    # drop_index = []
 
-    for ith_row in range(len(df)):
-        # Team names
-        week = df.iloc[ith_row]['GW']
-        team_home = df.iloc[ith_row]['home_team']
-        team_away = df.iloc[ith_row]['away_team']
+    # for ith_row in range(len(df)):
+    #     # Team names
+    #     week = df.iloc[ith_row]['GW']
+    #     team_home = df.iloc[ith_row]['home_team']
+    #     team_away = df.iloc[ith_row]['away_team']
 
-        if not CheckSingleGameFile(week, team_home, team_away):
-            drop_index.append(ith_row)
+    #     if not CheckSingleGameFile(week, team_home, team_away):
+    #         drop_index.append(ith_row)
 
-    df = df.drop(df.index[drop_index]).copy().reset_index(drop=True)
+    # df = df.drop(df.index[drop_index]).copy().reset_index(drop=True)
 
-    return df
+    return ReadGameInfoDfDropNan()
 
 
 # Real EPL score table as df
@@ -326,17 +326,17 @@ def ReadEplScoreTable():
     dfScoreTable = csv_dic_df(paths.DATA_HOME + "EPL/" + 'info_team_wld.csv')
 
     # change col name: str to int
-    [dfScoreTable.rename(columns={str(i): i}, inplace=True) for i in range(1, 24)]
+    [dfScoreTable.rename(columns={str(i): i}, inplace=True) for i in range(1, 26)]
 
     # values: str to int
-    for i in range(1, 24):
+    for i in range(1, 26):
         dfScoreTable[i] = dfScoreTable[i].astype(int)
 
     # sum all scores
     dfScoreTable['pts'] = dfScoreTable.sum(axis=1)
 
     # rearrange columns
-    dfScoreTable = dfScoreTable[['team', 'pts'] + list(range(1, 24))]
+    dfScoreTable = dfScoreTable[['team', 'pts'] + list(range(1, 26))]
 
     # sort by overall points
     df = dfScoreTable.sort_values(['pts'], ascending=False).reset_index(drop=True)

@@ -24,11 +24,11 @@ import useful_methods
 # *******************************************************
 
 # Limitations
-TIME_LIMIT = 108
+TIME_LIMIT = 63
 RETWEET_STATUS = False
 FILTER_STATUS = True
 START_TIME = 1
-END_TIME = 108
+END_TIME = 63
 
 
 # *******************************************************
@@ -38,7 +38,6 @@ END_TIME = 108
 os.chdir(paths.READ_PATH_GAME_INFO)
 dfGameInfos = useful_methods.csv_dic_df('game_infos.csv')
 dfGameInfos = useful_methods.DropNanGames(dfGameInfos)
-
 
 # which week
 WEEK_NUM = input()
@@ -88,7 +87,7 @@ def EmolexSumList(dfEmolex, start=1, end=60):
 
 
 # Count Home, Away Emolex
-def CountGameEmolex(week, team_home, team_away):
+def CountGameEmolexEmoji(week, team_home, team_away):
 
     # Read Single as DF
     dfGame = useful_methods.SingleGameDf(week, team_home, team_away, filtering=FILTER_STATUS, retweet=RETWEET_STATUS)
@@ -105,6 +104,17 @@ def CountGameEmolex(week, team_home, team_away):
     dic_emolex_home = EmolexSumList(dfEmolexHome, start=START_TIME, end=END_TIME)
     dic_emolex_away = EmolexSumList(dfEmolexAway, start=START_TIME, end=END_TIME)
 
+    # Count Emoji Sentiment Count
+    dic_emoji_sent_home = useful_methods.EmojiSentimentCount(dfGame, 'home', START_TIME, END_TIME)
+    dic_emoji_sent_away = useful_methods.EmojiSentimentCount(dfGame, 'away', START_TIME, END_TIME)
+
+    # Merge: Emolex & Emoji Sentiment
+    dic_emolex_home[-2] += dic_emoji_sent_home['pos']
+    dic_emolex_home[-1] += dic_emoji_sent_home['neg']
+
+    dic_emolex_away[-2] += dic_emoji_sent_away['pos']
+    dic_emolex_away[-1] += dic_emoji_sent_away['neg']
+
     return (dic_emolex_home, dic_emolex_away)
 
 
@@ -117,7 +127,7 @@ def EmolexCountSingleMatch(ith_row):
     team_away = dfGameInfos.iloc[ith_row]['away_team']
 
     # Count Emolex Word
-    emolex_count = CountGameEmolex(week, team_home, team_away)
+    emolex_count = CountGameEmolexEmoji(week, team_home, team_away)
 
     # print each rows
     print('%s, %s, %s, %s, %s' %
@@ -158,8 +168,8 @@ columns = ['GW', 'home_team', 'away_team', 'emolex_home', 'emolex_away']
 dfResult = pd.DataFrame(results, columns=columns)
 
 # Save as CSV
-useful_methods.DFtoCSV(dfResult, paths.READ_PATH_RESULTS, 'emolex_single', index=False)
-print("[Saved in]: %s" % (paths.READ_PATH_RESULTS + 'emolex_single.csv'))
+useful_methods.DFtoCSV(dfResult, paths.READ_PATH_RESULTS, 'emolex_emoji_single', index=False)
+print("[Saved in]: %s" % (paths.READ_PATH_RESULTS + 'emolex_emoji_single.csv'))
 
 
 

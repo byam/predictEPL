@@ -23,11 +23,11 @@ import useful_methods
 # *******************************************************
 
 # Limitations
-TIME_LIMIT = 108
+TIME_LIMIT = 63
 RETWEET_STATUS = False
 FILTER_STATUS = True
 START_TIME = 1
-END_TIME = 108
+END_TIME = 63
 
 
 # *******************************************************
@@ -41,7 +41,7 @@ dfGameInfos = useful_methods.DropNanGames(dfGameInfos)
 
 # which week
 WEEK_NUM = input()
-dfGameInfos = dfGameInfos[dfGameInfos.GW == str(WEEK_NUM)].copy().reset_index(drop=True)
+dfGameInfos = dfGameInfos[dfGameInfos.GW == int(WEEK_NUM)].copy().reset_index(drop=True)
 
 
 # Convert number strings to integers
@@ -56,10 +56,10 @@ dfGameInfos['score_ft_away'] = [int(number) for number in dfGameInfos['score_ft_
 # *******************************************************
 
 PKL_HASH_EMOLEX = "dtr_hash_svn_2016-01-22_08:26:25.pkl"
-PKL_REVIEW = 'dtr_hash_svn_2016-01-24_05:14:42.pkl'
+PKL_REVIEW = 'detecter_sentiment_reviews_nb0204.pkl'
 
 # Read SVM(hash emolex) detecter
-with open(paths.DETECTER_HOME + PKL_HASH_EMOLEX, 'rb') as f:
+with open(paths.DETECTER_HOME + PKL_REVIEW, 'rb') as f:
     u = pickle._Unpickler(f)
     u.encoding = 'utf-8'
     detecter = u.load()
@@ -154,8 +154,8 @@ columns = ['GW', 'home_team', 'away_team', 'pn_home_pos', 'pn_home_neg', 'pn_awa
 dfResult = pd.DataFrame(results, columns=columns)
 
 # Save as CSV
-useful_methods.DFtoCSV(dfResult, paths.READ_PATH_RESULTS, 'hash_all', index=False)
-print("[Saved in]: %s" % (paths.READ_PATH_RESULTS + 'hash_all.csv'))
+useful_methods.DFtoCSV(dfResult, paths.READ_PATH_RESULTS, 'hash_single', index=False)
+print("[Saved in]: %s" % (paths.READ_PATH_RESULTS + 'hash_single.csv'))
 
 
 

@@ -354,6 +354,43 @@ GAMES = {
             ('Watford', 'Chelsea'),
         ],
 
+    'GW25':
+        [
+            ('City', 'Leicester'),
+
+            ('Villa', 'Norwich'),
+            ('Liverpool', 'Sunderland'),
+            ('Newcastle', 'WestBromwich'),
+            ('Tottenham', 'Watford'),
+            ('Stoke', 'Everton'),
+            ('Swansea', 'Crystal'),
+
+            ('Southampton', 'WestHam'),
+
+            ('Bournemouth', 'Arsenal'),
+
+            ('Chelsea', 'United'),
+        ],
+
+    'GW26':
+        [
+            ('Sunderland', 'United'),
+
+            ('Bournemouth', 'Stoke'),
+            ('Crystal', 'Watford'),
+            ('Everton', 'WestBromwich'),
+            ('Norwich', 'WestHam'),
+            ('Swansea', 'Southampton'),
+
+            ('Chelsea', 'Newcastle'),
+
+            ('Arsenal', 'Leicester'),
+
+            ('Villa', 'Liverpool'),
+
+            ('City', 'Tottenham'),
+        ],
+
 }
 
 # 'Bournemouth'

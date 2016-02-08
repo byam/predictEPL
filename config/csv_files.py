@@ -348,4 +348,41 @@ FILES = {
             'game9_10.csv',
         ],
 
+    'GW25':
+        [
+            'game1.csv',
+
+            'game2_7.csv',
+            'game2_7.csv',
+            'game2_7.csv',
+            'game2_7.csv',
+            'game2_7.csv',
+            'game2_7.csv',
+
+            'game8.csv',
+
+            'game9.csv',
+
+            'game10.csv',
+        ],
+
+    'GW26':
+        [
+            'game1.csv',
+
+            'game2_6.csv',
+            'game2_6.csv',
+            'game2_6.csv',
+            'game2_6.csv',
+            'game2_6.csv',
+
+            'game7.csv',
+
+            'game8.csv',
+
+            'game9.csv',
+
+            'game10.csv',
+        ],
+
 }

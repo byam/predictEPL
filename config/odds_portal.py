@@ -1,4 +1,108 @@
 RAW_ODDS = """
+Yesterday, 07 Feb   1   X   2   B's
+16:00   Chelsea - Manchester United 1:1 
+2.16
+3.20
+3.70
+58
+13:30   Bournemouth - Arsenal   0:2 
+4.33
+3.58
+1.87
+58
+06 Feb 2016 1   X   2   B's
+17:30   Southampton - West Ham  1:0 
+1.69
+3.77
+5.31
+58
+15:00   Aston Villa - Norwich   2:0 
+2.45
+3.14
+3.11
+58
+15:00   Liverpool - Sunderland  2:2 
+1.43
+4.57
+7.73
+57
+15:00   Newcastle Utd - West Brom   1:0 
+2.22
+3.25
+3.46
+57
+15:00   Stoke City - Everton    0:3 
+2.81
+3.28
+2.60
+57
+15:00   Swansea - Crystal Palace    1:1 
+2.27
+3.14
+3.43
+57
+15:00   Tottenham - Watford 1:0 
+1.49
+4.27
+7.15
+58
+12:45   Manchester City - Leicester 1:3 
+1.61
+4.08
+5.59
+58
+03 Feb 2016 1   X   2   B's
+19:45   Everton - Newcastle Utd 3:0 
+1.69
+3.92
+4.96
+57
+19:45   Watford - Chelsea   0:0 
+4.64
+3.59
+1.82
+57
+02 Feb 2016 1   X   2   B's
+20:00   Crystal Palace - Bournemouth    1:2 
+2.58
+3.16
+2.92
+57
+20:00   Manchester United - Stoke City  3:0 
+1.63
+3.73
+5.99
+57
+20:00   West Brom - Swansea 1:1 
+2.55
+3.01
+3.09
+57
+19:45   Arsenal - Southampton   0:0 
+1.80
+3.52
+4.80
+57
+19:45   Leicester - Liverpool   2:0 
+2.77
+3.22
+2.66
+57
+19:45   Norwich - Tottenham 0:3 
+4.65
+3.82
+1.76
+57
+19:45   Sunderland - Manchester City    0:1 
+6.61
+4.50
+1.49
+57
+19:45   West Ham - Aston Villa  2:0 
+1.85
+3.43
+4.67
+57
 24 Jan 2016 1   X   2   B's
 16:00   Arsenal - Chelsea   0:1 
 2.25
