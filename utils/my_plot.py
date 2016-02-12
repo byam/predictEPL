@@ -86,6 +86,7 @@ def PlotLineChart(my_list_list, labels, colors, title, xlabel, ylabel,
 
     plt.xlabel(xlabel, fontproperties=fp_small)
     plt.ylabel(ylabel, fontproperties=fp_small)
+    plt.axvline(x=48, color="orange", alpha=0.5)
     # plt.title(title)
     plt.legend(prop=fp_small, loc="upper right")
 

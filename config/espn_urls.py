@@ -232,6 +232,164 @@ GAMES = {
 
             ('Arsenal', 'City'),
         ],
+
+    'GW18':
+        [
+            ('Stoke', 'United'),
+
+            ('Villa', 'WestHam'),
+            ('Bournemouth', 'Crystal'),
+            ('Chelsea', 'Watford'),
+            ('Liverpool', 'Leicester'),
+            ('City', 'Sunderland'),
+            ('Tottenham', 'Norwich'),
+            ('Swansea', 'WestBromwich'),
+
+            ('Newcastle', 'Everton'),
+
+            ('Southampton', 'Arsenal'),
+        ],
+
+    'GW19':
+        [
+            ('Crystal', 'Swansea'),
+            ('Everton', 'Stoke'),
+            ('Norwich', 'Villa'),
+            ('Watford', 'Tottenham'),
+            ('WestBromwich', 'Newcastle'),
+
+            ('Arsenal', 'Bournemouth'),
+            ('United', 'Chelsea'),
+            ('WestHam', 'Southampton'),
+
+            ('Leicester', 'City'),
+
+            ('Sunderland', 'Liverpool'),
+        ],
+
+    'GW20':
+        [
+            ('WestHam', 'Liverpool'),
+
+            ('Arsenal', 'Newcastle'),
+            ('Leicester', 'Bournemouth'),
+            ('United', 'Swansea'),
+            ('Norwich', 'Southampton'),
+            ('Sunderland', 'Villa'),
+            ('WestBromwich', 'Stoke'),
+
+            ('Watford', 'City'),
+
+            ('Crystal', 'Chelsea'),
+
+            ('Everton', 'Tottenham'),
+        ],
+
+    'GW21':
+        [
+            ('Villa', 'Crystal'),
+            ('Bournemouth', 'WestHam'),
+            ('Newcastle', 'United'),
+
+            ('Chelsea', 'WestBromwich'),
+            ('City', 'Everton'),
+            ('Southampton', 'Watford'),
+            ('Stoke', 'Norwich'),
+            ('Swansea', 'Sunderland'),
+            ('Liverpool', 'Arsenal'),
+            ('Tottenham', 'Leicester'),
+        ],
+
+    'GW22':
+        [
+            ('Tottenham', 'Sunderland'),
+
+            ('Bournemouth', 'Norwich'),
+            ('Chelsea', 'Everton'),
+            ('City', 'Crystal'),
+            ('Newcastle', 'WestHam'),
+            ('Southampton', 'WestBromwich'),
+
+            ('Villa', 'Leicester'),
+
+            ('Liverpool', 'United'),
+
+            ('Stoke', 'Arsenal'),
+
+            ('Swansea', 'Watford'),
+        ],
+
+    'GW23':
+        [
+            ('Norwich', 'Liverpool'),
+
+            ('Crystal', 'Tottenham'),
+            ('Leicester', 'Stoke'),
+            ('United', 'Southampton'),
+            ('Sunderland', 'Bournemouth'),
+            ('Watford', 'Newcastle'),
+            ('WestBromwich', 'Villa'),
+
+
+            ('WestHam', 'City'),
+
+            ('Everton', 'Swansea'),
+
+            ('Arsenal', 'Chelsea'),
+        ],
+
+    'GW24':
+        [
+            ('Arsenal', 'Southampton'),
+            ('Leicester', 'Liverpool'),
+            ('Norwich', 'Tottenham'),
+            ('Sunderland', 'City'),
+            ('WestHam', 'Villa'),
+
+            ('Crystal', 'Bournemouth'),
+            ('United', 'Stoke'),
+            ('WestBromwich', 'Swansea'),
+
+            ('Everton', 'Newcastle'),
+            ('Watford', 'Chelsea'),
+        ],
+
+    'GW25':
+        [
+            ('City', 'Leicester', 'http://www.espnfc.us/gamecast/422418/gamecast.html'),
+
+            ('Villa', 'Norwich'),
+            ('Liverpool', 'Sunderland'),
+            ('Newcastle', 'WestBromwich'),
+            ('Tottenham', 'Watford'),
+            ('Stoke', 'Everton'),
+            ('Swansea', 'Crystal'),
+
+            ('Southampton', 'WestHam'),
+
+            ('Bournemouth', 'Arsenal'),
+
+            ('Chelsea', 'United'),
+        ],
+
+    'GW26':
+        [
+            ('Sunderland', 'United'),
+
+            ('Bournemouth', 'Stoke'),
+            ('Crystal', 'Watford'),
+            ('Everton', 'WestBromwich'),
+            ('Norwich', 'WestHam'),
+            ('Swansea', 'Southampton'),
+
+            ('Chelsea', 'Newcastle'),
+
+            ('Arsenal', 'Leicester'),
+
+            ('Villa', 'Liverpool'),
+
+            ('City', 'Tottenham'),
+        ],
 }
 
 
